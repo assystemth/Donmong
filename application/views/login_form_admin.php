@@ -165,7 +165,7 @@
 
         .bg {
             /* The image used */
-            background-image: url('<?php echo base_url("docs/k.bg-select-login.jpg"); ?>');
+            background-image: url('<?php echo base_url("docs/k.bg-admin.jpg"); ?>');
             /* Full height */
             height: 100vh;
             /* Center the image horizontally and vertically */

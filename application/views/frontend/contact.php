@@ -18,17 +18,17 @@
             <img src="<?php echo base_url("docs\k.logo.png"); ?>" width="132px" height="133px">
             <br>
             <div class="mt-4">
-                <span class="font-contact-1">เทศบาลตำบลกาบเชิง</span><br><br>
-                <span class="font-contact-2">ที่อยู่ : เลขที่ 39 หมู่ที่ 17 ตำบลกาบเชิง อำเภอกาบเชิง จังหวัดสุรินทร์ 32210 <br>
-                    โทรศัพท์ : 0-4455-9143 <br>
-                    โทรสาร : 0-4455-9253 <br>
-                    Facebook : <a href="https://www.facebook.com/people/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%9A%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87-%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B8%E0%B8%A3%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C/100068962338320/" target="_blank" rel="noopener noreferrer">เทศบาลตำบลกาบเชิง</a>
+                <span class="font-contact-1">สำนักงานเทศบาลตำบลดอนโมง</span><br><br>
+                <span class="font-contact-2">ที่อยู่ : เลขที่ 99/9 หมู่ที่ 9 ถนนมลิวรรณ ตำบลบ้านกง อำเภอหนองเรือ จังหวัดขอนแก่น 40240 <br>
+                    โทรศัพท์ : 043-299471-2 ต่อ 22,23,18 <br>
+                    โทรสาร : 043-299471-2 ต่อ 22,23,18 <br>
+                    Facebook : <a href="https://www.facebook.com/donmongmuni/?ref=embed_page" target="_blank" rel="noopener noreferrer">เทศบาลตำบลดอนโมง</a>
                 </span>
             </div>
             <div class="mt-5 mb-3">
                 <span class="font-contact-map">แผนที่หน่วยงาน</span>
             </div>
-            <iframe class="map-contact" width="873" height="594" frameborder="0" src="https://www.google.com/maps?q=สำนักงานเทศบาลตำบลกาบเชิง&output=embed" allowfullscreen></iframe>
+            <iframe class="map-contact" width="873" height="594" frameborder="0" src="https://www.google.com/maps?q=สำนักงานเทศบาลตำบลดอนโมง&output=embed" allowfullscreen></iframe>
         </div>
     </div>
 </div>

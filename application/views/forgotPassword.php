@@ -160,7 +160,7 @@
 
         .bg {
             /* The image used */
-            background-image: url('<?php echo base_url("docs/s.bg-admin.jpg"); ?>');
+            background-image: url('<?php echo base_url("docs/k.bg-admin.jpg"); ?>');
             /* Full height */
             height: 100%;
             /* Center the image horizontally and vertically */

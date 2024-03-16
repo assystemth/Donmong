@@ -13,7 +13,7 @@
 <script src="https://kit.fontawesome.com/9d1d9a82d2.js" crossorigin="anonymous"></script> -->
 <link rel="icon" href="<?php echo base_url("docs/logo.png"); ?>" type="image/x-icon">
 
-<title>เทศบาลธงธานี - ระบบอินทราเน็ต</title>
+<title>เทศบาลดอนโมง - ระบบอินทราเน็ต</title>
     <!-- boostrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- icon -->
@@ -71,27 +71,23 @@
                                 } elseif ($m_level == 2) {
                                     echo "Super Admin";
                                 } elseif ($m_level == 3) {
-                                    echo "ทำเนียบเทศบาลธงธานี";
-                                } elseif ($m_level == 4) {
                                     echo "คณะผู้บริหาร";
-                                } elseif ($m_level == 5) {
+                                } elseif ($m_level == 4) {
                                     echo "สมาชิกสภาตำบล";
-                                } elseif ($m_level == 6) {
+                                } elseif ($m_level == 5) {
                                     echo "หัวหน้าส่วนราชการ";
+                                } elseif ($m_level == 6) {
+                                    echo "ผู้นำชุมชน";
                                 } elseif ($m_level == 7) {
-                                    echo "พนักงานเทศบาล";
-                                } elseif ($m_level == 8) {
                                     echo "สำนักปลัด";
-                                } elseif ($m_level == 9) {
+                                } elseif ($m_level == 8) {
                                     echo "กองคลัง";
-                                } elseif ($m_level == 10) {
+                                } elseif ($m_level == 9) {
                                     echo "กองช่าง";
-                                } elseif ($m_level == 11) {
-                                    echo "กองประปา";
-                                } elseif ($m_level == 12) {
+                                } elseif ($m_level == 10) {
                                     echo "กองสาธารณสุขและสิ่งแวดล้อม";
-                                } elseif ($m_level == 13) {
-                                    echo "กองการศึกษาศาสนาและวัฒนธรรม";
+                                } elseif ($m_level == 11) {
+                                    echo "หน่วยตรวจสอบภายใน";
                                 } else {
                                     echo "ตำแหน่งไม่ถูกต้อง";
                                 }
@@ -123,7 +119,7 @@
                                 } elseif ($m_level == 2) {
                                     echo "Super Admin";
                                 } elseif ($m_level == 3) {
-                                    echo "ทำเนียบเทศบาลธงธานี";
+                                    echo "ทำเนียบเทศบาลดอนโมง";
                                 } elseif ($m_level == 4) {
                                     echo "คณะผู้บริหาร";
                                 } elseif ($m_level == 5) {

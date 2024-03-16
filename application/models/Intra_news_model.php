@@ -128,7 +128,7 @@ class Intra_news_model extends CI_Model
         echo "Line Notify API Response: $response";
     }
     private $lineNotifyApiUrl = 'https://notify-api.line.me/api/notify';
-    private $lineNotifyAccessToken = 'Iff0yJEZxd1xtZQDhWGKHltb455decobtxXQlDjlWST';
+    private $lineNotifyAccessToken = 'cUP78Au0g9UEDEbkJrbZBMIucRjj45VcFzHiGXvHcEy';
 
     public function list_all()
     {

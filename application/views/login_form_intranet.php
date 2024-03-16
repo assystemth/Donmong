@@ -165,7 +165,7 @@
 
         .bg {
             /* The image used */
-            background-image: url('<?php echo base_url("docs/k.bg-intranet.jpg"); ?>');
+            background-image: url('<?php echo base_url("docs/k.bg-intranetv1.jpg"); ?>');
             /* Full height */
             height: 100vh;
             /* Center the image horizontally and vertically */

@@ -18,9 +18,7 @@ class Intra_share_file extends CI_Controller
             $this->session->userdata('m_level') != 8 &&
             $this->session->userdata('m_level') != 9 &&
             $this->session->userdata('m_level') != 10 &&
-            $this->session->userdata('m_level') != 11 &&
-            $this->session->userdata('m_level') != 12 &&
-            $this->session->userdata('m_level') != 13
+            $this->session->userdata('m_level') != 11
         ) {
             redirect('user', 'refresh');
         }
@@ -307,6 +305,59 @@ class Intra_share_file extends CI_Controller
         $this->Intra_share_file_model->del_sf_audit($intra_form_id);
         $this->session->set_flashdata('del_success', TRUE);
         redirect('Intra_share_file/sf_audit');
+    }
+    // *****************************************************************************************
+    //  ************************************************************************
+    public function sf_learder()
+    {
+        $data['query'] = $this->Intra_share_file_model->list_sf_learder();
+
+        $this->load->view('intranet_templat/header_sf_learder');
+        $this->load->view('internet_asste/css');
+        $this->load->view('intranet_templat/navbar');
+        $this->load->view('intranet/sf_learder', $data);
+        $this->load->view('internet_asste/js');
+        $this->load->view('intranet_templat/footer');
+    }
+
+    public function search_sf_learder()
+    {
+        $search_term = $this->input->post('search_term');
+
+        // ถ้ามีคำค้นหา
+        if (!empty($search_term)) {
+            $data['query'] = $this->Intra_share_file_model->search_sf_learder($search_term);
+        } else {
+            // ถ้าไม่มีคำค้นหา ดึงข้อมูลทั้งหมด
+            $data['query'] = $this->Intra_share_file_model->list_sf_learder();
+        }
+
+        $this->load->view('intranet_templat/header_sf_learder');
+        $this->load->view('internet_asste/css');
+        $this->load->view('intranet_templat/navbar');
+        $this->load->view('intranet/sf_learder', $data);
+        $this->load->view('internet_asste/js');
+        $this->load->view('intranet_templat/footer');
+    }
+
+    public function add_sf_learder()
+    {
+        // echo '<pre>';
+        // print_r($_POST);
+        // echo '</pre>';
+        // echo '<pre>';
+        // print_r($_FILES);
+        // echo '</pre>';
+        // exit;
+        $this->Intra_share_file_model->add_sf_learder();
+        redirect('Intra_share_file/sf_learder');
+    }
+
+    public function del_sf_learder($intra_form_id)
+    {
+        $this->Intra_share_file_model->del_sf_learder($intra_form_id);
+        $this->session->set_flashdata('del_success', TRUE);
+        redirect('Intra_share_file/sf_learder');
     }
     // *****************************************************************************************
     // กองประปา ************************************************************************

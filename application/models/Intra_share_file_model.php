@@ -408,6 +408,85 @@ class Intra_share_file_model extends CI_Model
         return $query->result();
     }
     // ****************************************************************************************
+    // ผู้ชุมชน *****************************************************************************
+    public function add_sf_learder()
+    {
+        $config['upload_path'] = './docs/intranet/file';
+        $config['allowed_types'] = 'pdf|doc|docx|xls|';
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload('intra_sf_learder_pdf')) {
+            // ไม่สามารถอัปโหลดไฟล์ได้
+            $error = array('error' => $this->upload->display_errors());
+            print_r($error);
+            exit;
+        }
+
+        // สำเร็จในการอัปโหลดไฟล์
+        $data = $this->upload->data();
+        $filename = $data['file_name'];
+
+        // ตรวจสอบพื้นที่ในการบันทึก
+        $used_space_mb = $this->space_model->get_used_space();
+        $upload_limit_mb = $this->space_model->get_limit_storage();
+        $total_space_required = $data['file_size'];
+
+        if ($used_space_mb + ($total_space_required / (1024 * 1024)) >= $upload_limit_mb) {
+            $this->session->set_flashdata('save_error', TRUE);
+            redirect('Intra_sf_learder');
+            return;
+        }
+
+        // ข้อมูลสำหรับบันทึกลงในฐานข้อมูล
+        $insert_data = array(
+            'intra_sf_learder_name' => $this->input->post('intra_sf_learder_name'),
+            'intra_sf_learder_by' => $this->session->userdata('m_fname'),
+            'intra_sf_learder_pdf' => $filename
+        );
+
+        // บันทึกลงในฐานข้อมูล
+        $query = $this->db->insert('tbl_intra_sf_learder', $insert_data);
+
+        // อัพเดตข้อมูลพื้นที่ในการใช้งาน
+        $this->space_model->update_server_current();
+
+        // ตรวจสอบความสำเร็จของการบันทึก
+        if ($query) {
+            $this->session->set_flashdata('save_success', TRUE);
+        } else {
+            $this->session->set_flashdata('save_error', TRUE);
+        }
+    }
+
+    public function list_sf_learder()
+    {
+        $this->db->order_by('intra_sf_learder_id', 'DESC');
+        $query = $this->db->get('tbl_intra_sf_learder');
+        return $query->result();
+    }
+
+    public function del_sf_learder($intra_sf_learder_id)
+    {
+        // ดึงข้อมูลรูปเก่า
+        $old_document = $this->db->get_where('tbl_intra_sf_learder', array('intra_sf_learder_id' => $intra_sf_learder_id))->row();
+
+        $old_file_path = './docs/intranet/file/' . $old_document->intra_sf_learder_pdf;
+        if (file_exists($old_file_path)) {
+            unlink($old_file_path);
+        }
+
+        $this->db->delete('tbl_intra_sf_learder', array('intra_sf_learder_id' => $intra_sf_learder_id));
+    }
+    public function search_sf_learder($search_term)
+    {
+        // ปรับแต่ง query ตามความต้องการ
+        $this->db->like('intra_sf_learder_name', $search_term);
+        // เพิ่มเงื่อนไขค้นหาเพิ่มเติมตามความต้องการ
+
+        $query = $this->db->get('tbl_intra_sf_learder');
+        return $query->result();
+    }
+    // ****************************************************************************************
     // กองสาธารณสุขและสิ่งแวดล้อม *****************************************************************************
     public function add_sf_dsab()
     {

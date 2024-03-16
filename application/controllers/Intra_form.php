@@ -18,9 +18,7 @@ class Intra_form extends CI_Controller
             $this->session->userdata('m_level') != 8 &&
             $this->session->userdata('m_level') != 9 &&
             $this->session->userdata('m_level') != 10 &&
-            $this->session->userdata('m_level') != 11 &&
-            $this->session->userdata('m_level') != 12 &&
-            $this->session->userdata('m_level') != 13
+            $this->session->userdata('m_level') != 11
         ) {
             redirect('user', 'refresh');
         }
