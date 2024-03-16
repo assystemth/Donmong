@@ -1,34 +1,40 @@
 <style>
     body {
-        padding: 0;
-        margin: 0;
-
-    }
-
-    main {
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        max-width: 1280px;
-        /* กำหนดความกว้างสูงสุดที่ 1280px */
-        height: 2000px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Kanit', sans-serif;
+        background: #F8F8F8;
     }
 
     .bg-header {
         /* The image used */
-        background-image: url('<?php echo base_url("docs/s.navbar-intranet.png"); ?>');
-        width: 1280px;
-        height: 62px;
-        /* Center the image horizontally and vertically */
-        background-position: center center;
-        /* Do not repeat the background image */
+        background-image: url('<?php echo base_url("docs/intranet/navbar-intranet19v5.png"); ?>');
+        background-size: contain;
         background-repeat: no-repeat;
-        /* Cover the entire div with the background image */
-        background-size: cover;
+        width: 100%;
+        height: 7.7vh;
+        z-index: 2;
+
     }
+
+    .welcome {
+        background-image: url('<?php echo base_url("docs/intranet/welcome19v4.jpg"); ?>');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1;
+        width: 100%;
+        height: 44vh;
+    }
+
+    .welcome-btm {
+        width: 100%;
+        height: 10vh;
+        margin-top: -75px;
+        z-index: 2;
+    }
+
+
 
     /* สีทั้งหมด color-all ********************************************************************  */
     .black {
@@ -152,48 +158,16 @@
         margin-top: 50px;
     } */
 
-
-
-    /* กำหนดสไตล์ scroll bar สำหรับ WebKit (Chrome, Safari) */
-    ::-webkit-scrollbar {
-        height: 5px;
-        width: 5px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #fff;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #888;
-    }
-
     /* scroll bar เลื่อนซ้ายขวา เลื่อนบนล่าง ****************************************************** */
-    .form__icon {
-        position: absolute;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #6D758F;
-        /* เลือกสีที่ต้องการ */
-        z-index: 2;
-        cursor: pointer;
-    }
 
     .search {
         margin-right: 1%;
-        width: 336px;
-        height: 35px;
+
     }
 
     .searchTerm {
-        border-radius: 84.414px;
-        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+
     }
 
     .searchButton {
@@ -221,33 +195,30 @@
 
     .menu {
         display: flex;
-        background-color: #F8F8F8;
-        width: 1280px;
+        margin-top: 1.6%;
+        height: 110vh;
+        background-color: #F4F4F4;
     }
 
     .flex-item-left {
-        flex: 0 0 22%;
-        /* 30% ของขนาดเริ่มต้นของ container */
-        background-color: #309b4d;
-        color: #E4E4E4;
+        flex: 0 0 20%;
+        background-color: #F8F8F8;
+        color: #fff;
         /* เพิ่มสีพื้นหลังเพื่อดูง่ายขึ้น */
     }
 
     .flex-item-right {
         flex: 1;
         /* รับพื้นที่ที่เหลือทั้งหมด */
-        /* background-color: #f8f8f8; */
-        margin-left: 30px;
-        margin-top: 50px;
-        border-radius: 34px;
-        background: #FFF;
-        box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 0.08);
+        /* background-color: #E4E4E4; */
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .flex-item-right-share-file {
         flex: 1;
         /* รับพื้นที่ที่เหลือทั้งหมด */
-        /* background-color: #f8f8f8; */
+        /* background-color: #F8F8F8; */
         margin-left: 2%;
         margin-right: 2%;
     }
@@ -263,10 +234,9 @@
     .bg-navbar {
         /* background-image: url('<?php echo base_url("docs/bg-intra-navbar3.png"); ?>');
         background-repeat: no-repeat;
-        background-size: cover cover; */
-        background-color: #E4E4E4;
-        height: 1138px;
-        width: 240px;
+        background-size: cover cover;
+        height: 100%; */
+        background-color: #F8F8F8;
     }
 
 
@@ -279,8 +249,8 @@
     }
 
     .navbar-right {
-        margin-left: 20%;
-        padding-right: 9px;
+        margin-left: 10%;
+        padding-right: 10px;
     }
 
     .box-folder {
@@ -369,9 +339,9 @@
     }
 
     .pagination .page-item.active .page-link {
-        background-color: #6BBF4D;
+        background-color: #0FC2C0;
         /* สีเขียว */
-        border-color: #6BBF4D;
+        border-color: #0FC2C0;
         color: #fff;
     }
 
@@ -382,8 +352,8 @@
     }
 
     .pagination .page-link:hover {
-        color: #F1F3F7;
-        background-color: #07834D;
+        color: #000;
+        background-color: #E9E9E9;
     }
 
     .popup {
@@ -414,117 +384,302 @@
         font-size: 14px;
     }
 
-    .credit {
-        background: linear-gradient(180deg, #6BBF4D 28.67%, #07834D 100%);
-        height: 80px;
-        padding-top: 20px;
+    .footer {
+        background-image: url('<?php echo base_url("docs/intranet/bg-footer19v2.png"); ?>');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 33vh;
+        z-index: 2;
+        padding-top: 8%;
     }
 
-    /* .footer {
-        background-image: url('<?php echo base_url("docs/s.bg-footer.png"); ?>');
+    .font-footer {
+        font-size: 19px;
+        color: #000;
+    }
+
+    /* .credit {
+        background-image: url('<?php echo base_url("docs/intranet/bg-footer19.png"); ?>');
+        background-size: contain;
         background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center center;
-        min-height: 425px;
-        width: 1280px;
-        position: relative;
+        width: 100vw;
+        height: 10vh;
         z-index: 2;
-        margin-top: -350px;
     } */
 
-    /* เอา ::marker ออกจาก dropdown menu */
-    .dropdown-menu li {
-        list-style-type: none;
+    .card-all-report {
+        border-radius: 14px;
+        background: #FFF;
+        box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        height: auto;
+        padding: 25px 30px;
     }
 
-    /* ปรับ margin ของแต่ละรายการเพื่อให้ไม่มีระยะห่าง */
-    .dropdown-menu li a {
-        margin: 0;
-    }
-
-    .bg-notify {
-        background: #fff;
-        border-radius: 50%;
-        width: 41.37px;
-        height: 39px;
-        flex-shrink: 0;
-    }
-
-    .input-group {
-        display: flex;
-    }
-
-    .input-group-prepend {
-        margin-right: 10px;
-        /* ปรับตำแหน่งของ icon ตามความต้องการ */
-        display: flex;
-        align-items: center;
-    }
-
-    .fa-bell {
-        transform: scale(1.5);
-        /* ปรับขนาดตามที่ต้องการ */
-    }
-
-    .btn-navbar {
-        color: var(--, #6D758F);
+    .font-topic-all-report {
+        color: #000;
         font-family: Kanit;
-        font-size: 18px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 1000;
+        line-height: 31.685px;
+        /* 176.027% */
+    }
+
+    .font-head-all-report {
+        color: #000;
+        font-family: Kanit;
+        font-size: 24px;
         font-style: normal;
         font-weight: 400;
-        line-height: 50px;
-        width: 206px;
-        height: 41.718px;
-        flex-shrink: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        line-height: 16.894px;
+        /* 93.858% */
     }
 
-    .btn-navbar:hover {
-        width: 206px;
-        height: 41.718px;
-        flex-shrink: 0;
-        fill: #FFF;
-        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.15));
-        color: #FFBA5E;
+    .font-detail-all-report {
+        color: #000;
         font-family: Kanit;
         font-size: 18px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 50px;
-        background-color: #FFF;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        font-weight: 300;
+        line-height: normal;
     }
 
-    .btn-navbar.active {
-        width: 206px;
-        height: 41.718px;
-        flex-shrink: 0;
-        fill: #FFF;
+    .box-content-report1 {
         filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.15));
+        width: 100%;
+        height: 50px;
+        border: solid 2px #F5900A;
+        padding: 8px 15px;
+        border-radius: 14px;
+    }
+
+    .box-content-report2 {
+        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.15));
+        width: 100%;
+        height: 50px;
+        border: solid 2px #DBFFDD;
+        padding: 8px 15px;
+        border-radius: 14px;
+    }
+
+    .box-content-report3 {
+        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.15));
+        width: 100%;
+        height: 50px;
+        border: solid 2px #FFA085;
+        padding: 8px 15px;
+        border-radius: 14px;
+    }
+
+    .box-content-report4 {
+        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.15));
+        width: 100%;
+        height: 50px;
+        border: solid 2px #CFE5FF;
+        padding: 8px 15px;
+        border-radius: 14px;
+    }
+
+    .box-content-report5 {
+        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.15));
+        width: 100%;
+        height: 50px;
+        border: solid 2px #CFD7FE;
+        padding: 8px 15px;
+        border-radius: 14px;
+    }
+
+    .box-content-report6 {
+        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.15));
+        width: 100%;
+        height: 50px;
+        border: solid 2px #FFD361;
+        padding: 8px 15px;
+        border-radius: 14px;
+    }
+
+    .box-content-report7 {
+        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.15));
+        width: 100%;
+        height: 50px;
+        border: solid 2px #FFE3E3;
+        padding: 8px 15px;
+        border-radius: 14px;
+    }
+
+    .card-all-complain {
+        border-radius: 14px;
+        background: #FFF;
+        box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        height: auto;
+        padding: 25px 30px;
+    }
+
+    .btn-all-complain {
+        border-radius: 14px;
+        background: #FFBA5D;
+        width: 103px;
+        height: 38.351px;
+        flex-shrink: 0;
+        color: #fff;
+    }
+
+    .btn-all-complain:hover {
+        background: #FFBA5D;
+        color: #fff;
+    }
+
+    .line-complain-left1 {
+        border-left: solid 3px #875DFF;
+        height: 40px;
+    }
+
+    .line-complain-left2 {
+        border-left: solid 3px #F5900A;
+        height: 40px;
+    }
+
+    .bg-complain-all {
+        border-radius: 34px;
+        background: #FFF;
+        box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 0.08);
+        width: 100%;
+        height: auto;
+        padding: 25px 30px;
+    }
+
+    .font-topic-all-complain {
+        color: #000;
+        font-family: Kanit;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 1000;
+        line-height: 31.685px;
+        /* 176.027% */
+    }
+
+    .scrollable-container {
+        max-height: 90vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-bottom: 40px;
+    }
+
+    .scrollable-container::-webkit-scrollbar {
+        height: 5px;
+        width: 10px;
+    }
+
+    .scrollable-container::-webkit-scrollbar-track {
+        border-radius: 33.559px;
+        background: #888;
+        box-shadow: 0px 2.685px 2.685px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .scrollable-container::-webkit-scrollbar-thumb {
+        border-radius: 33.559px;
+        background: #0FC2C0;
+        box-shadow: 0px 2.685px 2.685px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .scrollable-container::-webkit-scrollbar-thumb:hover {
+        background: #D9D9D9;
+    }
+
+
+
+
+    .pad-30 {
+        padding-top: 30px;
+    }
+
+    .pad-10 {
+        padding-top: 10px;
+    }
+
+    .font-head-pdf {
+        color: #000;
+        font-family: Kanit;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 1000;
+        line-height: 22px;
+        /* 122.222% */
+    }
+
+    .font-download-pdf {
+        font-family: Kanit;
+        font-size: 20px;
+    }
+
+    .img-profile {
+        width: 40px;
+    }
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .font-header-name {
+        overflow: hidden;
         color: #FFF;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         font-family: Kanit;
-        font-size: 18px;
+        font-size: 16px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 50px;
-        background-color: #FFBA5E;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        font-weight: 400;
+        line-height: normal;
     }
 
-    .banner{
-        width: 1280px;
-        height: 373px;
-        z-index: 1 ;
+    .font-rank-name {
+        overflow: hidden;
+        color: #D9D9D9;
+        text-overflow: ellipsis;
+        font-family: Kanit;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
     }
 
-    .navbar-bottom{
-        z-index: 5;
-        margin-top: -20px;
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+
+    .font-dropdown-name {
+        color: var(--font, #015958);
+        font-family: Kanit;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .font-dropdown-rank {
+        overflow: hidden;
+        color: #727272;
+        text-overflow: ellipsis;
+        font-family: Kanit;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .dropdown-item {
+        color: #015958;
+    }
+
+    .bg-edit-profile {
+        border-radius: 34px;
+        background: #FFF;
+        box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 0.08);
+        width: 100%;
+        height: auto;
+        padding: 25px 30px;
     }
 </style>
