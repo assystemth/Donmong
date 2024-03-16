@@ -96,6 +96,7 @@
                         <!-- <h6 class="collapse-header">Custom Components:</h6> -->
                         <a class="collapse-item" href="<?php echo site_url('Site_map_backend'); ?>">แผนผังโครงสร้างภาพรวม</a>
                         <a class="collapse-item" href="<?php echo site_url('P_executives_backend'); ?>">คณะผู้บริหาร</a>
+                        <a class="collapse-item" href="<?php echo site_url('P_learder_backend'); ?>">ผู้นำชุมชน</a>
                         <a class="collapse-item" href="<?php echo site_url('P_council_backend'); ?>">สมาชิกสภา</a>
                         <a class="collapse-item" href="<?php echo site_url('P_unit_leaders_backend'); ?>">หัวหน้าส่วนราชการ</a>
                         <a class="collapse-item" href="<?php echo site_url('P_deputy_backend'); ?>">สำนักปลัด อบต.</a>
@@ -131,6 +132,9 @@
                         <a class="collapse-item" href="<?php echo site_url('Plan_paca_backend'); ?>">แผนปฏิบัติการป้องกัน<br>การทุจริต</a>
                         <a class="collapse-item" href="<?php echo site_url('Plan_psi_backend'); ?>">แผนแม่บทสารสนเทศ</a>
                         <a class="collapse-item" href="<?php echo site_url('Plan_pmda_backend'); ?>">แผนป้องกันและบรรเทา<br>สาธารณภัยประจำปี</a>
+                        <a class="collapse-item" href="<?php echo site_url('Plan_sttg_backend'); ?>">แผนยุทศาสตร์</a>
+                        <a class="collapse-item" href="<?php echo site_url('Plan_audit_backend'); ?>">แผนการตรวจสอบภายใน</a>
+                        <a class="collapse-item" href="<?php echo site_url('Plan_lad_backend'); ?>">กฏบัตรการตรวจสอบภายใน</a>
 
                     </div>
                 </div>
@@ -168,6 +172,10 @@
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_ahs_backend'); ?>">หลักประกันสุขภาพตำบล</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_ae_backend'); ?>">เบี้ยผู้สูงอายุ</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_e_book_backend'); ?>">ดาวโหลดแบบฟอร์ม E-book</a> 
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_ckl_backend'); ?>">ศูนย์การจัดการความรู้</a> 
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_cosr_backend'); ?>">ศูนย์ปฏิบัติการความปลอดภัยทางถนน</a> 
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_hkl_backend'); ?>">คลังความรู้ / แผ่นพับประชาสัมพันธ์</a>
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_gbo_backend'); ?>"> คู่มือผลประโยชน์ทับซ้อน</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_tax_backend'); ?>">ข้อมูลชำระภาษี</a> 
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_oppr_backend'); ?>">งานอาสาป้องกันภัย<br>ฝ่ายพลเรือน(อปพร.)</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_ems_backend'); ?>">งานกู้ชีพ/บริการ<br>การแพทย์ฉุกเฉิน(EMS)</a>
@@ -203,6 +211,10 @@
                         <a class="collapse-item" href="<?php echo site_url('Ita_backend'); ?>">ITA การประเมินคุณธรรม<br>ของหน่วยงานภาครัฐ</a>
                         <a class="collapse-item" href="<?php echo site_url('Ita_year_backend'); ?>">ITA ประจำปี</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_aa_backend'); ?>">กิจการสภา</a>
+                        <a class="collapse-item" href="<?php echo site_url('Operation_we_backend'); ?>">งานจริยธรรม</a>
+                        <a class="collapse-item" href="<?php echo site_url('Operation_spfct_backend'); ?>">การลดขั้นตอนการปฏิบัติงาน</a>
+                        <a class="collapse-item" href="<?php echo site_url('Operation_rpf_backend'); ?>">รายงานข้อมูลทางการเงิน</a>
+                        <a class="collapse-item" href="<?php echo site_url('Operation_rprm_backend'); ?>">รายงานผลการประชุม</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_aditn_backend'); ?>">ตรวจสอบภายใน</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_eg_backend'); ?>">ประมวลจริยธรรมสำหรับ<br>เจ้าหน้าที่ของรัฐ</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_ameg_backend'); ?>">การประเมินจริยธรรม<br>เจ้าหน้าที่ของรัฐ</a>
