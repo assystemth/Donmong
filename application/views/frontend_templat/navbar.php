@@ -69,15 +69,15 @@
 
 
 <div style="position: relative; width: 1280px; ">
-    <img src="<?php echo base_url("docs/k.navbar-top.png"); ?>">
-    <a href="<?php echo site_url('Home'); ?>" onmouseover="changeImage(`<?php echo base_url('docs/k.item-nav-top1v3-hover.png'); ?>`)" onmouseout="restoreImage(`<?php echo base_url('docs/k.item-nav-top1v3.png'); ?>`)">
-        <img src="<?php echo base_url("docs/k.item-nav-top1v3.png"); ?>" alt="" style="position: absolute; top: 20%; left: 70%;">
+    <img src="<?php echo base_url("docs/d.navbar-top2.png"); ?>">
+    <a href="<?php echo site_url('Home'); ?>" onmouseover="changeImage(`<?php echo base_url('docs/d.item-nav-top1-hover.png'); ?>`)" onmouseout="restoreImage(`<?php echo base_url('docs/d.item-nav-top1.png'); ?>`)">
+        <img src="<?php echo base_url("docs/d.item-nav-top1.png"); ?>" alt="" style="position: absolute; top: 10%; left: 62%;">
     </a>
-    <a href="<?php echo site_url('Pages/all_web'); ?>" onmouseover="changeImage(`<?php echo base_url('docs/k.item-nav-top2v3-hover.png'); ?>`)" onmouseout="restoreImage(`<?php echo base_url('docs/k.item-nav-top2v3.png'); ?>`)">
-        <img src="<?php echo base_url("docs/k.item-nav-top2v3.png"); ?>" alt="" style="position: absolute; top: 20%; left: 79%;">
+    <a href="<?php echo site_url('Pages/all_web'); ?>" onmouseover="changeImage(`<?php echo base_url('docs/d.item-nav-top2v2-hover.png'); ?>`)" onmouseout="restoreImage(`<?php echo base_url('docs/d.item-nav-top2.png'); ?>`)">
+        <img src="<?php echo base_url("docs/d.item-nav-top2.png"); ?>" alt="" style="position: absolute; top: 10%; left: 73%;">
     </a>
-    <a href="<?php echo site_url('Home/login'); ?>" onmouseover="changeImage(`<?php echo base_url('docs/k.item-nav-top3v3-hover.png'); ?>`)" onmouseout="restoreImage(`<?php echo base_url('docs/k.item-nav-top3v3.png'); ?>`)">
-        <img src="<?php echo base_url("docs/k.item-nav-top3v3.png"); ?>" alt="" style="position: absolute; top: 20%; left: 89%;">
+    <a href="<?php echo site_url('Home/login'); ?>" onmouseover="changeImage(`<?php echo base_url('docs/d.item-nav-top3-hover.png'); ?>`)" onmouseout="restoreImage(`<?php echo base_url('docs/d.item-nav-top3.png'); ?>`)">
+        <img src="<?php echo base_url("docs/d.item-nav-top3.png"); ?>" alt="" style="position: absolute; top: 10%; left: 85%;">
     </a>
 </div>
 

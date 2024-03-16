@@ -249,17 +249,14 @@
   }
 
   .welcome {
-    /* background-image: url('<?php echo base_url("docs/video.mp4"); ?>');
+    background-image: url('<?php echo base_url("docs/k.welcome.gif"); ?>');
     background-repeat: no-repeat;
-    background-size: 100%; */
-    margin-top: -125px;
+    background-size: 100%;
+    margin-top: -182px;
     z-index: 1;
     width: 1280px;
     height: 690px;
   }
-video {
-  z-index: 1; /* กำหนด z-index สำหรับ video element */
-}
 
   .tab-container {
     background-image: url('<?php echo base_url("docs/k.run-text4.png"); ?>');
@@ -303,7 +300,7 @@ video {
   }
 
   .bg-main {
-    background-image: url('<?php echo base_url("docs/k.bg-main.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-main.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 850px;
@@ -312,10 +309,10 @@ video {
   }
 
   .vision {
-    background-image: url('<?php echo base_url("docs/k.bg-vision.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-vision2.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 881px;
+    height: 880px;
     width: 1280px;
     z-index: 2;
     margin-top: -71px;
@@ -325,7 +322,7 @@ video {
   }
 
   .head-activity {
-    background-image: url('<?php echo base_url("docs/k.bg-nav-mid3.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-nav-mid.png"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 64px;
@@ -361,10 +358,10 @@ video {
   }
 
   .bg-activity {
-    background-image: url('<?php echo base_url("docs/k.bg-activity2.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-activity.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 677px;
+    height: 674px;
     width: 1280px;
     margin: auto;
   }
@@ -374,7 +371,6 @@ video {
     background-color: #FDF5E1; */
     height: 160px;
     width: 180px;
-
     /* border: 2px solid #EABA48;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .2); */
   }
@@ -386,18 +382,17 @@ video {
   }
 
   .text-activity {
-    color: #FFF;
-    text-align: center;
+    color: #305B76;
     text-shadow: 0px 3.213px 3.213px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
-    font-size: 16.063px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
 
   .text-activity-time {
-    color: #FFF;
+    color: #9E5313;
     font-family: Kanit;
     font-size: 12.85px;
     font-style: normal;
@@ -419,13 +414,13 @@ video {
   }
 
   .dropdown-content {
-    background-image: url('<?php echo base_url("docs/k.bg-nav-content.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-nav-content.png"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     display: none;
     position: absolute;
     width: 1280px;
-    height: 408px;
+    height: 440px;
     z-index: 2;
     margin-left: 3px;
   }
@@ -447,7 +442,7 @@ video {
   }
 
   .dropdown-item:hover {
-    color: #0D699C;
+    color: #E1B81A;
     font-family: Kanit;
     font-size: 20px;
     font-style: normal;
@@ -522,17 +517,14 @@ video {
     text-decoration: none;
   }
 
-  .bg-news2 {
-    background-image: url('<?php echo base_url("docs/bg-new2.png"); ?>');
+  /* .bg-news {
+    background-image: url('<?php echo base_url("docs/bg-new.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center center;
-    height: 1070px;
-    width: 1920px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    height: 1827px;
+    width: 1280px;
+    margin: auto;
+  } */
 
   .content-news-bg {
     height: 730px;
@@ -635,26 +627,25 @@ video {
   }
 
   .bg-otop {
-    background-image: url('<?php echo base_url("docs/k.bg-otop.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-otop.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center center;
     width: 1280px;
-    height: 727px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 758px;
+
   }
 
   .otop-content {
-    padding-top: 100px;
+    margin-top: 40px;
+    margin-left: 85px;
     max-width: 1120px;
   }
 
   .slick-prev-otop,
   .slick-next-otop {
     position: absolute;
-    top: 45%;
+    top: 48%;
     transform: translateY(-50%);
     z-index: 1;
     /* ตั้งค่า z-index เพื่อให้ปุ่มอยู่ข้างบนของเนื้อหา */
@@ -696,26 +687,23 @@ video {
   }
 
   .bg-travel {
-    background-image: url('<?php echo base_url("docs/k.bg-travel.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-travel.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 1280px;
-    height: 744px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 709px;
   }
 
   .travel-content {
     max-width: 1120px;
-    margin-top: 110px;
-    /* ปรับตามความต้องการ */
+    margin-top: 40px;
+    margin-left: 85px;
   }
 
   .slick-prev,
   .slick-next {
     position: absolute;
-    top: 42%;
+    top: 48%;
     transform: translateY(-50%);
     z-index: 1;
     /* ตั้งค่า z-index เพื่อให้ปุ่มอยู่ข้างบนของเนื้อหา */
@@ -755,7 +743,7 @@ video {
 
   .image-with-shadow-travel {
     border-radius: 30.145px;
-    border: 4.433px solid var(--Style, #D39B2C);
+    border: 4.433px solid var(--Style, #959595);
     background: url(<path-to-image>), lightgray 50% / cover no-repeat, url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: 3.546px 3.546px 8.866px 0px rgba(0, 0, 0, 0.25);
   }
@@ -772,11 +760,11 @@ video {
   }
 
   .bg-page-bottom {
-    background-image: url('<?php echo base_url("docs/k.bg-page-btm2.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-page-btm2.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 1280px;
-    height: 2000px;
+    height: 1950px;
     z-index: 1;
   }
 
@@ -792,7 +780,7 @@ video {
   }
 
   .font-e-service-25 {
-    color: var(--text, #EEE);
+    color: var(--text, #0F4B74);
     -webkit-text-stroke-width: 0.30000001192092896;
     -webkit-text-stroke-color: #000;
     font-family: Kanit;
@@ -814,7 +802,7 @@ video {
 
   .bg-view {
     border-radius: 34px;
-    border: 1px solid var(--Radial, #9E5313);
+    border: 3px solid #FFF3BC;
     background: #FFF;
     width: 350px;
     height: 413px;
@@ -829,7 +817,7 @@ video {
   }
 
   .font-view {
-    color: #7FD9FF;
+    color: #6F5201;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 24px;
@@ -908,7 +896,7 @@ video {
 
   .bg-like {
     border-radius: 34px;
-    border: 1px solid var(--Style, #9E5313);
+    border: 3px solid #FFF3BC;
     background: #FFF;
     width: 339px;
     height: 413px;
@@ -922,7 +910,7 @@ video {
   }
 
   .font-like {
-    color: #7FD9FF;
+    color: #6F5201;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 24px;
@@ -991,7 +979,7 @@ video {
 
   .custom-button-prev {
     position: absolute;
-    left: -5px;
+    left: 5px;
     /* ปรับตำแหน่งตามที่คุณต้องการ */
     top: 50%;
     transform: translateY(-50%);
@@ -1001,7 +989,7 @@ video {
 
   .custom-button-next {
     position: absolute;
-    right: -8px;
+    right: 8px;
     /* ปรับตำแหน่งตามที่คุณต้องการ */
     top: 50%;
     transform: translateY(-50%);
@@ -1947,7 +1935,7 @@ video {
   .font-24 {
     font-size: 24px;
   }
-  
+
 
   .font-24b {
     font-size: 24px;
@@ -2828,50 +2816,52 @@ video {
   }
 
   .bg-video {
-    background-image: url('<?php echo base_url("docs/k.bg-video2.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-video3.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 2170px;
-    width: 1280px;
+    height: 2400px;
+    width: 1281px;
     margin: auto;
   }
 
   .bg-content-video {
-    background-image: url('<?php echo base_url("docs/k.bg-frame-video.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-frame-video.png"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 334px;
-    width: 528px;
+    height: 521px;
+    width: 893px;
     margin: auto;
-    margin-top: 35px;
-    padding-left: 23px;
-    padding-top: 17px;
+    margin-top: 15px;
+    padding-left: 21px;
+    padding-top: 19px;
   }
 
   .text-content-travel {
-    color: #FAE370;
-    text-shadow: -1px 0 #014674, 0 2px #014674,
-      2px 0 #014674, 0 -1px #014674;
+    color: #014979;
+    text-shadow: 0px 0px 2.63px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 0.30000001192092896;
+    -webkit-text-stroke-color: #FFF;
     font-family: Kanit;
-    font-size: 32px;
+    font-size: 21.629px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
 
   .text-content-otop {
-    color: #FAE370;
-    /* text-shadow: -1px 0 #014674, 0 2px #014674,
-      2px 0 #014674, 0 -1px #014674; */
+    color: #014979;
+    text-shadow: 0px 0px 2.63px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 0.30000001192092896;
+    -webkit-text-stroke-color: #FFF;
     font-family: Kanit;
-    font-size: 32px;
+    font-size: 21.629px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
 
   .bg-qa-list {
-    background-image: url('<?php echo base_url("docs/k-bg-qa-listv2.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-qa-list.png"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 513px;
@@ -2886,7 +2876,7 @@ video {
     gap: 38.018px;
     align-self: stretch;
     border-radius: 82.647px;
-    border: 1px solid #006DBC;
+    border: 1px solid #FFD203;
     background: #FFF;
     width: 653px;
     height: 42px;
@@ -2932,5 +2922,15 @@ video {
     /* สีปุ่มปิด */
     border: none;
     cursor: pointer;
+  }
+
+  .active-button {
+    /* background-color: #BB7622; */
+    color: #BB7622;
+  }
+
+  .inactive-button {
+    /* background-color: #000; */
+    color: #000;
   }
 </style>
