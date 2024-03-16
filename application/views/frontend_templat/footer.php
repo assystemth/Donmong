@@ -1,5 +1,3 @@
-</div>
-
 <footer class="footer">
     <div class="credit">
         <span class="font-footer">
