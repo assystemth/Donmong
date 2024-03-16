@@ -47,7 +47,6 @@
                         <!-- <h6 class="collapse-header">Custom Components:</h6> -->
                         <a class="collapse-item" href="<?php echo site_url('hotNews_backend'); ?>">ข่าวด่วน</a>
                         <a class="collapse-item" href="<?php echo site_url('banner_backend'); ?>">แบนเนอร์ หน้าเว็บ</a>
-                        <a class="collapse-item" href="#">แบนเนอร์ ระบบอินทราเน็ต</a>
                         <a class="collapse-item" href="<?php echo site_url('news_backend'); ?>">ข้อมูลข่าวประชาสัมพันธ์</a>
                         <a class="collapse-item" href="<?php echo site_url('procurement_backend'); ?>">ข่าวจัดซื้อจัดจ้าง</a>
                         <a class="collapse-item" href="<?php echo site_url('Newsletter_backend'); ?>">จดหมายข่าว</a>
@@ -73,16 +72,15 @@
                         <a class="collapse-item" href="<?php echo site_url('Authority_backend'); ?>">ข้อมูลอำนาจหน้าที่</a>
                         <a class="collapse-item" href="<?php echo site_url('Mission_backend'); ?>">ภารกิจและความรับผิดชอบ</a>
                         <a class="collapse-item" href="<?php echo site_url('Executivepolicy_backend'); ?>">นโยบายผู้บริหาร</a>
+                        <a class="collapse-item" href="<?php echo site_url('Sme_backend'); ?>">ระบบสารสนเทศสนับสนุน<br>การบริหารจัดการ</a>
+                        <a class="collapse-item" href="<?php echo site_url('Award_backend'); ?>">รางวัลแห่งความภาคภูมิใจ</a>
                         <a class="collapse-item" href="<?php echo site_url('Otop_backend'); ?>">ผลิตภัณฑ์ชุมชน (OTOP)</a>
                         <a class="collapse-item" href="<?php echo site_url('Activity_backend'); ?>">ภาพกิจกรรม</a>
-                        <a class="collapse-item" href="<?php echo site_url('Award_backend'); ?>">รางวัลแห่งความภาคภูมิใจ</a>
                         <a class="collapse-item" href="<?php echo site_url('Ci_backend'); ?>">ข้อมูลชุมชน</a>
                         <a class="collapse-item" href="<?php echo site_url('travel_backend'); ?>">สถานที่ท่องเที่ยว</a>
                         <a class="collapse-item" href="<?php echo site_url('Si_backend'); ?>">ยุทธศาสตร์การพัฒนา<br>และแนวทางการพัฒนา</a>
                         <a class="collapse-item" href="<?php echo site_url('Msg_pres_backend'); ?>">สารจากนายก</a>
                         <a class="collapse-item" href="<?php echo site_url('Msg_prem_backend'); ?>">สารจากปลัด</a>
-                        <a class="collapse-item" href="<?php echo site_url('Emblem_backend'); ?>">ตราสัญลักษณ์</a>
-
                     </div>
                 </div>
             </li>

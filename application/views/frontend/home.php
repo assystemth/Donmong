@@ -181,7 +181,7 @@
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/authority'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;อำนาจหน้าที่</a></li>
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/mission'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ภารกิจและความรับผิดชอบ</a></li>
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/executivepolicy'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;นโยบายผู้บริหาร</a></li>
-                    <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/#'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ระบบสารสนเทศสนับสนุนการบริหารจัดการ</a></li>
+                    <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/sme'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ระบบสารสนเทศสนับสนุนการบริหารจัดการ</a></li>
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/award'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รางวัลแห่งความภูมิใจ</a></li>
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/contact'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ติดต่อเรา</a></li>
                 </div>
@@ -322,11 +322,13 @@
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/adding_corruption'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ร้องเรียนทุจริต</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/adding_suggestions'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ช่องทางรับฟังความคิดเห็น</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/questions'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ช่องทางรับฟังความคิดเห็น</a></li>
-                    <li><a class="mar-left-9 dropdown-item" href="https://mbdb.cgd.go.th/wel/" target="_blank" ><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ระบบตรวจสอบสิทธิสวัสดิการ</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="https://mbdb.cgd.go.th/wel/" target="_blank"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ระบบตรวจสอบสิทธิสวัสดิการ</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="https://csgcheck.dcy.go.th/public/eq/popSubsidy.do?ms=158953" target="_blank"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ระบบตรวจสอบสิทธิผู้มีสิทธิรับเงิน<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อุดหนุนเพื่อการเลี้ยงดูเด็กแรกเกิด</a></li>
                 </div>
             </ul>
         </div>
+    </div>
+</div>
 
 <div class="bg-activity">
     <div class="d-flex justify-content-center" style="padding-top: 3%;">
@@ -778,12 +780,12 @@
         <div class="slick-carousel-otop">
             <?php foreach ($qOtop as $otop) { ?>
                 <div class="text-center zoom-travel mt-5">
-                    <a href="<?php echo site_url('Pages/otop_detail/' . $otop->otop_id); ?>">
+                    <a href="<?php echo site_url('pages/otop'); ?>">
                         <img src="<?php echo base_url('docs/img/' . $otop->otop_img); ?>" width="209px" height="197px" class="image-with-shadow-travel">
                     </a>
                     <br>
                     <div class="d-flex justify-content-center" style="margin-left: 0px; width:209px;">
-                        <a class="underline" href="<?php echo site_url('Pages/otop_detail/' . $otop->otop_id); ?>">
+                        <a class="underline" href="<?php echo site_url('pages/otop'); ?>">
                             <span class="text-content-otop"><?= $otop->otop_name; ?></span>
                         </a>
                     </div>

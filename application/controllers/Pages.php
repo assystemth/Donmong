@@ -26,6 +26,7 @@ class Pages extends CI_Controller
 		$this->load->model('authority_model');
 		$this->load->model('mission_model');
 		$this->load->model('cmi_model');
+		$this->load->model('sme_model');
 		$this->load->model('executivepolicy_model');
 		$this->load->model('travel_model');
 		$this->load->model('si_model');
@@ -648,6 +649,17 @@ class Pages extends CI_Controller
 		$this->load->view('frontend_asset/css');
 		$this->load->view('frontend_templat/navbar');
 		$this->load->view('frontend/ci', $data);
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+	public function sme()
+	{
+		$data['qSme'] = $this->sme_model->sme_frontend();
+
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/sme', $data);
 		$this->load->view('frontend_asset/js');
 		$this->load->view('frontend_templat/footer');
 	}

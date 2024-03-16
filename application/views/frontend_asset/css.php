@@ -1053,7 +1053,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center center;
-    min-height: 284px;
+    height: 284px;
     width: 1280px;
     position: relative;
     z-index: 2;
@@ -1221,7 +1221,7 @@
     margin-top: 40px;
     margin-bottom: 5%;
     border-radius: 22.86px;
-    background: #C6E7FF;
+    background: #FFFBE8;
     box-shadow: 0px 0px 6.724px 0px rgba(0, 0, 0, 0.25);
     height: 1500px;
     width: 1069px;
@@ -2108,7 +2108,7 @@
   .page-border-otop {
     border-radius: 34px;
     border: 1px solid #6D758F;
-    background: var(--PDF, rgba(159, 218, 255, 0.25));
+    background: rgba(255, 251, 232, 0.80);
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.15);
     padding-left: 50px;
     padding-top: 30px;
@@ -2241,7 +2241,7 @@
 
   .pages-select-pdf {
     border-radius: 34px;
-    background: var(--PDF, rgba(159, 218, 255, 0.25));
+    background: #FFFBE8;
     padding: 15px;
     margin-bottom: 15px;
     width: 100%;
@@ -2252,7 +2252,7 @@
   .pages-select-e-gp {
     border-radius: 16.042px;
     /* border: 0.668px solid var(--02, #ECB23F); */
-    background: #C6E7FF;
+    background: #FFFBE8;
     padding: 15px;
     margin-bottom: 15px;
     flex-shrink: 0;
@@ -2266,7 +2266,7 @@
     gap: 6.699px;
     flex-shrink: 0;
     border-radius: 22.777px;
-    background: #C6E7FF;
+    background: #FFFBE8;
     box-shadow: 0px 0px 6.699px 0px rgba(0, 0, 0, 0.25);
   }
 
@@ -2288,7 +2288,7 @@
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 17.085px;
-    background: #C6E7FF;
+    background: #FFFBE8;
     box-shadow: 0px 0px 6.701px 0px rgba(0, 0, 0, 0.25);
     height: 260px;
     width: 914px;
@@ -2300,7 +2300,7 @@
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 17.085px;
-    background: #C6E7FF;
+    background: #FFF5C9;
     box-shadow: 0px 0px 6.701px 0px rgba(0, 0, 0, 0.25);
     height: 600px;
     width: 914px;
@@ -2312,7 +2312,7 @@
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 17.085px;
-    background: #C6E7FF;
+    background: #FFF5C9;
     box-shadow: 0px 0px 6.701px 0px rgba(0, 0, 0, 0.25);
     height: 350px;
     width: 914px;
@@ -2324,7 +2324,7 @@
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 17.085px;
-    background: #C6E7FF;
+    background: #FFF5C9;
     box-shadow: 0px 0px 6.701px 0px rgba(0, 0, 0, 0.25);
     height: 515px;
     width: 914px;
@@ -2336,7 +2336,7 @@
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 17.085px;
-    background: #C6E7FF;
+    background: #FFF5C9;
     box-shadow: 0px 0px 6.701px 0px rgba(0, 0, 0, 0.25);
     height: 320px;
     width: 667px;
@@ -2367,7 +2367,7 @@
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 17.085px;
-    background: #C6E7FF;
+    background: #FFF5C9;
     box-shadow: 0px 0px 6.701px 0px rgba(0, 0, 0, 0.25);
     height: 600px;
     width: 914px;
@@ -2382,7 +2382,7 @@
     gap: 13.398px;
     flex-shrink: 0;
     border-radius: 22.777px;
-    background: #C6E7FF;
+    background: #FFFBE8;
     box-shadow: 0px 0px 6.699px 0px rgba(0, 0, 0, 0.25);
   }
 
@@ -2460,24 +2460,25 @@
   /* กำหนดสไตล์ scroll bar สำหรับ WebKit (Chrome, Safari) */
   ::-webkit-scrollbar {
     height: 5px;
-    width: 5px;
+    width: 15px;
   }
 
   ::-webkit-scrollbar-track {
     border-radius: 33.559px;
-    background: #FFF;
+    background: #ECECEC;
     box-shadow: 0px 2.685px 2.685px 0px rgba(0, 0, 0, 0.25);
   }
 
   ::-webkit-scrollbar-thumb {
     border-radius: 33.559px;
-    background: #5A300C;
+    background: #FFD203;
     box-shadow: 0px 2.685px 2.685px 0px rgba(0, 0, 0, 0.25);
   }
 
   ::-webkit-scrollbar-thumb:hover {
     background: #888;
   }
+  
 
   /* scroll bar เลื่อนซ้ายขวา เลื่อนบนล่าง ****************************************************** */
 
