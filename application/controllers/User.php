@@ -62,6 +62,7 @@ class User extends CI_Controller
 						'm_id' => $result->m_id,
 						'm_level' => $result->ref_pid,
 						'm_fname' => $result->m_fname,
+						'm_lname' => $result->m_lname,
 						'm_img' => $result->m_img,
 					);
 

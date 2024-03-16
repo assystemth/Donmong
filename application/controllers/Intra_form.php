@@ -11,7 +11,16 @@ class Intra_form extends CI_Controller
             $this->session->userdata('m_level') != 1 &&
             $this->session->userdata('m_level') != 2 &&
             $this->session->userdata('m_level') != 3 &&
-            $this->session->userdata('m_level') != 4
+            $this->session->userdata('m_level') != 4 &&
+            $this->session->userdata('m_level') != 5 &&
+            $this->session->userdata('m_level') != 6 &&
+            $this->session->userdata('m_level') != 7 &&
+            $this->session->userdata('m_level') != 8 &&
+            $this->session->userdata('m_level') != 9 &&
+            $this->session->userdata('m_level') != 10 &&
+            $this->session->userdata('m_level') != 11 &&
+            $this->session->userdata('m_level') != 12 &&
+            $this->session->userdata('m_level') != 13
         ) {
             redirect('user', 'refresh');
         }
@@ -67,5 +76,22 @@ class Intra_form extends CI_Controller
         $this->load->view('intranet/form', $data);
         $this->load->view('internet_asste/js');
         $this->load->view('intranet_templat/footer');
+    }
+
+    public function form_detail($intra_form_id)
+    {
+        $data['rsedit'] = $this->Intra_form_model->read($intra_form_id);
+
+        $this->load->view('intranet_templat/header_form');
+        $this->load->view('internet_asste/css');
+        $this->load->view('intranet_templat/navbar');
+        $this->load->view('intranet/form_detail', $data);
+        $this->load->view('internet_asste/js');
+        $this->load->view('intranet_templat/footer');
+    }
+
+    public function increment_download($intra_form_id)
+    {
+        $this->Intra_form_model->increment_download($intra_form_id);
     }
 }

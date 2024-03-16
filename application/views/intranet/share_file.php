@@ -60,110 +60,163 @@
     </div>
 
     <div class="row">
-
         <div class="col-sm-4 mt-2">
             <div class="box-folder mb-4">
                 <div class="align-items-center">
                     <a href="<?= site_url('Intra_share_file/sf_all'); ?>" class="underline">
-                        <img src="<?php echo base_url("docs/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                        <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
                         <span class="font-folder mx-3">แชร์ภายในองค์กร</span>
                     </a>
                 </div>
             </div>
-            <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 5) : ?>
-                <div class="box-folder mb-4">
-                    <div class="align-items-center">
-                        <a href="<?= site_url('Intra_share_file/sf_treasury'); ?>" class="underline">
-                            <img src="<?php echo base_url("docs/folder.png"); ?>" width="auto" style="max-width: 100%;">
-                            <span class="font-folder mx-3">กองคลัง</span>
-                        </a>
-                    </div>
-                </div>
-            <?php endif; ?>
-
-            <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 8) : ?>
-                <div class="box-folder">
-                    <div class="align-items-center">
-                        <a href="<?= site_url('Intra_share_file/sf_council'); ?>" class="underline">
-                            <img src="<?php echo base_url("docs/folder.png"); ?>" width="auto" style="max-width: 100%;">
-                            <span class="font-folder mx-3">สมาชิกสภาตำบล</span>
-                        </a>
-                    </div>
-                </div>
-            <?php endif; ?>
-
         </div>
 
-        <div class="col-sm-4">
-            <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 3) : ?>
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 3): ?>
+            <div class="col-sm-4 mt-2">
+                <div class="box-folder">
+                    <div class="align-items-center">
+                        <a href="<?= site_url('Intra_share_file/sf_palace'); ?>" class="underline">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <span class="font-folder mx-3">ทำเนียบเทศบาลธงธานี</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 4) : ?>
+            <div class="col-sm-4 mt-2">
                 <div class="box-folder mb-4">
                     <div class="align-items-center">
                         <a href="<?= site_url('Intra_share_file/sf_executive'); ?>" class="underline">
-                            <img src="<?php echo base_url("docs/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
                             <span class="font-folder mx-3">คณะผู้บริหาร</span>
                         </a>
                     </div>
                 </div>
-            <?php endif; ?>
+            </div>
+        <?php endif; ?>
 
-            <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 6) : ?>
-                <div class="box-folder mb-4">
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 5) : ?>
+            <div class="col-sm-4 mt-2">
+                <div class="box-folder">
                     <div class="align-items-center">
-                        <a href="<?= site_url('Intra_share_file/sf_maintenance'); ?>" class="underline">
-                            <img src="<?php echo base_url("docs/folder.png"); ?>" width="auto" style="max-width: 100%;">
-                            <span class="font-folder mx-3">กองช่าง</span>
+                        <a href="<?= site_url('Intra_share_file/sf_council'); ?>" class="underline">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <span class="font-folder mx-3">สมาชิกสภาตำบล</span>
                         </a>
                     </div>
                 </div>
-            <?php endif; ?>
+            </div>
+        <?php endif; ?>
 
-            <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 10) : ?>
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 6) : ?>
+            <div class="col-sm-4 mt-2">
+
                 <div class="box-folder">
                     <div class="align-items-center">
                         <a href="<?= site_url('Intra_share_file/sf_unit_leaders'); ?>" class="underline">
-                            <img src="<?php echo base_url("docs/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
                             <span class="font-folder mx-3">หัวหน้าส่วนราชการ</span>
                         </a>
                     </div>
                 </div>
-            <?php endif; ?>
+            </div>
+        <?php endif; ?>
 
-        </div>
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 7) : ?>
+            <div class="col-sm-4 mt-2">
 
-        <div class="col-sm-4">
-            <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 4) : ?>
-                <div class="box-folder mb-4">
+                <div class="box-folder">
                     <div class="align-items-center">
-                        <a href="<?= site_url('Intra_share_file/sf_audit'); ?>" class="underline">
-                            <img src="<?php echo base_url("docs/folder.png"); ?>" width="auto" style="max-width: 100%;">
-                            <span class="font-folder mx-3">หน่วยตรวจสอบภายใน</span>
+                        <a href="<?= site_url('Intra_share_file/sf_employee'); ?>" class="underline">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <span class="font-folder mx-3">พนักงานเทศบาล</span>
                         </a>
                     </div>
                 </div>
-            <?php endif; ?>
+            </div>
+        <?php endif; ?>
 
-            <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 7) : ?>
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 8) : ?>
+            <div class="col-sm-4 mt-2">
                 <div class="box-folder mb-4">
                     <div class="align-items-center">
                         <a href="<?= site_url('Intra_share_file/sf_deputy'); ?>" class="underline">
-                            <img src="<?php echo base_url("docs/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
                             <span class="font-folder mx-3">สำนักปลัด</span>
                         </a>
                     </div>
                 </div>
-            <?php endif; ?>
+            </div>
+        <?php endif; ?>
 
-            <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 11) : ?>
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 9) : ?>
+            <div class="col-sm-4 mt-2">
+                <div class="box-folder mb-4">
+                    <div class="align-items-center">
+                        <a href="<?= site_url('Intra_share_file/sf_treasury'); ?>" class="underline">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <span class="font-folder mx-3">กองคลัง</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 10) : ?>
+            <div class="col-sm-4 mt-2">
+                <div class="box-folder mb-4">
+                    <div class="align-items-center">
+                        <a href="<?= site_url('Intra_share_file/sf_maintenance'); ?>" class="underline">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <span class="font-folder mx-3">กองช่าง</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 11) : ?>
+            <div class="col-sm-4 mt-2">
+                <div class="box-folder mb-4">
+                    <div class="align-items-center">
+                        <a href="<?= site_url('Intra_share_file/sf_audit'); ?>" class="underline">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <span class="font-folder mx-3">กองประปา</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 12) : ?>
+            <div class="col-sm-4 mt-2">
+                <div class="box-folder mb-4">
+                    <div class="align-items-center">
+                        <a href="<?= site_url('Intra_share_file/sf_dsab'); ?>" class="underline">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <span class="font-folder mx-3">กองสาธารณสุขและสิ่งแวดล้อม</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_level'] == 13): ?>
+            <div class="col-sm-4 mt-2">
                 <div class="box-folder">
                     <div class="align-items-center">
                         <a href="<?= site_url('Intra_share_file/sf_education'); ?>" class="underline">
-                            <img src="<?php echo base_url("docs/folder.png"); ?>" width="auto" style="max-width: 100%;">
+                            <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
                             <span class="font-folder mx-3">กองการศึกษาฯ</span>
                         </a>
                     </div>
                 </div>
-            <?php endif; ?>
+            </div>
+        <?php endif; ?>
 
-        </div>
+        
+
     </div>
 </div>

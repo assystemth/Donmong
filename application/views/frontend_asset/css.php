@@ -286,7 +286,7 @@
     z-index: 1;
     animation: textRunUpdate 30s linear infinite;
     font-size: 19px;
-    color: #082555;
+    color: #5A300C;
   }
 
   @keyframes textRunUpdate {
@@ -1049,7 +1049,7 @@
 
 
   .footer {
-    background-image: url('<?php echo base_url("docs/k.bg-footer.png"); ?>');
+    background-image: url('<?php echo base_url("docs/b.bg-footer.png"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center center;
@@ -1075,7 +1075,7 @@
   }
 
   .font-footer {
-    color: #EEE;
+    color: #6F5201;
     text-align: center;
     text-shadow: 0px 2.685px 6.712px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
@@ -1260,11 +1260,11 @@
   }
 
   .path1-1 {
-    background-image: url('<?php echo base_url("docs/k.path1-1.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.path1-1v3.png"); ?>');
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 92px;
-    height: 28px;
+    width: 98px;
+    height: 33px;
     z-index: 3;
     text-align: center;
     display: flex;
@@ -1273,13 +1273,13 @@
   }
 
   .path2-1 {
-    background-image: url('<?php echo base_url("docs/k.path2-1.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.path2-1.png"); ?>');
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 131px;
-    height: 28px;
+    width: 136px;
+    height: 32px;
     z-index: 2;
-    margin-left: -13px;
+    margin-left: -18px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -1287,13 +1287,13 @@
   }
 
   .path2-2 {
-    background-image: url('<?php echo base_url("docs/k.path2-2.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.path2-2.png"); ?>');
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 160px;
-    height: 28px;
+    width: 189px;
+    height: 32px;
     z-index: 2;
-    margin-left: -13px;
+    margin-left: -18px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -1301,13 +1301,13 @@
   }
 
   .path2-3 {
-    background-image: url('<?php echo base_url("docs/k.path2-3.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.path2-3.png"); ?>');
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 28px;
+    width: 237px;
+    height: 32px;
     z-index: 2;
-    margin-left: -13px;
+    margin-left: -18px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -1329,23 +1329,26 @@
   }
 
   .font-path-1 {
-    color: #FFF;
+    color: #EEE;
     font-family: Kanit;
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-left: -10px;
+    margin-top: -5px;
   }
 
   .font-path-2 {
-    color: #002D53;
+    color: #5A300C;
     font-family: Kanit;
     font-size: 17px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     margin-left: -10px;
+    margin-top: -2px;
+
   }
 
   .page-center {
@@ -1367,10 +1370,10 @@
   }
 
   .head-pages {
-    background-image: url('<?php echo base_url("docs/k.head-pages.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.head-pages1.png"); ?>');
     background-size: 100%;
-    width: 488px;
-    height: 96px;
+    width: 400px;
+    height: 95px;
     margin-top: 70px;
     text-align: center;
     display: flex;
@@ -1379,10 +1382,10 @@
   }
 
   .head-pages-two {
-    background-image: url('<?php echo base_url("docs/k.head-pages2.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.head-pages2.png"); ?>');
     background-size: 100%;
-    width: 570px;
-    height: 96px;
+    width: 560px;
+    height: 95px;
     margin-top: 70px;
     text-align: center;
     display: flex;
@@ -1391,10 +1394,10 @@
   }
 
   .head-pages-three {
-    background-image: url('<?php echo base_url("docs/k.head-pages3.png"); ?>');
+    background-image: url('<?php echo base_url("docs/d.head-pages3.png"); ?>');
     background-size: 100%;
-    width: 690px;
-    height: 96px;
+    width: 720px;
+    height: 95px;
     margin-top: 70px;
     text-align: center;
     display: flex;
@@ -1416,7 +1419,7 @@
   } */
 
   .font-pages-head {
-    color: var(--main, #082555);
+    color: var(--main, #5A300C);
     text-shadow: 0px 2.685px 6.712px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 30px;
@@ -1427,7 +1430,7 @@
   }
 
   .font-pages-head-long {
-    color: var(--main, #082555);
+    color: var(--main, #5A300C);
     text-shadow: 0px 2.685px 6.712px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 26px;
@@ -1438,7 +1441,7 @@
   }
 
   .font-pages-head-long2 {
-    color: var(--main, #082555);
+    color: var(--main, #5A300C);
     text-shadow: 0px 2.685px 6.712px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 23px;
@@ -1641,7 +1644,7 @@
   }
 
   .font-q-a-chat-color {
-    color: #082555;
+    color: #5A300C;
     leading-trim: both;
     text-edge: cap;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -1667,7 +1670,7 @@
   }
 
   .font-contact-1 {
-    color: #002D53;
+    color: #5A300C;
     text-align: center;
     font-family: Kanit;
     font-size: 24px;
@@ -1809,7 +1812,7 @@
   }
 
   .font-p-rank {
-    color: #082555;
+    color: #5A300C;
     font-family: Kanit;
     font-size: 22px;
     font-style: normal;
@@ -1828,7 +1831,7 @@
   }
 
   .font-head-all-web {
-    color: var(--main, #082555);
+    color: var(--main, #5A300C);
     font-family: Kanit;
     font-size: 22px;
     font-style: normal;
@@ -2044,7 +2047,7 @@
   }
 
   .span-time-q-a {
-    color: #082555;
+    color: #5A300C;
     font-family: Kanit;
     font-size: 16.078px;
     font-style: normal;
@@ -2127,9 +2130,9 @@
   }
 
   .pagination .page-item.active .page-link {
-    background-color: #082555;
+    background-color: #5A300C;
     /* สีเขียว */
-    border-color: #082555;
+    border-color: #5A300C;
     color: #fff;
   }
 
@@ -2468,7 +2471,7 @@
 
   ::-webkit-scrollbar-thumb {
     border-radius: 33.559px;
-    background: #082555;
+    background: #5A300C;
     box-shadow: 0px 2.685px 2.685px 0px rgba(0, 0, 0, 0.25);
   }
 
@@ -2570,7 +2573,7 @@
   }
 
   select.custom-select {
-    color: #082555;
+    color: #5A300C;
     font-family: Kanit;
     font-size: 20.102px;
     font-style: normal;
@@ -2630,7 +2633,7 @@
   }
 
   .font-gi-head {
-    color: #082555;
+    color: #5A300C;
     font-family: Kanit;
     font-size: 24px;
     font-style: normal;

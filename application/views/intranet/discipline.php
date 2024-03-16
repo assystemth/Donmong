@@ -2,7 +2,7 @@
 <div class="flex-item-right">
     <div class="d-flex justify-content-end mb-4 mt-5">
         <a href="#" class="popup-insert" data-target="#popupInsert">
-            <img src="<?php echo base_url("docs/btn-intra-add-file.png"); ?>" width="auto" style="max-width: 100%;">
+            <img src="<?php echo base_url("docs/intranet/btn-intra-add-file.png"); ?>" width="auto" style="max-width: 100%;">
         </a>
     </div>
 
@@ -59,11 +59,11 @@
         // กำหนดรูปภาพตามลงท้ายของไฟล์
         $iconImage = "";
         if ($fileExtension === 'pdf') {
-            $iconImage = "docs/icon-pdf-intra.png";
+            $iconImage = "docs/intranet/icon-pdf-intra.png";
         } elseif ($fileExtension === 'doc' || $fileExtension === 'docx') {
-            $iconImage = "docs/icon-doc-intra.png";
+            $iconImage = "docs/intranet/icon-doc-intra.png";
         } elseif ($fileExtension === 'xls') {
-            $iconImage = "docs/icon-xls-intra.png";
+            $iconImage = "docs/intranet/icon-xls-intra.png";
         }
     ?>
         <div class="file-pdf">
@@ -71,16 +71,16 @@
                 <div class="col-sm-1">
                     <img src="<?php echo base_url($iconImage); ?>" width="80%">
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-7">
                     <span>ชื่อ</span><br>
-                    <a class="underline" href="<?php echo base_url('docs/intranet/file/' . $rs->intra_discipline_pdf); ?>" download>
+                    <a href="<?= site_url('Intra_discipline/discipline_detail/' . $rs->intra_discipline_id); ?>">
                         <span class="black font-20 limit-font-one"><?= $rs->intra_discipline_name; ?></span>
                     </a>
                 </div>
                 <div class="col-sm-2">
                     <span>วันที่</span><br>
                     <span class="font-18">
-                    <?php
+                        <?php
                         // ในการใช้งาน setThaiMonth
                         $date = new DateTime($rs->intra_discipline_datesave);
                         $day_th = $date->format('d');
@@ -95,7 +95,7 @@
                     <span>ผู้อัพโหลด</span><br>
                     <span class="font-18"><?= $rs->intra_discipline_by; ?></span>
                 </div>
-                <div class="col-sm-2">
+                <!-- <div class="col-sm-2">
                     <div class="d-flex justify-content-end">
                         <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-three-dots-vertical" style="font-size:30px; color: gray;"></i>
@@ -103,19 +103,19 @@
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <li>
                                 <a class="dropdown-item" target="_blank" href="<?php echo base_url('docs/intranet/file/' . $rs->intra_discipline_pdf); ?>">
-                                    <img src="<?php echo base_url("docs/icon-open-intra.png"); ?>" width="20">
+                                    <img src="<?php echo base_url("docs/intranet/icon-open-intra.png"); ?>" width="20">
                                     &nbsp; เปิด</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?php echo base_url('docs/intranet/file/' . $rs->intra_discipline_pdf); ?>" download>
-                                    <img src="<?php echo base_url("docs/icon-download-intra.png"); ?>" width="20">
+                                    <img src="<?php echo base_url("docs/intranet/icon-download-intra.png"); ?>" width="20">
                                     &nbsp; ดาวโหลด</a>
                             </li>
 
                             <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2 || $_SESSION['m_fname'] == $rs->intra_discipline_by) : ?>
                             <li>
                                 <a class="dropdown-item" href="#" ole="button" onclick="confirmDelete(<?= $rs->intra_discipline_id; ?>);">
-                                    <img src="<?php echo base_url("docs/icon-del-intra.png"); ?>" width="20">
+                                    <img src="<?php echo base_url("docs/intranet/icon-del-intra.png"); ?>" width="20">
                                     &nbsp; ลบ</a>
                                 <script>
                                     function confirmDelete(intra_discipline_id) {
@@ -140,7 +140,7 @@
 
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     <?php } ?>
