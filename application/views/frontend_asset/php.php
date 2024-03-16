@@ -6,7 +6,7 @@
                 <?php echo $onlineUsersMonth; ?>,
                 <?php echo $onlineUsersCount; ?>
             ],
-            colors: ['#AEE1F7', '#FFDF63', '#1D4A95'],
+            colors: ['#59BEEA', '#FFDF63', '#6ADB58'],
             animation: true,
             animationSpeed: 10,
             fillTextData: false,
