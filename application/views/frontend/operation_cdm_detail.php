@@ -8,8 +8,8 @@
         </div>
     </div>
     <div class="page-center">
-        <div class="head-pages-two">
-            <span class="font-pages-head">หลักเกณฑ์การบริหารและพัฒนา</span>
+    <div class="head-pages-three">
+                <span class="font-pages-head">หลักเกณฑ์การบริหารและพัฒนาทรัพยากรบุคคล</span>
         </div>
     </div>
     <div class="bg-pages-in ">

@@ -9,8 +9,8 @@
     </div>
     <div class="container-pages-news">
         <div class="page-center">
-            <div class="head-pages-two">
-                <span class="font-pages-head">หลักประกันสุขภาพตำบลสว่าง</span>
+            <div class="head-pages-three">
+                <span class="font-pages-head">หลักประกันสุขภาพเทศบาลตำบลดอนโมง</span>
             </div>
         </div>
         <div style="padding-top: 80px;"></div>

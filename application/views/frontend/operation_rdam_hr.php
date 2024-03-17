@@ -10,7 +10,7 @@
     <div class="container-pages-news">
         <div class="page-center">
             <div class="head-pages-three">
-                <span class="font-pages-head-long">รายงานผลการบริหารและพัฒนาทรัพยากรบุคคล</span>
+                <span class="font-pages-head-long">รายงานผลการบริหารและพัฒนาทรัพยากรบุคคลประจำปี</span>
             </div>
         </div>
         <div style="padding-top: 80px;"></div>

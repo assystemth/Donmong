@@ -9,8 +9,8 @@
     </div>
     <div class="container-pages-news">
         <div class="page-center">
-            <div class="head-pages-two">
-                <span class="font-pages-head">แผนปฏิบัติการป้องกันการทุจริต</span>
+            <div class="head-pages-three">
+                <span class="font-pages-head-long">แผนปฏิบัติการป้องกันการทุจริต<br>เพื่อยกระดับคุณธรรมและความโปร่งใส</span>
             </div>
         </div>
         <div style="padding-top: 80px;"></div>

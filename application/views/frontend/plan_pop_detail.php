@@ -9,7 +9,7 @@
     </div>
 
     <div class="page-center">
-        <div class="head-pages">
+        <div class="head-pages-two">
             <span class="font-pages-head">แผนปฏิบัติการจัดซื้อจัดจ้าง</span>
         </div>
     </div>

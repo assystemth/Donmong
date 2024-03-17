@@ -9,8 +9,8 @@
     </div>
     <div class="container-pages-news">
         <div class="page-center">
-            <div class="head-pages-two">
-                <span class="font-pages-head">หลักเกณฑ์การบริหารและพัฒนา</span>
+        <div class="head-pages-three">
+                <span class="font-pages-head">หลักเกณฑ์การบริหารและพัฒนาทรัพยากรบุคคล</span>
             </div>
         </div>
         <div style="padding-top: 80px;"></div>
