@@ -11,7 +11,7 @@
                     <img src="<?= base_url('docs/k.logo.png'); ?>" alt="" width="64px" height="64px">
                 </div>
 
-                <div class="sidebar-brand-text mx-3">กาบเชิง</div>
+                <div class="sidebar-brand-text mx-3">ธงธานี</div>
             </a>
 
             <!-- Divider -->
@@ -76,10 +76,10 @@
                         <a class="collapse-item" href="<?php echo site_url('Executivepolicy_backend'); ?>">นโยบายผู้บริหาร</a>
                         <a class="collapse-item" href="<?php echo site_url('Sme_backend'); ?>">ระบบสารสนเทศสนับสนุน<br>การบริหารจัดการ</a>
                         <a class="collapse-item" href="<?php echo site_url('Award_backend'); ?>">รางวัลแห่งความภูมิใจ</a>
-                        <!-- <a class="collapse-item" href="<?php echo site_url('Ci_backend'); ?>">ข้อมูลชุมชน</a> -->
-                        <!-- <a class="collapse-item" href="<?php echo site_url('Si_backend'); ?>">ยุทธศาสตร์การพัฒนา<br>และแนวทางการพัฒนา</a> -->
-                        <!-- <a class="collapse-item" href="<?php echo site_url('Msg_pres_backend'); ?>">สารจากนายก</a> -->
-                        <!-- <a class="collapse-item" href="<?php echo site_url('Msg_prem_backend'); ?>">สารจากปลัด</a> -->
+                        <a class="collapse-item" href="<?php echo site_url('Ci_backend'); ?>">ข้อมูลชุมชน</a>
+                        <a class="collapse-item" href="<?php echo site_url('Si_backend'); ?>">ยุทธศาสตร์การพัฒนา<br>ด้านโครงสร้างพื้นฐาน</a>
+                        <a class="collapse-item" href="<?php echo site_url('Msg_pres_backend'); ?>">สารจากนายก</a>
+                        <a class="collapse-item" href="<?php echo site_url('Msg_prem_backend'); ?>">สารจากปลัด</a>
                     </div>
                 </div>
             </li>
@@ -162,7 +162,7 @@
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_cjc_backend'); ?>">ศูนย์ยุติธรรมชุมชน</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_oppr_backend'); ?>">งานอาสาป้องกันภัย<br>ฝ่ายพลเรือน(อปพร.)</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_ems_backend'); ?>">งานกู้ชีพ/บริการ<br>การแพทย์ฉุกเฉิน(EMS)</a>
-                        <a class="collapse-item" href="<?php echo site_url('Pbsv_ahs_backend'); ?>">หลักประกันสุขภาพตำบล</a>
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_ahs_backend'); ?>">หลักประกันสุขภาพเทศบาล</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_sags_backend'); ?>">คู่มือและ<br>มาตราฐานการให้บริการ</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_gup_backend'); ?>">คู่มือสำหรับประชาชน</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_e_book_backend'); ?>">ดาวโหลดแบบฟอร์ม E-book</a> 
@@ -202,8 +202,6 @@
                         <a class="collapse-item" href="<?php echo site_url('Operation_spfct_backend'); ?>">การลดขั้นตอนการปฏิบัติงาน</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_rpf_backend'); ?>">รายงานข้อมูลทางการเงิน</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_rprm_backend'); ?>">รายงานผลการประชุม</a>
-
-                        
                         <a class="collapse-item" href="<?php echo site_url('P_rpo_backend'); ?>">รายงานผลการดำเนินงาน</a>
                         <a class="collapse-item" href="<?php echo site_url('P_reb_backend'); ?>">รายงานใช้จ่ายงบประมาณ</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_mcc_backend'); ?>">การจัดการเรื่องร้องเรียน<br>การทุจริต</a>
@@ -222,7 +220,7 @@
                         <a class="collapse-item" href="<?php echo site_url('Announce_backend'); ?>">ประกาศเทศบาล</a>
                         <a class="collapse-item" href="<?php echo site_url('Order_backend'); ?>">คำสั่งเทศบาล</a>
                         <a class="collapse-item" href="<?php echo site_url('Mui_backend'); ?>">มาตราการภายในหน่วยงาน</a>
-                        <a class="collapse-item" href="<?php echo site_url('Guide_work_backend'); ?>">คู่มือการปฏิบัติงาน</a>
+                        <a class="collapse-item" href="<?php echo site_url('Guide_work_backend'); ?>">คู่มือและมาตราฐานการปฏิบัติงาน</a>
                         <a class="collapse-item" href="<?php echo site_url('Loadform_backend'); ?>">ดาวน์โหลดแบบฟอร์ม</a>
                         <a class="collapse-item" href="<?php echo site_url('Km_backend'); ?>">การจัดการความรู้ท้องถิ่น KM</a>
                     </div>

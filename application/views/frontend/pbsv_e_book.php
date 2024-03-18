@@ -9,7 +9,7 @@
     </div>
     <div class="container-pages-news">
         <div class="page-center">
-            <div class="head-pages">
+            <div class="head-pagesข-two">
                 <span class="font-pages-head">ดาวน์โหลดแบบฟอร์ม E-book</span>
             </div>
         </div>

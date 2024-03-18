@@ -181,6 +181,7 @@
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/authority'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;อำนาจหน้าที่</a></li>
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/mission'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ภารกิจและความรับผิดชอบ</a></li>
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/executivepolicy'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;นโยบายผู้บริหาร</a></li>
+                    <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/si'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ยุทธศาสตร์การพัฒนาด้านโครงสร้างพื้นฐาน</a></li>
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/sme'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ระบบสารสนเทศสนับสนุนการบริหารจัดการ</a></li>
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/award'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รางวัลแห่งความภูมิใจ</a></li>
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/contact'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ติดต่อเรา</a></li>
@@ -306,7 +307,7 @@
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/pbsv_cjc'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ศูนย์งานยุติธรรมชุมชม</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/pbsv_oppr'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;งานอาสาสมัครป้องกันภัยฝ่ายพลเรือน (อปพร.)</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/pbsv_ems'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;งานกู้ชีพ / การบริการการแพทย์ฉุกเฉิน (EMS)</a></li>
-                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/pbsv_ahs'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;หลักประกันสุขภาพเทศบาลตำบลดอนโมง</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/pbsv_ahs'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;หลักประกันสุขภาพเทศบาล</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/pbsv_sags'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;คู่มือหรือมาตรฐานการให้บริการ</a></li>
                 </div>
                 <div class="dropdown-center">
@@ -319,9 +320,10 @@
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/adding_complain'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ร้องเรียนร้องทุกข์</a></li>
                 </div>
                 <div class="dropdown-right">
-                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/adding_corruption'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ร้องเรียนทุจริต</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/adding_corruption'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;แจ้งเรื่องทุจริตหน่วยงานภาครัฐ</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/adding_suggestions'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ช่องทางรับฟังความคิดเห็น</a></li>
-                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/questions'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ช่องทางรับฟังความคิดเห็น</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/questions'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;คำถามที่พบบ่อย FAQ</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/q_a'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;กระทู้ถาม-ตอบ (Q&A)</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="https://mbdb.cgd.go.th/wel/" target="_blank"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ระบบตรวจสอบสิทธิสวัสดิการ</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="https://csgcheck.dcy.go.th/public/eq/popSubsidy.do?ms=158953" target="_blank"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ระบบตรวจสอบสิทธิผู้มีสิทธิรับเงิน<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อุดหนุนเพื่อการเลี้ยงดูเด็กแรกเกิด</a></li>
                 </div>

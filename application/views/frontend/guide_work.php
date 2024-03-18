@@ -9,8 +9,8 @@
     </div>
     <div class="container-pages-news">
         <div class="page-center">
-            <div class="head-pages">
-                <span class="font-pages-head">คู่มือการปฏิบัติงาน</span>
+            <div class="head-pages-two">
+                <span class="font-pages-head">คู่มือและมาตราฐานการปฏิบัติงาน</span>
             </div>
         </div>
         <div style="padding-top: 80px;"></div>

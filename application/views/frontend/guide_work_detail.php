@@ -8,8 +8,8 @@
         </div>
     </div>
     <div class="page-center">
-        <div class="head-pages">
-            <span class="font-pages-head">คู่มือการปฏิบัติงาน</span>
+        <div class="head-pagesข-two">
+            <span class="font-pages-head">คู่มือและมาตราฐานการปฏิบัติงาน</span>
         </div>
     </div>
     <div class="bg-pages-in ">
