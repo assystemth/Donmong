@@ -265,7 +265,7 @@
             <ul class="no-bullets mt-4">
                 <div class="dropdown-left">
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_reauf'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานติดตามและประเมินผลแผนฯ</a></li>
-                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_rpobuy'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานผลการดำเนินงานจัดซื้อจัดจ้าง</a></li>
+                    <!-- <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/#'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานผลการดำเนินงานจัดซื้อจัดจ้าง</a></li> -->
                     <li><a class="mar-left-9 dropdown-item"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การบริหารและพัฒนาทรัพยากรบุคคล</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_policy_hr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;นโยบายบริหารทรัพยากรบุคคล</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_am_hr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;การดำเนินงานตามนโยบายการบริหาร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทรัพยากรบุคคล</a></li>

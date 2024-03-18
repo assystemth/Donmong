@@ -182,7 +182,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!-- <h6 class="collapse-header">Custom Components:</h6> -->
                         <a class="collapse-item" href="<?php echo site_url('Operation_reauf_backend'); ?>">รายงานติดตาม<br>และประเมินผลแผนฯ</a>
-                        <a class="collapse-item" href="<?php echo site_url('P_rpobuy_backend'); ?>">รายงานผลการดำเนินงาน<br>การจัดซื้อจัดจ้าง</a>
+                        <!-- <a class="collapse-item" href="<?php echo site_url('####_backend'); ?>">รายงานผลการดำเนินงาน<br>การจัดซื้อจัดจ้าง</a> -->
                         <a class="collapse-item" href="<?php echo site_url('Operation_policy_hr_backend'); ?>">นโยบายบริหาร<br>ทรัพยากรบุคคล</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_am_hr_backend'); ?>">การดำเนินการบริหาร<br>ทรัพยากรบุคคล</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_rdam_hr_backend'); ?>">รายงานผลการบริหาร<br>และพัฒนาทรัพยากรบุคคล</a>
