@@ -1,9 +1,9 @@
-<!-- <div class="image-slide-stick-mid">
-    <a href="https://itas.nacc.go.th/go/eit/qu7msc" target="_blank">
-    <img src="docs/eit-slide-mid.png">
+<div class="image-slide-stick-mid">
+    <a href="https://itas.nacc.go.th/go/eit/8bjr7a" target="_blank">
+    <img src="docs/eit-slide-midv2.png">
     </a>
     <img src="docs/eit-slide-close.png" class="close-button-slide-mid" onclick="closeImageSlideMid()">
-</div> -->
+</div>
 <div class="welcome">
 
     <!-- <div class="tab-container">
@@ -268,9 +268,9 @@
                     <!-- <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/#'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานผลการดำเนินงานจัดซื้อจัดจ้าง</a></li> -->
                     <li><a class="mar-left-9 dropdown-item"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การบริหารและพัฒนาทรัพยากรบุคคล</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_policy_hr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;นโยบายบริหารทรัพยากรบุคคล</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_am_hr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;การดำเนินงานตามนโยบายการบริหาร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทรัพยากรบุคคล</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_rdam_hr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;รายงานผลการบริหารและพัฒนาทรัพยากร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;บุคคลประจำปี</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_cdm_topic'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;หลักเกณฑ์การบริหารและพัฒนาทรัพยากร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;บุคคล</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_am_hr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;การดำเนินงานตามนโยบายการบริหาร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทรัพยากรบุคคล</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_rdam_hr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;รายงานผลการบริหารและพัฒนาทรัพยากร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;บุคคลประจำปี</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_cdm_topic'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;หลักเกณฑ์การบริหารและพัฒนาทรัพยากร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;บุคคล</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_po'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การเปิดโอกาสให้มีส่วนร่วม</a></li>
                 </div>
                 <div class="dropdown-center">

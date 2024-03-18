@@ -105,10 +105,10 @@
                 </div>
                 <div class="d-flex justify-content-between" style="margin-left: 60px; margin-right: 50px; margin-top: 70px;">
                     <a href="<?php echo site_url('Login_intranet'); ?>">
-                        <img src="<?php echo base_url("docs/k.btn-lo gin-intranet.png"); ?>" width="260px" height="78px">
+                        <img src="<?php echo base_url("docs/k.btn-lo gin-intranet2.png"); ?>" width="260px" height="78px">
                     </a>
                     <a href="<?php echo site_url('User'); ?>">
-                        <img src="<?php echo base_url("docs/k.btn-login-admin.png"); ?>" width="260px" height="78px">
+                        <img src="<?php echo base_url("docs/k.btn-login-admin2.png"); ?>" width="260px" height="78px">
                     </a>
                 </div>
             </div>
