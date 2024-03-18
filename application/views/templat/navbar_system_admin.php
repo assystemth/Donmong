@@ -133,18 +133,19 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapsefive')">
                     <img src="<?= base_url('docs/btn-bend7.png'); ?>">
-                    <span>ข้อมูลข้อบัญญัติ</span>
+                    <span>ข้อมูลเทศบัญญัติ</span>
                 </a>
                 <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!-- <h6 class="collapse-header">Custom Components:</h6> -->
-                        <a class="collapse-item" href="<?php echo site_url('Canon_bgps_backend'); ?>">ข้อบัญญัติงบประมาณ</a>
-                        <a class="collapse-item" href="<?php echo site_url('Canon_chh_backend'); ?>">ข้อบัญญัติการควบคุมกิจการ<br>ที่เป็นอันตรายต่อสุขภาพ</a>
-                        <a class="collapse-item" href="<?php echo site_url('Canon_ritw_backend'); ?>">ข้อบัญญัติการติดตั้ง<br>ระบบบำบัดน้ำเสียในอาคาร</a>
-                        <a class="collapse-item" href="<?php echo site_url('Canon_market_backend'); ?>">ข้อบัญญัติตลาด</a>
-                        <a class="collapse-item" href="<?php echo site_url('Canon_rmwp_backend'); ?>">ข้อบัญญัติการจัดการ<br>สิ่งปฏิกูลและมูลฝอย</a>
-                        <a class="collapse-item" href="<?php echo site_url('Canon_rcsp_backend'); ?>">ข้อบัญญัติหลักเกณฑ์การ<br>คัดขยะมูลฝอย</a>
-                        <a class="collapse-item" href="<?php echo site_url('Canon_rcp_backend'); ?>">ข้อบัญญัติการควบคุมการ<br>เลี้ยงหรือปล่อยสุนัขและแมว</a>
+                        <a class="collapse-item" href="<?php echo site_url('Canon_bgps_backend'); ?>">เทศบัญญัติงบประมาณ</a>
+                        <a class="collapse-item" href="<?php echo site_url('Canon_chh_backend'); ?>">เทศบัญญัติการควบคุมกิจการ<br>ที่เป็นอันตรายต่อสุขภาพ</a>
+                        <a class="collapse-item" href="<?php echo site_url('Canon_ritw_backend'); ?>">เทศบัญญัติการติดตั้ง<br>ระบบบำบัดน้ำเสียในอาคาร</a>
+                        <a class="collapse-item" href="<?php echo site_url('Canon_market_backend'); ?>">เทศบัญญัติตลาด</a>
+                        <a class="collapse-item" href="<?php echo site_url('Canon_rmwp_backend'); ?>">เทศบัญญัติการจัดการ<br>สิ่งปฏิกูลและมูลฝอย</a>
+                        <a class="collapse-item" href="<?php echo site_url('Canon_rcsp_backend'); ?>">เทศบัญญัติหลักเกณฑ์การ<br>คัดขยะมูลฝอย</a>
+                        <a class="collapse-item" href="<?php echo site_url('Canon_rcp_backend'); ?>">เทศบัญญัติการควบคุมการ<br>เลี้ยงหรือปล่อยสุนัขและแมว</a>
+                        <a class="collapse-item" href="<?php echo site_url('Canon_teba_backend'); ?>">เทศบัญญัติการโอนงบ<br>ประมาณรายจ่ายประจำปี</a>
 
                     </div>
                 </div>
@@ -220,7 +221,7 @@
                         <a class="collapse-item" href="<?php echo site_url('Announce_backend'); ?>">ประกาศเทศบาล</a>
                         <a class="collapse-item" href="<?php echo site_url('Order_backend'); ?>">คำสั่งเทศบาล</a>
                         <a class="collapse-item" href="<?php echo site_url('Mui_backend'); ?>">มาตราการภายในหน่วยงาน</a>
-                        <a class="collapse-item" href="<?php echo site_url('Guide_work_backend'); ?>">คู่มือและมาตราฐานการปฏิบัติงาน</a>
+                        <a class="collapse-item" href="<?php echo site_url('Guide_work_backend'); ?>">คู่มือและมาตราฐานการปฏิบัติ<br>งาน</a>
                         <a class="collapse-item" href="<?php echo site_url('Loadform_backend'); ?>">ดาวน์โหลดแบบฟอร์ม</a>
                         <a class="collapse-item" href="<?php echo site_url('Km_backend'); ?>">การจัดการความรู้ท้องถิ่น KM</a>
                     </div>

@@ -300,7 +300,7 @@
   }
 
   .bg-main {
-    background-image: url('<?php echo base_url("docs/d.bg-main.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-main1.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 850px;
@@ -627,7 +627,7 @@
   }
 
   .bg-otop {
-    background-image: url('<?php echo base_url("docs/d.bg-otop.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-otop3.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center center;
@@ -687,7 +687,7 @@
   }
 
   .bg-travel {
-    background-image: url('<?php echo base_url("docs/d.bg-travel.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-travel2.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 1280px;
@@ -760,7 +760,7 @@
   }
 
   .bg-page-bottom {
-    background-image: url('<?php echo base_url("docs/d.bg-page-btm2.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-page-btm3.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 1280px;
@@ -2820,11 +2820,11 @@
   }
 
   .bg-video {
-    background-image: url('<?php echo base_url("docs/d.bg-video3.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-video4.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 2400px;
-    width: 1281px;
+    width: 1282px;
     margin: auto;
   }
 
@@ -2936,5 +2936,13 @@
   .inactive-button {
     /* background-color: #000; */
     color: #000;
+  }
+
+  .font-ita-content-detail {
+    color: #000;
+    font-family: Kanit;
+    font-size: 20px;
+    font-style: normal;
+    padding-left: 150px;
   }
 </style>
