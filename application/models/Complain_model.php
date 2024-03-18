@@ -77,6 +77,16 @@ class Complain_model extends CI_Model
         return $query->result();
     }
 
+    public function intranet_complain()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_complain as c');
+        $this->db->limit(5);
+        $this->db->order_by('c.complain_id', 'DESC');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
     public function updateComplain($complain_detail_case_id, $complain_detail_status, $complain_detail_com)
     {
         // อัปเดต tbl_complain
@@ -102,7 +112,7 @@ class Complain_model extends CI_Model
             $message .= "สถานะ: " . $complainData->complain_status . "\n";
             $message .= "เรื่อง: " . $complainData->complain_topic . "\n";
             $message .= "รายละเอียด: " . $complainData->complain_detail . "\n";
-            $message .= "ชื่อผู้แจ้งข้อมูล: " . $complainData->complain_by . "\n";
+            $message .= "ชื่อผู้อัพเดตข้อมูล: " . $complainData->complain_by . "\n";
             $message .= "เบอร์โทรศัพท์ผู้แจ้ง: " . $complainData->complain_phone . "\n";
             $message .= "ที่อยู่: " . $complainData->complain_address . "\n";
             $message .= "อีเมล: " . $complainData->complain_email . "\n";
@@ -119,7 +129,7 @@ class Complain_model extends CI_Model
         }
 
         // print_r($complainData);
-        // echo "<br>";q
+        // echo "<br>";
         // print_r($complainData2);
         // exit;
 
@@ -130,7 +140,7 @@ class Complain_model extends CI_Model
     private function sendLineNotify($message)
     {
         define('LINE_API', "https://notify-api.line.me/api/notify");
-        $token = "dJaRd4U9RETKpT6VynXswtP2xWtBFBfn6squgl6i9JL"; // ใส่ Token ที่คุณได้รับ
+        $token = "Cr7P2PjX5hMa9KzgyHGthEL9UGcqjelH2jGpTMqwn4X"; // ใส่ Token ที่คุณได้รับ
 
         $queryData = array('message' => $message);
         $queryData = http_build_query($queryData, '', '&');
@@ -204,7 +214,7 @@ class Complain_model extends CI_Model
     }
 
     // เว็บ kakoh เริ่มจากตรงนี้ *********************************************************************
-    public function add_complain($complain_detail_case_id)
+    public function add_complain()
     {
         // Check used space
         $used_space_mb = $this->space_model->get_used_space();
@@ -223,8 +233,6 @@ class Complain_model extends CI_Model
             redirect('Pages/adding_complain');
             return;
         }
-
-        $updated = $this->db->update('tbl_complain');
 
         $complain_data = array(
             'complain_type' => $this->input->post('complain_type'),
@@ -273,15 +281,8 @@ class Complain_model extends CI_Model
 
         $this->db->trans_complete();
 
-        if ($updated) {
-            // ดึงข้อมูลจาก tbl_complain
-            $complainData = $this->db->get_where('tbl_complain', array('complain_id' => $complain_detail_case_id))->row();
-
-            // ดึงข้อมูลจาก tbl_complain_detail โดยเรียงลำดับตาม ID ล่าสุดและเลือกเพียงหนึ่งรายการ
-            $this->db->order_by('complain_detail_id', 'DESC');
-            $this->db->limit(1);
-            $complainDetailData = $this->db->get('tbl_complain_detail')->row();
-
+        // ดึงข้อมูลจาก tbl_complain หลังจากอัปเดต
+        $complainData = $this->db->get_where('tbl_complain', array('complain_id' => $complain_id))->row();
 
         if ($complainData) {
             $message = "เรื่องร้องเรียน ใหม่ !" . "\n";
@@ -289,8 +290,7 @@ class Complain_model extends CI_Model
             $message .= "สถานะ: " . $complainData->complain_status . "\n";
             $message .= "เรื่อง: " . $complainData->complain_topic . "\n";
             $message .= "รายละเอียด: " . $complainData->complain_detail . "\n";
-            $message .= "ชื่อผู้อัพเดตข้อมูล: " . $complainDetailData->complain_detail_by . "\n";
-            $message .= "ข้อความจากแอดมิน: " . $complainDetailData->complain_detail_com . "\n";
+            $message .= "ชื่อผู้อัพเดตข้อมูล: " . $complainData->complain_by . "\n";
             $message .= "เบอร์โทรศัพท์ผู้แจ้ง: " . $complainData->complain_phone . "\n";
             $message .= "ที่อยู่: " . $complainData->complain_address . "\n";
             $message .= "อีเมล: " . $complainData->complain_email . "\n";
@@ -298,9 +298,6 @@ class Complain_model extends CI_Model
         }
 
         $this->sendLineNotifyImg($message, $upload_data['full_path']);
-    }
-
-    
 
         $this->space_model->update_server_current();
         $this->session->set_flashdata('save_success', TRUE);
@@ -336,7 +333,7 @@ class Complain_model extends CI_Model
         echo "Line Notify API Response: $response";
     }
     private $lineNotifyApiUrl = 'https://notify-api.line.me/api/notify';
-    private $lineNotifyAccessToken = 'dJaRd4U9RETKpT6VynXswtP2xWtBFBfn6squgl6i9JL'; // Replace with your Line Notify access token
+    private $lineNotifyAccessToken = 'Cr7P2PjX5hMa9KzgyHGthEL9UGcqjelH2jGpTMqwn4X'; // Replace with your Line Notify access token
     public function add_complain_detail($complain_id)
     {
         $data = array(
@@ -370,7 +367,7 @@ class Complain_model extends CI_Model
     {
         $this->db->select('COUNT(complain_id) AS total_complain_success');
         $this->db->from('tbl_complain');
-        $this->db->where('tbl_complain.complain_status', 'ดำเนินการเสร็จสิ้น');
+        $this->db->where('tbl_complain.complain_status', 'ดำเนินการเรียบร้อย');
         $query = $this->db->get();
         return $query->row()->total_complain_success;
     }
@@ -382,6 +379,14 @@ class Complain_model extends CI_Model
         $query = $this->db->get();
         return $query->row()->total_complain_operation;
     }
+    public function count_complain_accept()
+    {
+        $this->db->select('COUNT(complain_id) AS total_complain_accept');
+        $this->db->from('tbl_complain');
+        $this->db->where('tbl_complain.complain_status', 'รับเรื่องแล้ว');
+        $query = $this->db->get();
+        return $query->row()->total_complain_accept;
+    }
     public function count_complain_doing()
     {
         $this->db->select('COUNT(complain_id) AS total_complain_doing');
@@ -389,5 +394,23 @@ class Complain_model extends CI_Model
         $this->db->where('tbl_complain.complain_status', 'กำลังดำเนินการ');
         $query = $this->db->get();
         return $query->row()->total_complain_doing;
+    }
+
+    public function count_complain_wait()
+    {
+        $this->db->select('COUNT(complain_id) AS total_complain_wait');
+        $this->db->from('tbl_complain');
+        $this->db->where('tbl_complain.complain_status', 'รอรับเรื่อง');
+        $query = $this->db->get();
+        return $query->row()->total_complain_wait;
+    }
+
+    public function count_complain_cancel()
+    {
+        $this->db->select('COUNT(complain_id) AS total_complain_cancel');
+        $this->db->from('tbl_complain');
+        $this->db->where('tbl_complain.complain_status', 'ยกเลิก');
+        $query = $this->db->get();
+        return $query->row()->total_complain_cancel;
     }
 }

@@ -3066,10 +3066,18 @@ class Pages extends CI_Controller
 	{
 		$this->lpa_model->increment_download_lpa($lpa_file_id);
 	}
+	public function ita_all()
+	{
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/ita_all');
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
 	public function ita()
 	{
-		$data['qIta'] = $this->ita_model->ita_frontend();
-		$data['qItaYear'] = $this->ita_year_model->ita_year_frontend();
+		$data['query'] = $this->ita_model->ita_frontend();
 
 		$this->load->view('frontend_templat/header');
 		$this->load->view('frontend_asset/css');
@@ -3110,20 +3118,9 @@ class Pages extends CI_Controller
 		$this->ita_model->increment_download_ita($ita_file_id);
 	}
 
-	public function ita_year($ita_year_id)
+	public function ita_year()
 	{
-		$data['rsData'] = $this->ita_year_model->read($ita_year_id);
-
-		// เพิ่มเงื่อนไขเพื่อตรวจสอบว่ามีข้อมูลหรือไม่
-		if (!$data['rsData']) {
-			$this->load->view('frontend_templat/header');
-			$this->load->view('frontend_asset/css');
-			$this->load->view('frontend_templat/navbar');
-			$this->load->view('frontend/empty_detail_pages');
-			$this->load->view('frontend_asset/js');
-			$this->load->view('frontend_templat/footer');
-			return; // ให้จบการทำงานที่นี่
-		}
+		$data['query'] = $this->ita_year_model->ita_year_frontend();
 
 		$this->load->view('frontend_templat/header');
 		$this->load->view('frontend_asset/css');
@@ -3132,6 +3129,28 @@ class Pages extends CI_Controller
 		$this->load->view('frontend_asset/js');
 		$this->load->view('frontend_templat/footer');
 	}
+	public function ita_year_detail($ita_year_id)
+	{
+		$data['query'] = $this->ita_year_model->read($ita_year_id);
+		$data['query_topic'] = $this->ita_year_model->get_ita_year_data($ita_year_id);
+		// เพิ่มเงื่อนไขเพื่อตรวจสอบว่ามีข้อมูลหรือไม่
+		if (!$data['query']) {
+			$this->load->view('frontend_templat/header');
+			$this->load->view('frontend_asset/css');
+			$this->load->view('frontend_templat/navbar');
+			$this->load->view('frontend/empty_detail_pages');
+			$this->load->view('frontend_asset/js');
+			$this->load->view('frontend_templat/footer');
+			return; // ให้จบการทำงานที่นี่
+		}
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/ita_year_detail', $data);
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+
 	public function operation_aditn()
 	{
 		$data['query'] = $this->operation_aditn_model->operation_aditn_frontend();

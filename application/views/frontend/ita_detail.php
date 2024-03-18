@@ -1,19 +1,19 @@
 <div class="bg-pages ">
-    <div class="row pad-path">
-        <div class="path1-1">
-            <span class="font-path-1 underline"><a href="<?php echo site_url('Home'); ?>">หน้าแรก</a></span>
+	        <div class="row pad-path">
+            <div class="path1-1">
+                <span class="font-path-1 underline"><a href="<?php echo site_url('Home'); ?>">หน้าแรก</a></span>
+            </div>
+            <div class="path2-3">
+                <span class="font-path-2 underline"><a href="#">ITA เทศบาลกาบเชิง</a></span>
+            </div>
         </div>
-        <div class="path2-2">
-            <span class="font-path-2 underline"><a href="#">การดำเนินงาน</a></span>
+        <div class="page-center">
+            <div class="head-pages-three">
+                <span class="font-pages-head">ITA การประเมินคุณธรรมและความโปร่งใส</span>
+            </div>
         </div>
-    </div>
-    <div class="page-center">
-        <div class="head-pages-three">
-            <span class="font-pages-head-long">ITA การประเมินคุณธรรมและความโปร่งใส</span>
-        </div>
-    </div>
-    <div class="bg-pages-in ">
-        <div class="scrollable-container">
+        <div class="bg-pages-in ">
+            <div class="scrollable-container">
                 <div class="font-pages-content-head">เรื่อง <?= $rsData->ita_name; ?></div>
                 <div class="pages-content break-word mt-2">
                     <span class="font-pages-content-detail"><?= $rsData->ita_detail; ?></span>
@@ -31,7 +31,7 @@
                             <div class="d-flex justify-content-start">
                                 <!-- ในหน้า view -->
                                 <a href="<?= base_url('docs/file/' . $file->ita_file_pdf); ?>" target="_blank" onclick="handleDownloadClick(<?= $file->ita_file_id; ?>)">
-                                    <img src="<?php echo base_url("docs/s.btn-dowload.png"); ?>">
+                                    <img src="<?php echo base_url("docs/k.btn-download.png"); ?>">
                                 </a>
                                 <script>
                                     function handleDownloadClick(ita_file_id) {
