@@ -47,7 +47,7 @@ class Q_a_model extends CI_Model
     private function sendLineNotify($message)
     {
         define('LINE_API', "https://notify-api.line.me/api/notify");
-        $token = "Iff0yJEZxd1xtZQDhWGKHltb455decobtxXQlDjlWST"; // ใส่ Token ที่คุณได้รับ
+        $token = "dJaRd4U9RETKpT6VynXswtP2xWtBFBfn6squgl6i9JL"; // ใส่ Token ที่คุณได้รับ
 
         $queryData = array('message' => $message);
         $queryData = http_build_query($queryData, '', '&');

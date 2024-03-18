@@ -140,7 +140,7 @@ class Complain_model extends CI_Model
     private function sendLineNotify($message)
     {
         define('LINE_API', "https://notify-api.line.me/api/notify");
-        $token = "Cr7P2PjX5hMa9KzgyHGthEL9UGcqjelH2jGpTMqwn4X"; // ใส่ Token ที่คุณได้รับ
+        $token = "dJaRd4U9RETKpT6VynXswtP2xWtBFBfn6squgl6i9JL"; // ใส่ Token ที่คุณได้รับ
 
         $queryData = array('message' => $message);
         $queryData = http_build_query($queryData, '', '&');
@@ -333,7 +333,7 @@ class Complain_model extends CI_Model
         echo "Line Notify API Response: $response";
     }
     private $lineNotifyApiUrl = 'https://notify-api.line.me/api/notify';
-    private $lineNotifyAccessToken = 'Cr7P2PjX5hMa9KzgyHGthEL9UGcqjelH2jGpTMqwn4X'; // Replace with your Line Notify access token
+    private $lineNotifyAccessToken = 'dJaRd4U9RETKpT6VynXswtP2xWtBFBfn6squgl6i9JL'; // Replace with your Line Notify access token
     public function add_complain_detail($complain_id)
     {
         $data = array(
