@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-7">
-            <h4>เพิ่มข้อมูลสถานที่ท่องเที่ยว</h4>
+            <h4>เพิ่มข้อมูลสถานที่สำคัญ</h4>
             <form action=" <?php echo site_url('travel_backend/add_Travel'); ?> " method="post" class="form-horizontal" enctype="multipart/form-data">
                 <br>
                 <!-- <div class="form-group row">

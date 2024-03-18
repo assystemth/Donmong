@@ -9,7 +9,7 @@
     </div>
     <div class="page-center">
         <div class="head-pages">
-            <span class="font-pages-head">วิสัยทัศน์</span>
+            <span class="font-pages-head">วิสัยทัศน์และพันธกิจ</span>
         </div>
     </div>
     <?php foreach ($qVision as $rs) { ?>

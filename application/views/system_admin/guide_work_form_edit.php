@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-7">
-            <h4>แก้ไขข้อมูลคู่มือการปฏิบัติงาน</h4>
+            <h4>แก้ไขข้อมูลคู่มือและมาตราฐานการปฏิบัติงาน</h4>
             <form action=" <?php echo site_url('Guide_work_backend/edit/' . $rsedit->guide_work_id); ?> " method="post" class="form-horizontal" enctype="multipart/form-data">
                 <br>
                 <div class="form-group row">

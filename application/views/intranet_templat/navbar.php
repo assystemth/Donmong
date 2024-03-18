@@ -8,7 +8,7 @@
 
 
             <div class="navbar-right">
-                <a class="navbar-link" data-image-src="<?php echo base_url("docs/intranet/nav-intranet-btn-hover1.png"); ?>" href="<?php echo site_url('System_intranet'); ?>">
+                <a class="navbar-link" data-image-src="<?php echo base_url("docs/intranet/nav-intranet-btn-hover1v2.png"); ?>" href="<?php echo site_url('System_intranet'); ?>">
                     <img src="<?php echo base_url("docs/intranet/nav-intranet-btn1.png"); ?>" width="100%" height="100%" style="padding-top: 13%;">
                 </a>
                 <br>
@@ -36,7 +36,7 @@
                     <img src="<?php echo base_url("docs/intranet/nav-intranet-btn7.png"); ?>" width="100%" height="100%" style="padding-top: 5%;">
                 </a>
                 <br>
-                <a class="navbar-link" data-image-src="<?php echo base_url("docs/intranet/nav-intranet-btn-hover8.png"); ?>" href="<?php echo site_url('Intra_report'); ?>">
+                <a class="navbar-link" data-image-src="<?php echo base_url("docs/intranet/nav-intranet-btn-hover8v2.png"); ?>" href="<?php echo site_url('Intra_report'); ?>">
                     <img src="<?php echo base_url("docs/intranet/nav-intranet-btn8.png"); ?>" width="100%" height="100%" style="padding-top: 5%;">
                 </a>
             </div>

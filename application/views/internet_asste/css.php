@@ -8,17 +8,17 @@
 
     .bg-header {
         /* The image used */
-        background-image: url('<?php echo base_url("docs/intranet/navbar-intranet19v5.png"); ?>');
+        background-image: url('<?php echo base_url("docs/intranet/navbar-intranet3.png"); ?>');
         background-size: contain;
         background-repeat: no-repeat;
         width: 100%;
-        height: 7.7vh;
+        height: 6.8vh;
         z-index: 2;
 
     }
 
     .welcome {
-        background-image: url('<?php echo base_url("docs/intranet/welcome19v4.jpg"); ?>');
+        background-image: url('<?php echo base_url("docs/intranet/welcome19v2.jpg"); ?>');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -339,21 +339,21 @@
     }
 
     .pagination .page-item.active .page-link {
-        background-color: #0FC2C0;
+        background-color: #FFD203;
         /* สีเขียว */
-        border-color: #0FC2C0;
+        border-color: #FFD203;
         color: #fff;
     }
 
     .pagination .page-link {
-        color: #000;
-        background-color: #F1F3F7;
+        color: #FFD203;
+        background-color: #FFF2B7;
 
     }
 
     .pagination .page-link:hover {
-        color: #000;
-        background-color: #E9E9E9;
+        color: #FFD203;
+        background-color: #FFF2B7;
     }
 
     .popup {
@@ -385,7 +385,7 @@
     }
 
     .footer {
-        background-image: url('<?php echo base_url("docs/intranet/bg-footer19v2.png"); ?>');
+        background-image: url('<?php echo base_url("docs/intranet/bg-intra-footer3.png"); ?>');
         background-size: contain;
         background-repeat: no-repeat;
         width: 100vw;
@@ -651,7 +651,7 @@
     }
 
     .font-dropdown-name {
-        color: var(--font, #015958);
+        color: var(--font, #5A300C);
         font-family: Kanit;
         font-size: 14px;
         font-style: normal;
@@ -671,7 +671,7 @@
     }
 
     .dropdown-item {
-        color: #015958;
+        color: #5A300C;
     }
 
     .bg-edit-profile {

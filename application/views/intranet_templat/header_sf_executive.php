@@ -167,7 +167,7 @@
     <div class="welcome">
     </div>
     <div class="welcome-btm">
-        <img src="<?= base_url('docs/intranet/btm-welcome19v2.png'); ?>" style="max-width: 100%; height: auto;">
+        <img src="<?= base_url('docs/intranet/btm-welcome2.png'); ?>" style="max-width: 100%; height: auto;">
     </div>
 
 

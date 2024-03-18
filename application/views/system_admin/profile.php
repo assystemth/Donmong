@@ -86,6 +86,14 @@
                 <br>
 
                 <div class="form-group row">
+                    <div class="col-sm-2 control-label">E-mail</div>
+                    <div class="col-sm-5">
+                        <input type="email" name="m_email" class="form-control" required value="<?php echo $rsedit->m_email; ?>">
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group row">
                     <div class="col-sm-2 control-label">เบอร์มือถือ</div>
                     <div class="col-sm-4">
                         <input type="text" name="m_phone" class="form-control" pattern="\d{10}" title="กรุณากรอกเบอร์มือถือเป็นตัวเลข 10 ตัว" value="<?php echo $rsedit->m_phone; ?>">

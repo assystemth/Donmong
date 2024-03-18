@@ -882,7 +882,7 @@
   .input-home-q-a {
     border-radius: 14px;
     border: 1px solid #693708;
-    color: var(--, #6D758F);
+    color: var(--, #8F7E6F);
     leading-trim: both;
     text-edge: cap;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -1734,7 +1734,7 @@
   }
 
   .font-page-detail-time-img {
-    color: #6D758F;
+    color: #8F7E6F;
     font-family: Kanit;
     font-size: 20px;
     font-style: normal;
@@ -1754,7 +1754,7 @@
   }
 
   .font-page-detail-view-img {
-    color: #6D758F;
+    color: #8F7E6F;
     text-align: center;
     font-family: Kanit;
     font-size: 20px;
@@ -1764,7 +1764,7 @@
   }
 
   .font-page-detail-view-news {
-    color: #6D758F;
+    color: #8F7E6F;
     text-align: center;
     font-family: Kanit;
     font-size: 20px;
@@ -1862,7 +1862,7 @@
   }
 
   .font-label-e-service-complain {
-    color: var(--text, var(--, #6D758F));
+    color: var(--text, var(--, #8F7E6F));
     leading-trim: both;
     text-edge: cap;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -1888,7 +1888,7 @@
   }
 
   .font-flcp-sd {
-    color: var(--, #6D758F);
+    color: var(--, #8F7E6F);
     font-family: Kanit;
     font-size: 21.442px;
     font-style: normal;
@@ -2005,7 +2005,7 @@
   }
 
   .span-time-pages-img {
-    color: #6D758F;
+    color: #8F7E6F;
     font-family: Kanit;
     font-size: 15px;
     font-style: normal;
@@ -2014,7 +2014,7 @@
   }
 
   .span-time-pages-img-detail {
-    color: #062AAA;
+    color: #5A300C;
     text-align: center;
     leading-trim: both;
     text-edge: cap;
@@ -2030,7 +2030,7 @@
   }
 
   .span-time-pages-news {
-    color: #6D758F;
+    color: #8F7E6F;
     font-family: Kanit;
     font-size: 20px;
     font-style: normal;
@@ -2107,7 +2107,7 @@
 
   .page-border-otop {
     border-radius: 34px;
-    border: 1px solid #6D758F;
+    border: 1px solid #8F7E6F;
     background: rgba(255, 251, 232, 0.80);
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.15);
     padding-left: 50px;
@@ -2355,7 +2355,7 @@
   }
 
   .pages-select-e-service {
-    border: 1px solid #6D758F;
+    border: 1px solid #8F7E6F;
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 30px;

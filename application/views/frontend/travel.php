@@ -10,7 +10,7 @@
     <div class="container-pages-news">
         <div class="page-center">
             <div class="head-pages">
-                <span class="font-pages-head">สถานที่ท่องเที่ยว</span>
+                <span class="font-pages-head">สถานที่สำคัญ</span>
             </div>
         </div>
         <div class="row" style="padding-top: 80px;">
