@@ -5,7 +5,7 @@
     <!-- Design by foolishdeveloper.com -->
     <link rel="icon" href="<?php echo base_url("docs/k.logo.png"); ?>" type="image/x-icon">
 
-    <title>เทศบาลตำบลกาบเชิง ระบบแอดมิน</title>
+    <title>เทศบาลตำบลดอนโมง ระบบแอดมิน</title>
     <!-- icon -->
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
