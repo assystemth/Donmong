@@ -1,39 +1,15 @@
 <div class="image-slide-stick-mid">
     <a href="https://itas.nacc.go.th/go/eit/8bjr7a" target="_blank">
-    <img src="docs/eit-slide-midv2.png">
+        <img src="docs/eit-slide-midv2.png">
     </a>
     <img src="docs/eit-slide-close.png" class="close-button-slide-mid" onclick="closeImageSlideMid()">
 </div>
 <div class="welcome">
-
-    <!-- <div class="tab-container">
-        <img src="docs/item-news-top.png" width="324" height="100" style="position: absolute; z-index: 2;">
-        <div id="marquee-container">
-            <div class="marquee">
-                <div>
-                    <?php
-                    $maxIterations = 1000;
-                    $iteration = 0;
-                    while ($iteration < $maxIterations) {
-                        foreach ($qHotnews as $index => $hotnews) {
-                            echo '<span>' . $hotnews->hotNews_text . '</span>';
-                        }
-                        $iteration++;
-                    }
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    <video width="1280" height="690" autoplay muted loop>
+        <source src="<?php echo base_url("docs/video.mp4"); ?>" type="video/mp4">
+    </video>
 </div>
 
-<!-- <div class="tab-container">
-    <div class="rectangle1"><span class="news-update">&nbsp;<i>ข่าวสารอัพเดต</i></span></div>
-    <div class="rectangle2"></div>
-    <?php foreach ($qHotnews as $hotnews) { ?>
-        <div class="running-text"><?= $hotnews->hotNews_text; ?></div>
-    <?php } ?>
-</div> -->
 <!-- วิสัยทัศน์  -->
 <div class="vision">
     <div class="row">

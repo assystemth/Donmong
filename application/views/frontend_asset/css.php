@@ -249,10 +249,10 @@
   }
 
   .welcome {
-    background-image: url('<?php echo base_url("docs/k.welcome.gif"); ?>');
+    /* background-image: url('<?php echo base_url("docs/k.welcome.gif"); ?>');
     background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: -182px;
+    background-size: 100%; */
+    margin-top: -110px;
     z-index: 1;
     width: 1280px;
     height: 690px;
@@ -315,10 +315,11 @@
     height: 880px;
     width: 1280px;
     z-index: 2;
-    margin-top: -71px;
+    margin-top: -65px;
     padding-top: 120px;
     padding-left: 40px;
     padding-right: 40px;
+    position: relative;
   }
 
   .head-activity {

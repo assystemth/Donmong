@@ -24,11 +24,11 @@
                     <thead>
                         <tr>
                             <th style="width: 5%;">ลำดับ</th>
-                            <th style="width: 20%;">ตำแหน่ง</th>
+                            <th style="width: 25%;">ตำแหน่ง</th>
                             <th style="width: 25%;">ชื่อ-สกุล</th>
                             <th style="width: 10%;">E-mail</th>
                             <th style="width: 10%;">เบอร์ติดต่อ</th>
-                            <th style="width: 5%;">สถานะ</th>
+                            <!-- <th style="width: 5%;">สถานะ</th> -->
                             <th style="width: 10%;">จัดการ</th>
                         </tr>
                     </thead>
@@ -44,7 +44,7 @@
                                     <td><?php echo $rs->m_fname . ' ' . $rs->m_lname; ?></td>
                                     <td><?php echo $rs->m_email; ?></td>
                                     <td><?php echo $rs->m_phone; ?></td>
-                                    <td>
+                                    <!-- <td>
                                         <?php if ($rs->pname !== 'System Admin') { ?>
                                             <?php if ($rs->m_status == 1) { ?>
                                                 <a class="btn btn-danger responsive-btn-ban" href="<?php echo site_url('member_backend/blockUser/' . $rs->m_id); ?>" onclick="return confirm('ยืนยันการแบนข้อมูล');"><i class="fa-solid fa-user-large-slash"></i>แบน</a>
@@ -52,7 +52,7 @@
                                                 <a class="btn btn-info responsive-btn-ban" href="<?php echo site_url('member_backend/unblockUser/' . $rs->m_id); ?>" onclick="return confirm('ยืนยันการแบนข้อมูล');"><i class="fa-solid fa-user-check"></i>ปลด</a>
                                             <?php } ?>
                                         <?php } ?>
-                                    </td>
+                                    </td> -->
                                     <td>
                                         <?php if ($_SESSION['m_level'] == 1) : ?>
                                             <!-- ทำสิ่งที่คุณต้องการทำเมื่อไม่ใช่ 'System Admin' และไม่ใช่ 'Super Admin' -->
