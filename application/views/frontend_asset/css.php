@@ -359,10 +359,10 @@
   }
 
   .bg-activity {
-    background-image: url('<?php echo base_url("docs/d.bg-activity.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-activity3.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 674px;
+    height: 673px;
     width: 1280px;
     margin: auto;
   }
@@ -688,7 +688,7 @@
   }
 
   .bg-travel {
-    background-image: url('<?php echo base_url("docs/d.bg-travel2.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-travel3.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 1280px;
