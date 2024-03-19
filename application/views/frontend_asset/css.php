@@ -2825,7 +2825,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     height: 2400px;
-    width: 1282px;
+    width: 1281px;
     margin: auto;
   }
 
