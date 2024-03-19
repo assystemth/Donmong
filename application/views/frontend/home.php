@@ -1,6 +1,6 @@
 <div class="image-slide-stick-mid">
     <a href="https://itas.nacc.go.th/go/eit/8bjr7a" target="_blank">
-        <img src="docs/eit-slide-midv2.png">
+    <img src="docs/eit-slide-midv3.png">
     </a>
     <img src="docs/eit-slide-close.png" class="close-button-slide-mid" onclick="closeImageSlideMid()">
 </div>
@@ -48,7 +48,7 @@
     <div class="row mt-5">
         <div class="col-4">
             <div class="d-flex justify-content-center mt-4">
-                <a href="<?php echo site_url('Pages/ita'); ?>" class="zoom-otop">
+                <a href="<?php echo site_url('Pages/_all'); ?>" class="zoom-otop">
                     <img class="mark-logo" src="docs/k.menu-eservice-top1v2.png">
                 </a>
             </div>
@@ -256,7 +256,7 @@
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_eco'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การเสริมสร้างวัฒนธรรมองค์กร</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_aca'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การปฏิบัติการป้องกันการทุจริต</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/lpa'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;LPA หรือการประเมิณประสิทธิภาพขององค์กร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปกครองส่วนท้องถิ่น</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/ita'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ITA การประเมิณคุณธรรมของหน่วยงานภาครัฐ</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/ita_all'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ITA การประเมิณคุณธรรมของหน่วยงานภาครัฐ</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_we'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;งานจริยธรรม</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_aditn'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;หน่วยตรวจสอบภายใน</a></li>
                 </div>
@@ -310,7 +310,7 @@
 
 <div class="bg-activity">
     <div class="d-flex justify-content-center" style="padding-top: 3%;">
-        <img src="docs/d.head-activity.png">
+        <img src="docs/d.head-activity2.png">
     </div>
     <div class="row d-flex justify-content-center" style="padding-top: 70px; margin-left: -50px;">
         <?php foreach ($qActivity as $activity) { ?>
@@ -362,7 +362,7 @@
 
 <div class="bg-video">
     <div class="d-flex justify-content-center" style="padding-top: 2%;">
-        <img src="docs/d.head-video.png">
+        <img src="docs/d.head-video2.png">
     </div>
     <div class="bg-content-video">
         <!-- <?php if (!empty($video_data) && !empty($video_data->video_link)) : ?>
@@ -442,37 +442,42 @@
         <div id="tabtwo2" class="tab-content-two">
             <div class="content-news-detail">
                 <a href="<?php echo site_url('Pages/canon_bgps'); ?>">
-                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;ข้อบัญญัติงบประมาณ</span>
+                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;เทศบัญญัติงบประมาณ</span>
                 </a>
             </div>
             <div class="content-news-detail">
                 <a href="<?php echo site_url('Pages/canon_chh'); ?>">
-                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;ข้อบัญญัติการควบคุมกิจการที่เป็นอันตรายต่อสุขภาพ</span>
+                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;เทศบัญญัติการควบคุมกิจการที่เป็นอันตรายต่อสุขภาพ</span>
                 </a>
             </div>
             <div class="content-news-detail">
                 <a href="<?php echo site_url('Pages/canon_ritw'); ?>">
-                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;ข้อบัญญัติการติดตั้งระบบบำบัดน้ำเสียในอาคาร</span>
+                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;เทศบัญญัติการติดตั้งระบบบำบัดน้ำเสียในอาคาร</span>
                 </a>
             </div>
             <div class="content-news-detail">
                 <a href="<?php echo site_url('Pages/canon_market'); ?>">
-                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;ข้อบัญญัติตลาด</span>
+                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;เทศบัญญัติตลาด</span>
                 </a>
             </div>
             <div class="content-news-detail">
                 <a href="<?php echo site_url('Pages/canon_rmwp'); ?>">
-                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;ข้อบัญญัติการจัดการสิ่งปฏิกูลและมูลฝอย</span>
+                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;เทศบัญญัติการจัดการสิ่งปฏิกูลและมูลฝอย</span>
                 </a>
             </div>
             <div class="content-news-detail">
                 <a href="<?php echo site_url('Pages/canon_rcsp'); ?>">
-                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;ข้อบัญญัติหลักเกณฑ์การคัดมูลฝอย</span>
+                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;เทศบัญญัติหลักเกณฑ์การคัดมูลฝอย</span>
                 </a>
             </div>
             <div class="content-news-detail">
                 <a href="<?php echo site_url('Pages/canon_rcp'); ?>">
-                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;ข้อบัญญัติการควบคุมการเลี้ยงหรือปล่อยสุนัขและแมว</span>
+                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;เทศบัญญัติการควบคุมการเลี้ยงหรือปล่อยสุนัขและแมว</span>
+                </a>
+            </div>
+            <div class="content-news-detail">
+                <a href="<?php echo site_url('Pages/canon_teba'); ?>">
+                    <span class="text-news"><img src="docs/k.logo.png" width="30px" height="34px">&nbsp;&nbsp;เทศบัญญัติการโอนงบประมาณรายจ่ายประจำปี</span>
                 </a>
             </div>
         </div>
@@ -724,7 +729,7 @@
 
 <div class="bg-travel">
     <div class="d-flex justify-content-center" style="padding-top: 5%;">
-        <img src="docs/d.head-travel.png">
+        <img src="docs/d.head-travel2.png">
     </div>
     <div class="travel-content">
         <div class="slick-carousel ">
@@ -752,7 +757,7 @@
 
 <div class="bg-otop">
     <div class="d-flex justify-content-center" style="padding-top: 8%;">
-        <img src="docs/d.head-otop.png">
+        <img src="docs/d.head-otop2.png">
     </div>
     <div class="otop-content">
         <div class="slick-carousel-otop">
@@ -780,7 +785,7 @@
 
 <div class="bg-page-bottom">
     <div class="d-flex justify-content-center" style="padding-top: 70px;" id="oss">
-        <img src="docs/d.head-e-service.png">
+        <img src="docs/d.head-e-service2.png">
     </div>
     <br>
     <!-- <div class="d-flex justify-content-center">
@@ -789,42 +794,42 @@
     <div class="row d-flex justify-content-center underline" style="padding-top: 40px; padding-left: 50px; padding-right: 50px;">
         <div class="col-2 text-center">
             <a href="<?php echo site_url('Pages/adding_complain'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service1.png">
+                <img src="docs/d.menu-e-service1v2.png">
                 <br>
                 <span class="font-e-service-25">แจ้งเรื่อง ร้องเรียน</span>
             </a>
         </div>
         <div class="col-2 text-center">
             <a href="<?php echo site_url('Pages/adding_corruption'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service2.png">
+                <img src="docs/d.menu-e-service2v2.png">
                 <br>
                 <span class="font-e-service-25">แจ้งเรื่องทุจริต</span>
             </a>
         </div>
         <div class="col-2 text-center">
             <a href="<?php echo site_url('Pages/adding_suggestions'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service3.png">
+                <img src="docs/d.menu-e-service3v2.png">
                 <br>
                 <span class="font-e-service-25">รับฟังความคิดเห็น</span>
             </a>
         </div>
         <div class="col-2 text-center">
             <a href="<?php echo site_url('Pages/q_a'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service4.png">
+                <img src="docs/d.menu-e-service4v2.png">
                 <br>
                 <span class="font-e-service-25">กระทู้ ถาม-ตอบ</span>
             </a>
         </div>
         <div class="col-2 text-center">
             <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service5.png">
+                <img src="docs/d.menu-e-service5v2.png">
                 <br>
                 <span class="font-e-service-25">ยื่นเอกสารออรไลน์</span>
             </a>
         </div>
         <div class="col-2 text-center d-flex ">
             <a href="<?php echo site_url('Pages/pbsv_e_book'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service6.png">
+                <img src="docs/d.menu-e-service6v2.png">
                 <br>
                 <span class="font-e-service-25">แบบฟอร์ม e-Book</span>
             </a>
