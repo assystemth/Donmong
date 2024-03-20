@@ -1,6 +1,6 @@
 <div class="image-slide-stick-mid">
     <a href="https://itas.nacc.go.th/go/eit/8bjr7a" target="_blank">
-    <img src="docs/eit-slide-midv3.png">
+        <img src="docs/eit-slide-midv3.png">
     </a>
     <img src="docs/eit-slide-close.png" class="close-button-slide-mid" onclick="closeImageSlideMid()">
 </div>
@@ -258,10 +258,11 @@
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/lpa'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;LPA หรือการประเมิณประสิทธิภาพขององค์กร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปกครองส่วนท้องถิ่น</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/ita_all'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ITA การประเมิณคุณธรรมของหน่วยงานภาครัฐ</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_we'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;งานจริยธรรม</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_aditn'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;หน่วยตรวจสอบภายใน</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_mcc'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การจัดการเรื่องร้องเรียนการทุจริต</a></li>
                 </div>
                 <div class="dropdown-right">
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_sap'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การปฏิบัติงานและการให้บริการ</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_aditn'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ตรวจสอบภายใน</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_aa'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;กิจการสภา</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_spfct'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การลดขั้นตอนการปฏิบัติงาน</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_rpf'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานข้อมูลทางการเงิน</a></li>

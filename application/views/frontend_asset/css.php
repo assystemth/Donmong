@@ -476,6 +476,7 @@
 
   .mar-left-12 {
     margin-left: 12%;
+    margin-top: 12px;
   }
 
   .mar-left-8 {
@@ -484,6 +485,7 @@
 
   .mar-left-9 {
     margin-left: 9%;
+    margin-top: 12px;
   }
 
   .mar-left-7 {
@@ -496,6 +498,7 @@
 
   .mar-left-3 {
     margin-left: 3%;
+    margin-top: 12px;
   }
 
   .mar-top-19 {

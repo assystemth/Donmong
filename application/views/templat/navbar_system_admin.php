@@ -206,8 +206,8 @@
                         <a class="collapse-item" href="<?php echo site_url('P_rpo_backend'); ?>">รายงานผลการดำเนินงาน</a>
                         <a class="collapse-item" href="<?php echo site_url('P_reb_backend'); ?>">รายงานใช้จ่ายงบประมาณ</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_mcc_backend'); ?>">การจัดการเรื่องร้องเรียน<br>การทุจริต</a>
-                        <a class="collapse-item" href="<?php echo site_url('Operation_eg_backend'); ?>">ประมวลจริยธรรมสำหรับ<br>เจ้าหน้าที่ของรัฐ</a>
-                        <a class="collapse-item" href="<?php echo site_url('Operation_ameg_backend'); ?>">การประเมินจริยธรรม<br>เจ้าหน้าที่ของรัฐ</a>
+                        <!-- <a class="collapse-item" href="<?php echo site_url('Operation_eg_backend'); ?>">ประมวลจริยธรรมสำหรับ<br>เจ้าหน้าที่ของรัฐ</a>
+                        <a class="collapse-item" href="<?php echo site_url('Operation_ameg_backend'); ?>">การประเมินจริยธรรม<br>เจ้าหน้าที่ของรัฐ</a> -->
                     </div>
                 </div>
             </li>
