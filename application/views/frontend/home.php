@@ -87,7 +87,7 @@
 
 <div class="bg-main">
     <!-- แทบวิ่ง  -->
-    <img src="docs/d.item-news-top.png" width="272" height="81" style="position: absolute; z-index: 2; margin-top: -22px;">
+    <img src="docs/d.item-news-top.png" width="272" height="81" style="position: absolute; z-index: 4; margin-top: -22px;">
 
     <div class="tab-container">
         <?php
@@ -824,7 +824,7 @@
             <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>" class="zoom-otop">
                 <img src="docs/d.menu-e-service5v2.png">
                 <br>
-                <span class="font-e-service-25">ยื่นเอกสารออรไลน์</span>
+                <span class="font-e-service-25">ยื่นเอกสารออนไลน์</span>
             </a>
         </div>
         <div class="col-2 text-center d-flex ">

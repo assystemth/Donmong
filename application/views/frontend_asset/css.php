@@ -267,7 +267,7 @@
     /* top: -100px; */
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    z-index: 3;
     margin-left: 79px;
     margin-top: -15px;
   }
@@ -1373,7 +1373,7 @@
   .head-pages {
     background-image: url('<?php echo base_url("docs/d.head-pages1.png"); ?>');
     background-size: 100%;
-    width: 400px;
+    width: 420px;
     height: 95px;
     margin-top: 70px;
     text-align: center;
