@@ -116,7 +116,7 @@ class Home extends CI_Controller
 	private function loadApiData()
 	{
 		// URL of the Open API
-		$api_url = 'https://opend.data.go.th/govspending/cgdcontract?api-key=TH3JFBwJZlaXdDCpcVfSFGuoofCJ1heX&year=2566&dept_code=5400402&budget_start=0&budget_end=1000000000&offset=0&limit=500&keyword=&winner_tin=';
+		$api_url = 'https://opend.data.go.th/govspending/cgdcontract?api-key=TH3JFBwJZlaXdDCpcVfSFGuoofCJ1heX&year=2566&dept_code=6490105&budget_start=0&budget_end=1000000000&offset=0&limit=500&keyword=&winner_tin=';
 
 		// Configure options for the HTTP request
 		$options = [
