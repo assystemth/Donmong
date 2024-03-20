@@ -381,7 +381,7 @@
         <?php else : ?>
             <p>No video available</p>
         <?php endif; ?> -->
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/NhFwG6Dz_sg?si=KU6Vwv23GbhXPp8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/hlaZsKX_dEI?si=fzeCzwTfIMe0W88T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="d-flex justify-content-center mt-3">
         <a href="<?php echo site_url('pages/video'); ?>">
