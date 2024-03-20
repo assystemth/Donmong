@@ -11,10 +11,10 @@ class Member_backend extends CI_Controller
 		$this->load->model('member_model');
 		$this->load->model('position_model');
 		if (
-            $this->session->userdata('m_level') != 1 &&
-            $this->session->userdata('m_level') != 2 &&
-            $this->session->userdata('m_level') != 3 &&
-            $this->session->userdata('m_level') != 4
+			$this->session->userdata('m_level') != 1 &&
+			$this->session->userdata('m_level') != 2 &&
+			$this->session->userdata('m_level') != 3 &&
+			$this->session->userdata('m_level') != 4
 		) {
 			redirect('user', 'refresh');
 		}
@@ -149,6 +149,7 @@ class Member_backend extends CI_Controller
 	{
 		// print_r($_POST);
 		$this->member_model->deldata($m_id);
+		$this->session->set_flashdata('del_success', TRUE);
 		redirect('member_backend', 'refresh');
 	}
 
