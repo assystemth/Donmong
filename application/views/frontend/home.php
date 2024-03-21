@@ -48,7 +48,7 @@
     <div class="row mt-5">
         <div class="col-4">
             <div class="d-flex justify-content-center mt-4">
-                <a href="<?php echo site_url('Pages/_all'); ?>" class="zoom-otop">
+                <a href="<?php echo site_url('Pages/ita_all'); ?>" class="zoom-otop">
                     <img class="mark-logo" src="docs/k.menu-eservice-top1v2.png">
                 </a>
             </div>
