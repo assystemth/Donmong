@@ -1099,7 +1099,7 @@
     background: rgba(255, 255, 255, 0.50);
     box-shadow: 0px 0px 6.724px 0px rgba(0, 0, 0, 0.25);
     width: 917.108px;
-    height: 638.748px;
+    height: 500px;
     padding: 21.516px;
     gap: 6.724px;
     flex-shrink: 0;
@@ -1344,7 +1344,7 @@
   }
 
   .font-path-2 {
-    color: #FFD203;
+    color: #5A300C;
     font-family: Kanit;
     font-size: 17px;
     font-style: normal;
@@ -1423,7 +1423,7 @@
   } */
 
   .font-pages-head {
-    color: var(--main, #FFD203);
+    color: var(--main, #5A300C);
     text-shadow: 0px 2.685px 6.712px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 30px;
@@ -1434,7 +1434,7 @@
   }
 
   .font-pages-head-long {
-    color: var(--main, #FFD203);
+    color: var(--main, #5A300C);
     text-shadow: 0px 2.685px 6.712px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 26px;
@@ -1445,7 +1445,7 @@
   }
 
   .font-pages-head-long2 {
-    color: var(--main, #FFD203);
+    color: var(--main, #5A300C);
     text-shadow: 0px 2.685px 6.712px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 23px;
