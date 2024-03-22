@@ -267,7 +267,7 @@
     /* top: -100px; */
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    z-index: 3;
     margin-left: 79px;
     margin-top: -15px;
   }
@@ -286,7 +286,7 @@
     z-index: 1;
     animation: textRunUpdate 30s linear infinite;
     font-size: 19px;
-    color: #5A300C;
+    color: #FFD203;
   }
 
   @keyframes textRunUpdate {
@@ -359,10 +359,10 @@
   }
 
   .bg-activity {
-    background-image: url('<?php echo base_url("docs/d.bg-activity.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-activity3.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 674px;
+    height: 673px;
     width: 1280px;
     margin: auto;
   }
@@ -476,6 +476,7 @@
 
   .mar-left-12 {
     margin-left: 12%;
+    margin-top: 12px;
   }
 
   .mar-left-8 {
@@ -484,6 +485,7 @@
 
   .mar-left-9 {
     margin-left: 9%;
+    margin-top: 12px;
   }
 
   .mar-left-7 {
@@ -496,6 +498,7 @@
 
   .mar-left-3 {
     margin-left: 3%;
+    margin-top: 12px;
   }
 
   .mar-top-19 {
@@ -688,7 +691,7 @@
   }
 
   .bg-travel {
-    background-image: url('<?php echo base_url("docs/d.bg-travel2.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-travel3.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 1280px;
@@ -1341,7 +1344,7 @@
   }
 
   .font-path-2 {
-    color: #5A300C;
+    color: #FFD203;
     font-family: Kanit;
     font-size: 17px;
     font-style: normal;
@@ -1373,7 +1376,7 @@
   .head-pages {
     background-image: url('<?php echo base_url("docs/d.head-pages1.png"); ?>');
     background-size: 100%;
-    width: 400px;
+    width: 420px;
     height: 95px;
     margin-top: 70px;
     text-align: center;
@@ -1420,7 +1423,7 @@
   } */
 
   .font-pages-head {
-    color: var(--main, #5A300C);
+    color: var(--main, #FFD203);
     text-shadow: 0px 2.685px 6.712px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 30px;
@@ -1431,7 +1434,7 @@
   }
 
   .font-pages-head-long {
-    color: var(--main, #5A300C);
+    color: var(--main, #FFD203);
     text-shadow: 0px 2.685px 6.712px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 26px;
@@ -1442,7 +1445,7 @@
   }
 
   .font-pages-head-long2 {
-    color: var(--main, #5A300C);
+    color: var(--main, #FFD203);
     text-shadow: 0px 2.685px 6.712px rgba(0, 0, 0, 0.25);
     font-family: Kanit;
     font-size: 23px;
@@ -1645,7 +1648,7 @@
   }
 
   .font-q-a-chat-color {
-    color: #5A300C;
+    color: #FFD203;
     leading-trim: both;
     text-edge: cap;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -1671,7 +1674,7 @@
   }
 
   .font-contact-1 {
-    color: #5A300C;
+    color: #FFD203;
     text-align: center;
     font-family: Kanit;
     font-size: 24px;
@@ -1813,7 +1816,7 @@
   }
 
   .font-p-rank {
-    color: #5A300C;
+    color: #FFD203;
     font-family: Kanit;
     font-size: 22px;
     font-style: normal;
@@ -1832,7 +1835,7 @@
   }
 
   .font-head-all-web {
-    color: var(--main, #5A300C);
+    color: var(--main, #FFD203);
     font-family: Kanit;
     font-size: 22px;
     font-style: normal;
@@ -2015,7 +2018,7 @@
   }
 
   .span-time-pages-img-detail {
-    color: #5A300C;
+    color: #FFD203;
     text-align: center;
     leading-trim: both;
     text-edge: cap;
@@ -2048,7 +2051,7 @@
   }
 
   .span-time-q-a {
-    color: #5A300C;
+    color: #FFD203;
     font-family: Kanit;
     font-size: 16.078px;
     font-style: normal;
@@ -2130,10 +2133,17 @@
     font-weight: bold;
   }
 
-  .pagination .page-item.active .page-link {
-    background-color: #5A300C;
+  .pagination .page-item .page-link {
+    background-color: #FFF2B7;
     /* สีเขียว */
-    border-color: #5A300C;
+    border-color: #FFF2B7;
+    color: #FFD203;
+  }
+
+  .pagination .page-item.active .page-link {
+    background-color: #FFD203;
+    /* สีเขียว */
+    border-color: #FFD203;
     color: #fff;
   }
 
@@ -2167,7 +2177,7 @@
 
   .pagination .page-link:hover {
     color: #F1F3F7;
-    background-color: #07834D;
+    background-color: #FFD203;
   }
 
 
@@ -2479,7 +2489,7 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #888;
   }
-  
+
 
   /* scroll bar เลื่อนซ้ายขวา เลื่อนบนล่าง ****************************************************** */
 
@@ -2575,7 +2585,7 @@
   }
 
   select.custom-select {
-    color: #5A300C;
+    color: #FFD203;
     font-family: Kanit;
     font-size: 20.102px;
     font-style: normal;
@@ -2635,7 +2645,7 @@
   }
 
   .font-gi-head {
-    color: #5A300C;
+    color: #FFD203;
     font-family: Kanit;
     font-size: 24px;
     font-style: normal;

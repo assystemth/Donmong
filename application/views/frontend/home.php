@@ -1,6 +1,6 @@
 <div class="image-slide-stick-mid">
     <a href="https://itas.nacc.go.th/go/eit/8bjr7a" target="_blank">
-    <img src="docs/eit-slide-midv3.png">
+        <img src="docs/eit-slide-midv3.png">
     </a>
     <img src="docs/eit-slide-close.png" class="close-button-slide-mid" onclick="closeImageSlideMid()">
 </div>
@@ -48,7 +48,7 @@
     <div class="row mt-5">
         <div class="col-4">
             <div class="d-flex justify-content-center mt-4">
-                <a href="<?php echo site_url('Pages/_all'); ?>" class="zoom-otop">
+                <a href="<?php echo site_url('Pages/ita_all'); ?>" class="zoom-otop">
                     <img class="mark-logo" src="docs/k.menu-eservice-top1v2.png">
                 </a>
             </div>
@@ -87,7 +87,7 @@
 
 <div class="bg-main">
     <!-- แทบวิ่ง  -->
-    <img src="docs/d.item-news-top.png" width="272" height="81" style="position: absolute; z-index: 2; margin-top: -22px;">
+    <img src="docs/d.item-news-top.png" width="272" height="81" style="position: absolute; z-index: 4; margin-top: -22px;">
 
     <div class="tab-container">
         <?php
@@ -258,10 +258,11 @@
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/lpa'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;LPA หรือการประเมิณประสิทธิภาพขององค์กร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปกครองส่วนท้องถิ่น</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/ita_all'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ITA การประเมิณคุณธรรมของหน่วยงานภาครัฐ</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_we'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;งานจริยธรรม</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_aditn'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;หน่วยตรวจสอบภายใน</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_mcc'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การจัดการเรื่องร้องเรียนการทุจริต</a></li>
                 </div>
                 <div class="dropdown-right">
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_sap'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การปฏิบัติงานและการให้บริการ</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_aditn'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ตรวจสอบภายใน</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_aa'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;กิจการสภา</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_spfct'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การลดขั้นตอนการปฏิบัติงาน</a></li>
                     <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_rpf'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานข้อมูลทางการเงิน</a></li>
@@ -381,7 +382,7 @@
         <?php else : ?>
             <p>No video available</p>
         <?php endif; ?> -->
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/NhFwG6Dz_sg?si=KU6Vwv23GbhXPp8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/hlaZsKX_dEI?si=fzeCzwTfIMe0W88T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="d-flex justify-content-center mt-3">
         <a href="<?php echo site_url('pages/video'); ?>">
@@ -824,7 +825,7 @@
             <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>" class="zoom-otop">
                 <img src="docs/d.menu-e-service5v2.png">
                 <br>
-                <span class="font-e-service-25">ยื่นเอกสารออรไลน์</span>
+                <span class="font-e-service-25">ยื่นเอกสารออนไลน์</span>
             </a>
         </div>
         <div class="col-2 text-center d-flex ">

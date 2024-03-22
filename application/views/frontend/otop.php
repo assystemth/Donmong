@@ -93,11 +93,56 @@
                     </li>
                 <?php endif; ?>
 
-                <?php for ($i = 1; $i <= $totalPages; $i++) : ?>
-                    <li class="page-item <?php echo ($i == $currentPage) ? 'active' : ''; ?>">
-                        <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
-                    </li>
-                <?php endfor; ?>
+ <!-- แสดงปุ่ม "กลับไปหน้าแรก" ถ้าหน้าปัจจุบันไม่ได้ต่อเนื่องจากหน้าแรก -->
+                        <?php
+                        $numToShow = 3; // จำนวนปุ่มที่ต้องการแสดง
+                        $half = floor($numToShow / 2);
+
+                        // ปุ่มหน้าเริ่มต้น
+                        $startPage = max($currentPage - $half, 1);
+
+                        // ปุ่มหน้าสุดท้าย
+                        $endPage = min($startPage + $numToShow - 1, $totalPages);
+
+                        // แสดงปุ่ม "กลับไปหน้าแรก" ถ้าหน้าปัจจุบันไม่ได้ต่อเนื่องจากหน้าแรก
+                        if ($currentPage - $numToShow > -1) {
+                        ?>
+                            <li class="page-item pagination-item">
+                                <a class="page-link" href="?page=1">1</a>
+                            </li>
+                            <li class="page-item pagination-item disabled">
+                                <span class="page-link">...</span>
+                            </li>
+                        <?php
+                        }
+
+                        // แสดงปุ่มหน้า
+                        for ($i = $startPage; $i <= $endPage; $i++) {
+                        ?>
+                            <li class="page-item pagination-item <?php echo ($i == $currentPage) ? 'active' : ''; ?>">
+                                <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                            </li>
+                        <?php
+                        }
+
+                        // แสดงปุ่ม "..." ถ้าหน้าไม่ได้ต่อเนื่อง
+                        if ($endPage < $totalPages) {
+                        ?>
+                            <li class="page-item pagination-item disabled">
+                                <span class="page-link">...</span>
+                            </li>
+                        <?php
+                        }
+
+                        // แสดงปุ่มสุดท้าย
+                        if ($endPage < $totalPages) {
+                        ?>
+                            <li class="page-item pagination-item <?php echo ($totalPages == $currentPage) ? 'active' : ''; ?>">
+                                <a class="page-link" href="?page=<?php echo $totalPages; ?>"><?php echo $totalPages; ?></a>
+                            </li>
+                        <?php
+                        }
+                        ?>
 
                 <?php if ($currentPage < $totalPages) : ?>
                     <li class="page-item">
