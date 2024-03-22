@@ -172,6 +172,7 @@
         <div class="dropdown-content">
             <ul class="no-bullets mt-4">
                 <div class="dropdown-left">
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_sp_topic'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;มาตรฐานกำหนดตำแหน่ง</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/site_map'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;แผนผังโครงสร้างรวม</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_executives'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;คณะผู้บริหาร</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_council'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;สมาชิกสภา</a></li>

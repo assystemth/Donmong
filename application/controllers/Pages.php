@@ -46,6 +46,7 @@ class Pages extends CI_Controller
 		$this->load->model('p_cdc_bbj_model');
 		$this->load->model('p_cdc_bnry_model');
 		$this->load->model('p_cdc_bkc_model');
+		$this->load->model('p_sp_model');
 
 		$this->load->model('plan_pdl_model');
 		$this->load->model('plan_pc3y_model');
@@ -2856,6 +2857,60 @@ class Pages extends CI_Controller
 	public function increment_download_operation_cdm($operation_cdm_file_id)
 	{
 		$this->operation_cdm_model->increment_download_operation_cdm($operation_cdm_file_id);
+	}
+	public function p_sp_topic()
+	{
+		$data['query'] = $this->p_sp_model->p_sp_frontend_list_topic();
+
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/p_sp_topic', $data);
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+	public function p_sp($p_sp_type_id)
+	{
+		$data['query'] = $this->p_sp_model->p_sp_frontend_list($p_sp_type_id);
+
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/p_sp', $data);
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+	public function p_sp_detail($p_sp_id)
+	{
+		$this->p_sp_model->increment_view($p_sp_id);
+
+		$data['rsData'] = $this->p_sp_model->read($p_sp_id);
+
+		// เพิ่มเงื่อนไขเพื่อตรวจสอบว่ามีข้อมูลหรือไม่
+		if (!$data['rsData']) {
+			$this->load->view('frontend_templat/header');
+			$this->load->view('frontend_asset/css');
+			$this->load->view('frontend_templat/navbar');
+			$this->load->view('frontend/empty_detail_pages');
+			$this->load->view('frontend_asset/js');
+			$this->load->view('frontend_templat/footer');
+			return; // ให้จบการทำงานที่นี่
+		}
+
+		$data['rsFile'] = $this->p_sp_model->read_file($p_sp_id);
+		$data['rsImg'] = $this->p_sp_model->read_img($p_sp_id);
+
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/p_sp_detail', $data);
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+
+	public function increment_download_p_sp($p_sp_file_id)
+	{
+		$this->p_sp_model->increment_download_p_sp($p_sp_file_id);
 	}
 	public function operation_po()
 	{

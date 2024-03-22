@@ -11,7 +11,7 @@
                     <img src="<?= base_url('docs/k.logo.png'); ?>" alt="" width="64px" height="64px">
                 </div>
 
-                <div class="sidebar-brand-text mx-3">ธงธานี</div>
+                <div class="sidebar-brand-text mx-3">ทต.ดอนโมง</div>
             </a>
 
             <!-- Divider -->
@@ -91,6 +91,7 @@
                 <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!-- <h6 class="collapse-header">Custom Components:</h6> -->
+                        <a class="collapse-item" href="<?php echo site_url('P_sp_backend'); ?>">มาตรฐานกำหนดตำแหน่ง</a>
                         <a class="collapse-item" href="<?php echo site_url('Site_map_backend'); ?>">แผนผังโครงสร้างภาพรวม</a>
                         <a class="collapse-item" href="<?php echo site_url('P_executives_backend'); ?>">คณะผู้บริหาร</a>
                         <a class="collapse-item" href="<?php echo site_url('P_council_backend'); ?>">สมาชิกสภา</a>
