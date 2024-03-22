@@ -12,23 +12,24 @@
             <span class="font-pages-head">ติดต่อเทศบาล</span>
         </div>
     </div>
-    <div style="margin-top: -30px;" ></div>        
-    <div class="bg-pages-in ">
+    <div style="margin-top: -50px;" ></div>        
+    <div class="bg-pages-in">
         <div class="text-center">
             <img src="<?php echo base_url("docs\k.logo.png"); ?>" width="132px" height="133px">
             <br>
             <div class="mt-4">
                 <span class="font-contact-1">สำนักงานเทศบาลตำบลดอนโมง</span><br><br>
                 <span class="font-contact-2">ที่อยู่ : เลขที่ 99/9 หมู่ที่ 9 ถนนมลิวรรณ ตำบลบ้านกง อำเภอหนองเรือ จังหวัดขอนแก่น 40240 <br>
-                    โทรศัพท์ : 043-299471-2 ต่อ 22,23,18 <br>
-                    โทรสาร : 043-299471-2 ต่อ 22,23,18 <br>
-                    Facebook : <a href="https://www.facebook.com/donmongmuni/?ref=embed_page" target="_blank" rel="noopener noreferrer">เทศบาลตำบลดอนโมง</a>
+                    โทรศัพท์/โทรสาร : 043-299471-2 ต่อ 22,23,18 <br>
+                    อีเมล : saraban@donmong.go.th<br>
+                    Facebook : <a href="https://www.facebook.com/donmongmuni/?ref=embed_page" target="_blank" rel="noopener noreferrer">เทศบาลตำบลดอนโมง</a><br>
+                    Line : <br><img src="<?php echo base_url("docs\line.jpg"); ?>">
                 </span>
             </div>
             <div class="mt-5 mb-3">
                 <span class="font-contact-map">แผนที่หน่วยงาน</span>
             </div>
-            <iframe class="map-contact" width="873" height="594" frameborder="0" src="https://www.google.com/maps?q=สำนักงานเทศบาลตำบลดอนโมง&output=embed" allowfullscreen></iframe>
+            <iframe class="map-contact" width="873" height="400" frameborder="0" src="https://www.google.com/maps?q=สำนักงานเทศบาลตำบลดอนโมง&output=embed" allowfullscreen></iframe>
         </div>
     </div>
 </div>
