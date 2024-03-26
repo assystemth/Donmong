@@ -286,7 +286,7 @@
     animation: textRunUpdate 30s linear infinite;
     font-size: 19px;
     color: #5A300C;
-  } 
+  }
 
   @keyframes textRunUpdate {
     0% {
@@ -2553,22 +2553,20 @@
 
   .show .img-show {
     width: 1000px;
-    height: 700px;
+    height: 100%;
     background: #FFF;
     position: absolute;
-    /* เปลี่ยนเป็น position: absolute; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
     z-index: 999;
-
   }
 
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .show .img-show {
       width: 1000px;
-      height: 700px;
+      height: 100%;
       left: 50%;
       transform: translate(-50%, -50%);
       margin-top: 40%;
@@ -2576,11 +2574,12 @@
   }
 
   .img-show img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   select.custom-select {
