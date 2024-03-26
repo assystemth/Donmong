@@ -286,8 +286,8 @@
     z-index: 1;
     animation: textRunUpdate 30s linear infinite;
     font-size: 19px;
-    color: #FFD203;
-  }
+    color: #5A300C;
+  } 
 
   @keyframes textRunUpdate {
     0% {
@@ -768,7 +768,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     width: 1280px;
-    height: 1950px;
+    height: 1975px;
     z-index: 1;
   }
 
@@ -788,7 +788,7 @@
     -webkit-text-stroke-width: 0.30000001192092896;
     -webkit-text-stroke-color: #000;
     font-family: Kanit;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -2585,7 +2585,7 @@
   }
 
   select.custom-select {
-    color: #FFD203;
+    color: #5A300C;
     font-family: Kanit;
     font-size: 20.102px;
     font-style: normal;

@@ -1,9 +1,9 @@
-<div class="image-slide-stick-mid">
+<!-- <div class="image-slide-stick-mid">
     <a href="https://itas.nacc.go.th/go/eit/8bjr7a" target="_blank">
         <img src="docs/eit-slide-midv3.png">
     </a>
     <img src="docs/eit-slide-close.png" class="close-button-slide-mid" onclick="closeImageSlideMid()">
-</div>
+</div> -->
 <div class="welcome">
     <video width="1280" height="690" autoplay muted loop>
         <source src="<?php echo base_url("docs/video.mp4"); ?>" type="video/mp4">
@@ -794,46 +794,53 @@
         <span class="font-e-service-32">บริการยื่นคำร้องออนไลน์ 24 ชั่วโมง</span>
     </div> -->
     <div class="row d-flex justify-content-center underline" style="padding-top: 40px; padding-left: 50px; padding-right: 50px;">
-        <div class="col-2 text-center">
+        <div class="col text-center mx-4">
             <a href="<?php echo site_url('Pages/adding_complain'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service1v2.png">
+                <img src="docs/d.menu-e-service1v3.png">
                 <br>
-                <span class="font-e-service-25">แจ้งเรื่อง ร้องเรียน</span>
+                <span class="font-e-service-25">แจ้งเรื่องร้องเรียน</span>
             </a>
         </div>
-        <div class="col-2 text-center">
+        <div class="col text-center mx-4">
             <a href="<?php echo site_url('Pages/adding_corruption'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service2v2.png">
+                <img src="docs/d.menu-e-service2v3.png">
                 <br>
                 <span class="font-e-service-25">แจ้งเรื่องทุจริต</span>
             </a>
         </div>
-        <div class="col-2 text-center">
+        <div class="col text-center mx-4">
             <a href="<?php echo site_url('Pages/adding_suggestions'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service3v2.png">
+                <img src="docs/d.menu-e-service3v3.png">
                 <br>
                 <span class="font-e-service-25">รับฟังความคิดเห็น</span>
             </a>
         </div>
-        <div class="col-2 text-center">
+        <div class="col text-center mx-4">
             <a href="<?php echo site_url('Pages/q_a'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service4v2.png">
+                <img src="docs/d.menu-e-service4v3.png">
                 <br>
                 <span class="font-e-service-25">กระทู้ ถาม-ตอบ</span>
             </a>
         </div>
-        <div class="col-2 text-center">
+        <div class="col text-center mx-4">
             <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service5v2.png">
+                <img src="docs/d.menu-e-service5v3.png">
                 <br>
                 <span class="font-e-service-25">ยื่นเอกสารออนไลน์</span>
             </a>
         </div>
-        <div class="col-2 text-center d-flex ">
+        <div class="col text-center d-flex  mx-4">
             <a href="<?php echo site_url('Pages/pbsv_e_book'); ?>" class="zoom-otop">
-                <img src="docs/d.menu-e-service6v2.png">
+                <img src="docs/d.menu-e-service6v3.png">
                 <br>
                 <span class="font-e-service-25">แบบฟอร์ม e-Book</span>
+            </a>
+        </div>
+        <div class="col text-center d-flex  mx-4">
+            <a href="<?php echo site_url('Pages/pbsv_e_book'); ?>" class="zoom-otop">
+                <img src="docs/d.menu-e-service7v2.png">
+                <br>
+                <span class="font-e-service-25">E-mail ถึงเทศบาล</span>
             </a>
         </div>
     </div>
@@ -1025,7 +1032,7 @@
     </div>
     <div class="bg-links" style="margin-top: -30px;">
         <div class="text-center">
-            <img src="docs/d.head-links.png">
+            <img src="docs/d.head-links1.png">
         </div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">

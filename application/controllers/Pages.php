@@ -3672,6 +3672,35 @@ class Pages extends CI_Controller
 		redirect('Pages/adding_esv_ods');
 	}
 
+	public function sendEmail()
+	{
+		$this->load->library('email');
+
+		$email = $this->input->post('esv_ods_email');
+		$subject = $this->input->post('esv_ods_topic');
+		$message = $this->input->post('esv_ods_detail');
+		$filePath = $_FILES['esv_ods_file']['tmp_name']; // เก็บเส้นทางไฟล์ที่อัพโหลดแล้ว
+		$fileName = $_FILES['esv_ods_file']['name']; // ชื่อไฟล์
+
+		// Attach file to email
+		$this->email->attach($filePath, 'attachment', $fileName);
+
+		// Set email details
+		$this->email->from($email);
+		$this->email->to('admin@donmong.go.th');
+		$this->email->subject($subject);
+		$this->email->message($message);
+
+		// Send email
+		if ($this->email->send()) {
+			$this->session->set_flashdata('save_success', TRUE);
+			redirect('Pages/adding_esv_ods');
+		} else {
+			echo 'Email could not be sent. Error: ' . $this->email->print_debugger();
+		}
+	}
+
+
 	public function questions()
 	{
 		$data['query'] = $this->questions_model->list();
