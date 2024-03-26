@@ -114,8 +114,7 @@ class Q_a_model extends CI_Model
         // ถ้าไม่มีข้อมูลในฐานข้อมูลให้ทำการเพิ่มข้อมูล
         $data = array(
             'q_a_reply_ref_id' => $this->input->post('q_a_reply_ref_id'),
-            'q_a_reply_by' => $this->input->post('q_a_reply_by'),
-            'q_a_reply_email' => $this->input->post('q_a_reply_email'),
+            'q_a_reply_by' => $this->session->userdata('m_fname'),
             'q_a_reply_detail' => $this->input->post('q_a_reply_detail'),
         );
 

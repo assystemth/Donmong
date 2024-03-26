@@ -110,6 +110,9 @@
                     case 'esv_ods':
                         controllerUrl = '<?php echo site_url('Pages/adding_esv_ods'); ?>';
                         break;
+                    case 'emailto':
+                        controllerUrl = '<?php echo site_url('Pages/emailto'); ?>';
+                        break;
                 }
 
                 console.log('Controller URL:', controllerUrl);

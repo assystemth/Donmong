@@ -837,7 +837,7 @@
             </a>
         </div>
         <div class="col text-center d-flex  mx-4">
-            <a href="<?php echo site_url('Pages/pbsv_e_book'); ?>" class="zoom-otop">
+            <a href="<?php echo site_url('Pages/emailto'); ?>" class="zoom-otop">
                 <img src="docs/d.menu-e-service7v2.png">
                 <br>
                 <span class="font-e-service-25">E-mail ถึงเทศบาล</span>

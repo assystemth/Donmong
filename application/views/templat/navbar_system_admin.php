@@ -51,8 +51,6 @@
                         <a class="collapse-item" href="<?php echo site_url('news_backend'); ?>">ข้อมูลข่าวประชาสัมพันธ์</a>
                         <a class="collapse-item" href="<?php echo site_url('procurement_backend'); ?>">ข่าวจัดซื้อจัดจ้าง</a>
                         <a class="collapse-item" href="<?php echo site_url('Newsletter_backend'); ?>">จดหมายข่าว</a>
-                        <a class="collapse-item" href="<?php echo site_url('Q_a_backend'); ?>">กระทู้ถาม-ตอบ</a>
-                        <a class="collapse-item" href="<?php echo site_url('Questions_backend'); ?>">คำถามที่พบบ่อย</a>
                         <a class="collapse-item" href="<?php echo site_url('Publicize_ita_backend'); ?>">ประชาสัมพันธ์ ITA</a>
                         <!-- <a class="collapse-item" href="<?php echo site_url('Form_esv_backend'); ?>">แบบฟอร์ม E-service</a> -->
                     </div>
@@ -168,9 +166,9 @@
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_ahs_backend'); ?>">หลักประกันสุขภาพเทศบาล</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_sags_backend'); ?>">คู่มือและ<br>มาตราฐานการให้บริการ</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_gup_backend'); ?>">คู่มือสำหรับประชาชน</a>
-                        <a class="collapse-item" href="<?php echo site_url('Pbsv_e_book_backend'); ?>">ดาวโหลดแบบฟอร์ม E-book</a> 
-                        <a class="collapse-item" href="<?php echo site_url('Pbsv_ckl_backend'); ?>">ศูนย์การจัดการความรู้</a> 
-                        <a class="collapse-item" href="<?php echo site_url('Pbsv_cosr_backend'); ?>">ศูนย์ปฏิบัติการความปลอดภัยทางถนน</a> 
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_e_book_backend'); ?>">ดาวโหลดแบบฟอร์ม E-book</a>
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_ckl_backend'); ?>">ศูนย์การจัดการความรู้</a>
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_cosr_backend'); ?>">ศูนย์ปฏิบัติการความปลอดภัยทางถนน</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_hkl_backend'); ?>">คลังความรู้ / แผ่นพับประชาสัมพันธ์</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_gbo_backend'); ?>"> คู่มือผลประโยชน์ทับซ้อน</a>
                     </div>
@@ -231,8 +229,8 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseeight')">
-                    <img src="<?= base_url('docs/btn-bend10.png'); ?>">
-                    <span>เรื่องร้องเรียน</span>
+                    <img src="<?= base_url('docs/btn-bend10v2.png'); ?>">
+                    <span>E-service</span>
                 </a>
                 <div id="collapseeight" class="collapse" aria-labelledby="headingeight" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -241,6 +239,9 @@
                         <a class="collapse-item" href="<?php echo site_url('Corruption_backend'); ?>">แจ้งเรื่องทุจริต<br>หน่วยงานภาครัฐ</a>
                         <a class="collapse-item" href="<?php echo site_url('Suggestions_backend'); ?>">รับฟังความคิดเห็น<br>และข้อเสนอแนะ</a>
                         <a class="collapse-item" href="<?php echo site_url('Esv_ods_backend'); ?>">ยื่นเรื่องออนไลน์</a>
+                        <a class="collapse-item" href="<?php echo site_url('Q_a_backend'); ?>">กระทู้ถาม-ตอบ</a>
+                        <a class="collapse-item" href="<?php echo site_url('Questions_backend'); ?>">คำถามที่พบบ่อย</a>
+                        <a class="collapse-item" href="<?php echo site_url('Emailto_backend'); ?>">E-mail ถึงเทศบาล</a>
                     </div>
                 </div>
             </li>

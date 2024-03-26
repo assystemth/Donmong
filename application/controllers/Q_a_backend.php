@@ -7,7 +7,7 @@ class Q_a_backend extends CI_Controller
     {
         parent::__construct();
         if (
-                        $this->session->userdata('m_level') != 1 &&
+            $this->session->userdata('m_level') != 1 &&
             $this->session->userdata('m_level') != 2 &&
             $this->session->userdata('m_level') != 3 &&
             $this->session->userdata('m_level') != 4
@@ -60,5 +60,23 @@ class Q_a_backend extends CI_Controller
         header('Content-Type: application/json');
         echo json_encode($response);
         $this->session->set_flashdata('del_success', TRUE);
+    }
+
+    public function adding_reply_q_a($q_a_id)
+    {
+        $data['rsedit'] = $this->q_a_model->read($q_a_id);
+
+        $this->load->view('templat/header');
+        $this->load->view('asset/css');
+        $this->load->view('templat/navbar_system_admin');
+        $this->load->view('system_admin/reply_q_a', $data);
+        $this->load->view('asset/js');
+        $this->load->view('templat/footer');
+    }
+
+    public function add_reply_q_a()
+    {
+        $this->q_a_model->add_reply_q_a();
+        redirect('Q_a_backend', 'refresh');
     }
 }

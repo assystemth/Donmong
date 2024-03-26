@@ -131,6 +131,7 @@ class Pages extends CI_Controller
 		$this->load->model('laws_la_model');
 		$this->load->model('form_esv_model');
 		$this->load->model('esv_ods_model');
+		$this->load->model('emailto_model');
 		$this->load->model('ita_year_model');
 		$this->load->model('km_model');
 		$this->load->model('eitiit_model');
@@ -3672,15 +3673,27 @@ class Pages extends CI_Controller
 		redirect('Pages/adding_esv_ods');
 	}
 
-	public function sendEmail()
+	public function emailto()
 	{
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/emailto');
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+
+	public function add_emailto()
+	{
+		$this->emailto_model->add_emailto();
+
 		$this->load->library('email');
 
-		$email = $this->input->post('esv_ods_email');
-		$subject = $this->input->post('esv_ods_topic');
-		$message = $this->input->post('esv_ods_detail');
-		$filePath = $_FILES['esv_ods_file']['tmp_name']; // เก็บเส้นทางไฟล์ที่อัพโหลดแล้ว
-		$fileName = $_FILES['esv_ods_file']['name']; // ชื่อไฟล์
+		$email = $this->input->post('emailto_email');
+		$subject = $this->input->post('emailto_topic');
+		$message = $this->input->post('emailto_detail');
+		$filePath = $_FILES['emailto_file']['tmp_name']; // เก็บเส้นทางไฟล์ที่อัพโหลดแล้ว
+		$fileName = $_FILES['emailto_file']['name']; // ชื่อไฟล์
 
 		// Attach file to email
 		$this->email->attach($filePath, 'attachment', $fileName);
@@ -3694,7 +3707,7 @@ class Pages extends CI_Controller
 		// Send email
 		if ($this->email->send()) {
 			$this->session->set_flashdata('save_success', TRUE);
-			redirect('Pages/adding_esv_ods');
+			redirect('Pages/adding_emailto');
 		} else {
 			echo 'Email could not be sent. Error: ' . $this->email->print_debugger();
 		}

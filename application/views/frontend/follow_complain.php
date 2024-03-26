@@ -25,11 +25,11 @@
     </div>
     <div class="container-pages-news">
         <div class="page-center">
-            <div class="head-pages">
+            <div class="head-pages-two">
                 <span class="font-pages-head">ติดตามสถานะเรื่องร้องเรียน</span>
             </div>
         </div>
-        <div class="bg-pages-in-e-service-flcp ">
+        <div class="bg-pages-in-e-service-flcp">
             <div class="pages-follow-complain underline">
                 <form action=" <?php echo site_url('Pages/follow_complain'); ?> " method="post" class="form-horizontal" enctype="multipart/form-data">
                     <div class="form-group">

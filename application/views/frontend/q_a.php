@@ -20,7 +20,7 @@
             </div>
             <?php
             $count = count($query);
-            $itemsPerPage = 12; // จำนวนรายการต่อหน้า
+            $itemsPerPage = 10; // จำนวนรายการต่อหน้า
             $totalPages = ceil($count / $itemsPerPage);
 
             $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;

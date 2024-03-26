@@ -53,7 +53,7 @@
             </div>
             <?php
             $count = count($rsReply);
-            $itemsPerPage = 12; // จำนวนรายการต่อหน้า
+            $itemsPerPage = 4; // จำนวนรายการต่อหน้า
             $totalPages = ceil($count / $itemsPerPage);
 
             $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -74,7 +74,7 @@
                 <div class="pages-select-q_a mt-4">
                     <div class="row">
                         <div class="col-2">
-                            <span class="color-q-a font-label-e-service-complainb"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <span class="color-q-a font-label-e-service-complain"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
                                 </svg>&nbsp;ผู้ตอบ</span>
                         </div>
@@ -117,13 +117,13 @@
                         </li>
                     <?php endif; ?>
 
-                    <?php for ($i = 1; $i <= $totalPages; $i++) : ?>
-                        <li class="page-item <?php echo ($i == $currentPage) ? 'active' : ''; ?>">
-                            <a class="page-link" href="?page=<?php echo $i; ?>">
-                                <?php echo $i; ?>
-                            </a>
-                        </li>
-                    <?php endfor; ?>
+                    <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                    <li class="page-item <?php echo ($i == $currentPage) ? 'active' : ''; ?>">
+                        <a class="page-link" href="?page=<?php echo $i; ?>">
+                            <?php echo $i; ?>
+                        </a>
+                    </li>
+                <?php endfor; ?>
 
                     <?php if ($currentPage < $totalPages) : ?>
                         <li class="page-item">
@@ -183,6 +183,9 @@
                 <a href="<?php echo site_url('Pages/q_a'); ?>"><img src="<?php echo base_url("docs/k.btn-back.png"); ?>"></a>
             </div>
         </div>
+        <div class="margin-top-delete-topic d-flex justify-content-end">
+                <a href="<?php echo site_url('Pages/q_a'); ?>"><img src="<?php echo base_url("docs/k.btn-back.png"); ?>"></a>
+            </div>
     </div>
 </div>
 

@@ -200,7 +200,7 @@
   }
 
   .color-q-a {
-    color: #005930;
+    color: #5A300C;
     leading-trim: both;
     text-edge: cap;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -209,7 +209,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 13.398px;
-    /* 66.667% */
   }
 
   /* ******************************************************************************* */
@@ -764,7 +763,7 @@
   }
 
   .bg-page-bottom {
-    background-image: url('<?php echo base_url("docs/d.bg-page-btm3.jpg"); ?>');
+    background-image: url('<?php echo base_url("docs/d.bg-page-btm4.jpg"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 1280px;
@@ -1648,7 +1647,7 @@
   }
 
   .font-q-a-chat-color {
-    color: #FFD203;
+    color: #5A300C;
     leading-trim: both;
     text-edge: cap;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -1674,7 +1673,7 @@
   }
 
   .font-contact-1 {
-    color: #FFD203;
+    color: #5A300C;
     text-align: center;
     font-family: Kanit;
     font-size: 24px;
@@ -2018,7 +2017,7 @@
   }
 
   .span-time-pages-img-detail {
-    color: #FFD203;
+    color: #693708;
     text-align: center;
     leading-trim: both;
     text-edge: cap;
@@ -2051,7 +2050,7 @@
   }
 
   .span-time-q-a {
-    color: #FFD203;
+    color: #693708;
     font-family: Kanit;
     font-size: 16.078px;
     font-style: normal;
