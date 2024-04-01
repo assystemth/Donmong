@@ -264,6 +264,11 @@
                     </div>
                 </div>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://webmail.donmong.go.th">
+                    <img src="<?= base_url('docs/btn-bend15.png'); ?>">
+                    <span>E-mail</span></a>
+            </li>
             <!-- <li class="nav-item">
                 <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapsenine')">
                     <img src="<?= base_url('docs/btn-bend11.png'); ?>">

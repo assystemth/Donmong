@@ -1834,7 +1834,7 @@
   }
 
   .font-head-all-web {
-    color: var(--main, #FFD203);
+    color: var(--main, #520b74);
     font-family: Kanit;
     font-size: 22px;
     font-style: normal;
