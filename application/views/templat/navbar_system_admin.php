@@ -11,7 +11,7 @@
                     <img src="<?= base_url('docs/k.logo.png'); ?>" alt="" width="64px" height="64px">
                 </div>
 
-                <div class="sidebar-brand-text mx-3">ทต.ดอนโมง</div>
+                <div class="sidebar-brand-text mx-3" style="Color:#000;">ทต.ดอนโมง</div>
             </a>
 
             <!-- Divider -->
@@ -19,13 +19,13 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo site_url('System_admin'); ?>">
-                    <img src="<?= base_url('docs/btn-bend1.png'); ?>">
+                <a class="nav-link" style="Color:#000;" href="<?php echo site_url('System_admin'); ?>">
+                    <img src="<?= base_url('docs/btn-bend-back1.png'); ?>">
                     <span>หน้าหลัก</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo site_url('Member_backend'); ?>">
-                    <img src="<?= base_url('docs/btn-bend2.png'); ?>">
+                <a class="nav-link" style="Color:#000;" href="<?php echo site_url('Member_backend'); ?>">
+                    <img src="<?= base_url('docs/btn-bend-back2.png'); ?>">
                     <span>จัดการสมาชิก</span></a>
             </li>
 
@@ -38,8 +38,8 @@
             </div> -->
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseTwo')">
-                    <img src="<?= base_url('docs/btn-bend3.png'); ?>">
+                <a class="nav-link collapsed" style="Color:#000;" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseTwo')">
+                    <img src="<?= base_url('docs/btn-bend-back3.png'); ?>">
                     <span>จัดการข้อมูล</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -57,8 +57,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseOne')">
-                    <img src="<?= base_url('docs/btn-bend4.png'); ?>">
+                <a class="nav-link collapsed" style="Color:#000;" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseOne')">
+                    <img src="<?= base_url('docs/btn-bend-back4.png'); ?>">
                     <span>ข้อมูลทั่วไป</span>
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
@@ -83,8 +83,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapsethree')">
-                    <img src="<?= base_url('docs/btn-bend5.png'); ?>">
+                <a class="nav-link collapsed" style="Color:#000;" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapsethree')">
+                    <img src="<?= base_url('docs/btn-bend-back5.png'); ?>">
                     <span>โครงสร้างบุคลากร</span>
                 </a>
                 <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionSidebar">
@@ -105,8 +105,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapsefour')">
-                    <img src="<?= base_url('docs/btn-bend6.png'); ?>">
+                <a class="nav-link collapsed" style="Color:#000;" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapsefour')">
+                    <img src="<?= base_url('docs/btn-bend-back6.png'); ?>">
                     <span>แผนงาน</span>
                 </a>
                 <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionSidebar">
@@ -131,8 +131,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapsefive')">
-                    <img src="<?= base_url('docs/btn-bend7.png'); ?>">
+                <a class="nav-link collapsed" style="Color:#000;" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapsefive')">
+                    <img src="<?= base_url('docs/btn-bend-back7.png'); ?>">
                     <span>ข้อมูลเทศบัญญัติ</span>
                 </a>
                 <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionSidebar">
@@ -151,8 +151,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapsesix')">
-                    <img src="<?= base_url('docs/btn-bend8.png'); ?>">
+                <a class="nav-link collapsed" style="Color:#000;" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapsesix')">
+                    <img src="<?= base_url('docs/btn-bend-back8.png'); ?>">
                     <span>บริการประชาชน</span>
                 </a>
                 <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionSidebar">
@@ -168,18 +168,18 @@
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_gup_backend'); ?>">คู่มือสำหรับประชาชน</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_e_book_backend'); ?>">ดาวโหลดแบบฟอร์ม E-book</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_ckl_backend'); ?>">ศูนย์การจัดการความรู้</a>
-                        <a class="collapse-item" href="<?php echo site_url('Pbsv_cosr_backend'); ?>">ศูนย์ปฏิบัติการความปลอดภัยทางถนน</a>
-                        <a class="collapse-item" href="<?php echo site_url('Pbsv_hkl_backend'); ?>">คลังความรู้ / แผ่นพับประชาสัมพันธ์</a>
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_cosr_backend'); ?>">ศูนย์ปฏิบัติการความปลอด<br>ภัยทางถนน</a>
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_hkl_backend'); ?>">คลังความรู้ / แผ่นพับประชา<br>สัมพันธ์</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_gbo_backend'); ?>"> คู่มือผลประโยชน์ทับซ้อน</a>
                     </div>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseseven')">
-                    <img src="<?= base_url('docs/btn-bend9.png'); ?>">
+                <a class="nav-link collapsed" style="Color:#000;" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseseven')">
+                    <img src="<?= base_url('docs/btn-bend-back9.png'); ?>">
                     <span>การดำเนินงาน</span>
                 </a>
-                <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordionSidebar">
+                <div id="collapseseven" style="Color:#000;" class="collapse" aria-labelledby="headingseven" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!-- <h6 class="collapse-header">Custom Components:</h6> -->
                         <a class="collapse-item" href="<?php echo site_url('Operation_reauf_backend'); ?>">รายงานติดตาม<br>และประเมินผลแผนฯ</a>
@@ -212,8 +212,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseeleven')">
-                    <img src="<?= base_url('docs/btn-bend14.png'); ?>">
+                <a class="nav-link collapsed" style="Color:#000;" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseeleven')">
+                    <img src="<?= base_url('docs/btn-bend-back10.png'); ?>">
                     <span>มาตรการภายใน</span>
                 </a>
                 <div id="collapseeleven" class="collapse" aria-labelledby="headingeleven" data-parent="#accordionSidebar">
@@ -228,8 +228,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseeight')">
-                    <img src="<?= base_url('docs/btn-bend10v2.png'); ?>">
+                <a class="nav-link collapsed" style="Color:#000;" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseeight')">
+                    <img src="<?= base_url('docs/btn-bend10v2-black.png'); ?>">
                     <span>E-service</span>
                 </a>
                 <div id="collapseeight" class="collapse" aria-labelledby="headingeight" data-parent="#accordionSidebar">
@@ -246,8 +246,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseten')">
-                    <img src="<?= base_url('docs/btn-bend13.png'); ?>">
+                <a class="nav-link collapsed" style="Color:#000;" data-toggle="collapse" aria-expanded="true" href="javascript:void(0);" onclick="toggleCollapse('collapseten')">
+                    <img src="<?= base_url('docs/btn-bend-back11.png'); ?>">
                     <span>กฏหมาย</span>
                 </a>
                 <div id="collapseten" class="collapse" aria-labelledby="headingnine" data-parent="#accordionSidebar">
@@ -264,9 +264,9 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://webmail.donmong.go.th">
-                    <img src="<?= base_url('docs/btn-bend15.png'); ?>">
+			            <li class="nav-item">
+                <a class="nav-link" style="Color:#000;" target="_blank" href="https://webmail.donmong.go.th">
+                    <img src="<?= base_url('docs/btn-bend-back15.png'); ?>">
                     <span>E-mail</span></a>
             </li>
             <!-- <li class="nav-item">
