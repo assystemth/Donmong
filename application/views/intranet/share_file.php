@@ -75,7 +75,7 @@
             <div class="col-sm-4 mt-2">
                 <div class="box-folder mb-4">
                     <div class="align-items-center">
-                        <a href="<?= site_url('Intra_share_file/sf_executives'); ?>" class="underline">
+                        <a href="<?= site_url('Intra_share_file/sf_executive'); ?>" class="underline">
                             <img src="<?php echo base_url("docs/intranet/folder.png"); ?>" width="auto" style="max-width: 100%;">
                             <span class="font-folder mx-3">คณะผู้บริหาร</span>
                         </a>
