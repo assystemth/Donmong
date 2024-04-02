@@ -4,12 +4,12 @@
             <span class="font-path-1 underline"><a href="<?php echo site_url('Home'); ?>">หน้าแรก</a></span>
         </div>
         <div class="path2-2">
-            <span class="font-path-2 underline"><a href="#">ข่าวจัดซื้อจัดจ้าง</a></span>
+            <span class="font-path-2 underline"><a href="#">การดำเนินงาน</a></span>
         </div>
     </div>
     <div class="page-center">
     <div class="head-pages-three">
-                <span class="font-pages-head">รายงานผลการดำเนินการ</span>
+                <span class="font-pages-head">รายงานผลการดำเนินงาน</span>
             </div>
     </div>
     <div class="bg-pages-in ">
