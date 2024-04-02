@@ -240,25 +240,25 @@ class Member_model extends CI_Model
         $this->db->where('m_id', $m_id);
         $this->db->update('tbl_member', $data);
 
-        // ตรวจสอบ session สำหรับสมาชิกที่เข้าสู่ระบบ
-        $current_member_data = $this->db->get_where('tbl_member', array('m_id' => $m_id))->row();
+        // // ตรวจสอบ session สำหรับสมาชิกที่เข้าสู่ระบบ
+        // $current_member_data = $this->db->get_where('tbl_member', array('m_id' => $m_id))->row();
 
-        if (
-            $current_member_data->m_id == $this->session->userdata('m_id') &&
-            $current_member_data->m_fname == $this->session->userdata('m_fname') &&
-            $current_member_data->m_img == $this->session->userdata('m_img')
-        ) {
-            // ไม่ต้องทำอะไรเพราะข้อมูล session ปัจจุบันตรงกับฐานข้อมูล
-        } else {
-            // ทำการอัพเดต session หลังจากอัพเดตข้อมูลในฐานข้อมูล
-            $updated_member_data = array(
-                'm_id' => $current_member_data->m_id,
-                'm_fname' => $current_member_data->m_fname,
-                'm_img' => $current_member_data->m_img,
-            );
-            $this->session->set_userdata($updated_member_data);
-        }
-        // ลบถึงตรงนี้ 
+        // if (
+        //     $current_member_data->m_id == $this->session->userdata('m_id') &&
+        //     $current_member_data->m_fname == $this->session->userdata('m_fname') &&
+        //     $current_member_data->m_img == $this->session->userdata('m_img')
+        // ) {
+        //     // ไม่ต้องทำอะไรเพราะข้อมูล session ปัจจุบันตรงกับฐานข้อมูล
+        // } else {
+        //     // ทำการอัพเดต session หลังจากอัพเดตข้อมูลในฐานข้อมูล
+        //     $updated_member_data = array(
+        //         'm_id' => $current_member_data->m_id,
+        //         'm_fname' => $current_member_data->m_fname,
+        //         'm_img' => $current_member_data->m_img,
+        //     );
+        //     $this->session->set_userdata($updated_member_data);
+        // }
+        // // ลบถึงตรงนี้ 
 
         $this->space_model->update_server_current();
         $this->session->set_flashdata('save_success', TRUE);

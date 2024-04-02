@@ -175,10 +175,10 @@
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_sp_topic'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;มาตรฐานกำหนดตำแหน่ง</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/site_map'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;แผนผังโครงสร้างรวม</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_executives'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;คณะผู้บริหาร</a></li>
-                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_council'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;สมาชิกสภา</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_council'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;สมาชิกสภาเทศบาล</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_unit_leaders'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;หัวหน้าส่วนราชการ</a></li>
-                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_learder'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ผู้นำชุมชน</a></li>
-                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_deputy'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;สำนักปลัด</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_learder'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ผู้นำชุมชนและผู้นำชุมชน</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/p_deputy'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;สำนักปลัดเทศบาล</a></li>
                 </div>
                 <div class="dropdown-center">
                     <li><a class="mar-left-3 dropdown-item" href="<?php echo site_url('Pages/p_treasury'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;กองคลัง</a></li>

@@ -47,7 +47,7 @@
                             <div class="mt-1"></div>
                             <a href="<?php echo site_url('Pages/msg_prem'); ?>" class="font-content-all-web">สารจากปลัด</a><br>
                             <div class="mt-1"></div>
-                            <a href="<?php echo site_url('Pages/contact'); ?>" class="font-content-all-web">ติดต่อเรา</a><br>
+                            <a href="<?php echo site_url('Pages/contact'); ?>" class="font-content-all-web">ติดต่อเทศบาล</a><br>
                         </div>
                     </div>
 
@@ -186,13 +186,13 @@
                             <div class="mt-1"></div>
                             <a href="<?php echo site_url('Pages/p_executives'); ?>" class="font-content-all-web">คณะผู้บริหาร</a><br>
                             <div class="mt-1"></div>
-                            <a href="<?php echo site_url('Pages/p_council'); ?>" class="font-content-all-web">สมาชิกสภาตำบล</a><br>
+                            <a href="<?php echo site_url('Pages/p_council'); ?>" class="font-content-all-web">สมาชิกสภาเทศบาล</a><br>
                             <div class="mt-1"></div>
                             <a href="<?php echo site_url('Pages/p_unit_leaders'); ?>" class="font-content-all-web">หัวหน้าส่วนราชการ</a><br>
                             <div class="mt-1"></div>
-                            <a href="<?php echo site_url('Pages/p_learder'); ?>" class="font-content-all-web">ผู้นำชุมชน</a><br>
+                            <a href="<?php echo site_url('Pages/p_learder'); ?>" class="font-content-all-web">ผู้นำชุมชนและผู้ใหญ่บ้าน</a><br>
                             <div class="mt-1"></div>
-                            <a href="<?php echo site_url('Pages/p_deputy'); ?>" class="font-content-all-web">สำนักปลัดองค์การบริหารส่วนตำบล</a><br>
+                            <a href="<?php echo site_url('Pages/p_deputy'); ?>" class="font-content-all-web">สำนักปลัดเทศบาล</a><br>
                             <div class="mt-1"></div>
                             <a href="<?php echo site_url('Pages/p_treasury'); ?>" class="font-content-all-web">กองคลัง</a><br>
                             <div class="mt-1"></div>

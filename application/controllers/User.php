@@ -88,24 +88,9 @@ class User extends CI_Controller
 				return 'System_admin';
 			case 2:
 				return 'System_admin';
-			case 3:
-				return 'System_admin';
-			case 4:
-				return 'System_admin';
-			case 5:
-				return 'System_admin';
-			case 6:
-				return 'System_admin';
-			case 7:
-				return 'System_admin';
-			case 8:
-				return 'System_admin';
-			case 9:
-				return 'System_admin';
-			case 10:
-				return 'System_admin';
 			default:
-				return 'Home/login'; // หากไม่พบระดับผู้ใช้งานที่เกี่ยวข้องกับการเด้ง
+			$this->logout(); // เรียกใช้ฟังก์ชั่น logout หากไม่พบระดับผู้ใช้งานที่เกี่ยวข้องกับการเด้ง
+			return 'Home/login';
 		}
 	}
 
