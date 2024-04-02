@@ -91,7 +91,7 @@
                                         <td><?php echo $rs->m_fname . ' ' . $rs->m_lname; ?></td>
                                         <td><?php echo $rs->m_email; ?></td>
                                         <td><?php echo $rs->m_phone; ?></td>
-                                        <td>
+                                        <!-- <td>
                                             <?php if ($_SESSION['m_level'] == 1 || $_SESSION['m_level'] == 2) : ?>
                                                 <?php if ($rs->pname !== 'Super Admin') { ?>
                                                     <?php if ($rs->m_status == 1) { ?>
@@ -101,7 +101,7 @@
                                                     <?php } ?>
                                                 <?php } ?>
                                             <?php endif; ?>
-                                        </td>
+                                        </td> -->
                                         <td>
                                             <?php if ($rs->pname !== 'Super Admin') : ?>
                                                 <!-- ทำสิ่งที่คุณต้องการทำเมื่อไม่ใช่ 'System Admin' และไม่ใช่ 'Super Admin' -->
