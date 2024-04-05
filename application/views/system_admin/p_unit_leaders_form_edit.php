@@ -8,7 +8,7 @@
                 <div class="form-group row">
                     <div class="col-sm-2 control-label">ชื่อ</div>
                     <div class="col-sm-5">
-                        <input type="text" name="p_unit_leaders_name" required class="form-control" value="<?= $rsedit->p_unit_leaders_name; ?>">
+                        <input type="text" name="p_unit_leaders_name" class="form-control" value="<?= $rsedit->p_unit_leaders_name; ?>">
                         <span class="fr">กรุณากรอกคำนำหน้า<?= form_error('p_unit_leaders_name'); ?></span>
                     </div>
                 </div>
@@ -24,28 +24,11 @@
                 <div class="form-group row">
                     <div class="col-sm-2 control-label">เบอร์มือถือ</div>
                     <div class="col-sm-4">
-                        <input type="text" pattern="\d{9,10}" title="กรุณากรอกเบอร์มือถือเป็นตัวเลข 9 หรือ 10 ตัว" name="p_unit_leaders_phone" class="form-control" value="<?= $rsedit->p_unit_leaders_phone; ?>">
+                        <input type="text" name="p_unit_leaders_phone" class="form-control" value="<?= $rsedit->p_unit_leaders_phone; ?>" pattern="\d{9,10}" title="กรุณากรอกเบอร์มือถือเป็นตัวเลข 9 หรือ 10 ตัว">
                         <span class="fr"><?= form_error('p_unit_leaders_phone'); ?></span>
                     </div>
                 </div>
                 <br>
-                <?php if ($rsedit->p_unit_leaders_id != 1) : ?>
-                    <div class="form-group row">
-                        <div class="col-sm-2 control-label">ตำแหน่งในการแสดงผล</div>
-                        <div class="col-sm-4">
-                            <select class="form-control" id="p_unit_leaders_column" name="p_unit_leaders_column">
-                                <option value="<?php echo $rsedit->p_unit_leaders_column; ?>"><?php echo $rsedit->p_unit_leaders_column; ?></option>
-                                <option value="" disabled>เลือกข้อมูล</option>
-                                <?php
-                                for ($i = 1; $i <= 100; $i++) {
-                                    echo "<option value=\"$i\">$i</option>";
-                                }
-                                ?>
-                            </select>
-                        </div>
-                    </div>
-                    <br>
-                <?php endif; ?>
                 <div class="form-group row">
                     <div class="col-sm-2 control-label">ไฟล์รูป</div>
                     <div class="col-sm-6">
@@ -53,7 +36,7 @@
                         <?php if (!empty($rsedit->p_unit_leaders_img)) : ?>
                             <img src="<?= base_url('docs/img/' . $rsedit->p_unit_leaders_img); ?>" width="180px" height="220px">
                         <?php else : ?>
-                            <img src="<?= base_url('docs/k.logo.png'); ?>" width="180px" height="220px">
+                            <img src="<?= base_url('docs/ex_personnel.png'); ?>" width="180px" height="220px">
                         <?php endif; ?>
                         <br>
                         เลือกใหม่
@@ -69,7 +52,26 @@
                         <div class="col-sm-2 control-label"></div>
                         <div class="col-sm-10">
                             <button type="submit" class="btn btn-success">บันทึกข้อมูล</button>
-                            <a class="btn btn-danger" href="<?php echo site_url('p_unit_leaders_backend'); ?>">ยกเลิก</a>
+                            <a class="btn btn-danger" href="<?php echo site_url('p_unit_leaders_backend'); ?>">ยกเลิก</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="btn btn-info" href="#" role="button" onclick="confirmDelete('<?= $rsedit->p_unit_leaders_id; ?>');">ลบข้อมูล</a>
+                            <script>
+                                function confirmDelete(p_unit_leaders_id) {
+                                    Swal.fire({
+                                        title: 'กดเพื่อยืนยัน?',
+                                        text: "คุณจะไม่สามรถกู้คืนได้อีก!",
+                                        icon: 'warning',
+                                        showCancelButton: true,
+                                        confirmButtonColor: '#3085d6',
+                                        cancelButtonColor: '#d33',
+                                        confirmButtonText: 'ใช่, ต้องการลบ!',
+                                        cancelButtonText: 'ยกเลิก' // เปลี่ยนข้อความปุ่ม Cancel เป็นภาษาไทย
+                                    }).then((result) => {
+                                        if (result.isConfirmed) {
+                                            window.location.href = "<?= site_url('p_unit_leaders_backend/del_p_unit_leaders/'); ?>" + p_unit_leaders_id;
+                                        }
+                                    });
+                                }
+                            </script>
                         </div>
                     </div>
             </form>

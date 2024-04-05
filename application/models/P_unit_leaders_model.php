@@ -205,8 +205,38 @@ class P_unit_leaders_model extends CI_Model
             unlink($old_file_path);
         }
 
-        $this->db->delete('tbl_p_unit_leaders', array('p_unit_leaders_id' => $p_unit_leaders_id));
+        // อัพเดทข้อมูลในฐานข้อมูลให้ค่าว่างหรือ null
+        $data = array(
+            'p_unit_leaders_name' => null,
+            'p_unit_leaders_rank' => null,
+            'p_unit_leaders_phone' => null,
+            'p_unit_leaders_img' => null,
+            'p_unit_leaders_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่เพิ่มข้อมูล
+            // เพิ่มคอลัมน์อื่นๆ ที่ต้องการลบข้อมูล ให้ใส่ค่า null ด้วย
+        );
+        $this->db->where('p_unit_leaders_id', $p_unit_leaders_id);
+        $this->db->update('tbl_p_unit_leaders', $data);
     }
+
+    public function p_unit_leaders_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_unit_leaders');
+        $this->db->where('tbl_p_unit_leaders.p_unit_leaders_id', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function p_unit_leaders_under_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_unit_leaders');
+        $this->db->where('tbl_p_unit_leaders.p_unit_leaders_id !=', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+
 
     public function p_unit_leaders_frontend_one()
     {

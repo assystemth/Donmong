@@ -203,8 +203,37 @@ class P_education_model extends CI_Model
             unlink($old_file_path);
         }
 
-        $this->db->delete('tbl_p_education', array('p_education_id' => $p_education_id));
+        // อัพเดทข้อมูลในฐานข้อมูลให้ค่าว่างหรือ null
+        $data = array(
+            'p_education_name' => null,
+            'p_education_rank' => null,
+            'p_education_phone' => null,
+            'p_education_img' => null,
+            'p_education_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่เพิ่มข้อมูล
+            // เพิ่มคอลัมน์อื่นๆ ที่ต้องการลบข้อมูล ให้ใส่ค่า null ด้วย
+        );
+        $this->db->where('p_education_id', $p_education_id);
+        $this->db->update('tbl_p_education', $data);
     }
+
+    public function p_education_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_education');
+        $this->db->where('tbl_p_education.p_education_id', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function p_education_under_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_education');
+        $this->db->where('tbl_p_education.p_education_id !=', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 
     public function p_education_frontend_one()
     {

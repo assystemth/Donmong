@@ -202,8 +202,37 @@ class P_audit_model extends CI_Model
             unlink($old_file_path);
         }
 
-        $this->db->delete('tbl_p_audit', array('p_audit_id' => $p_audit_id));
+        // อัพเดทข้อมูลในฐานข้อมูลให้ค่าว่างหรือ null
+        $data = array(
+            'p_audit_name' => null,
+            'p_audit_rank' => null,
+            'p_audit_phone' => null,
+            'p_audit_img' => null,
+            'p_audit_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่เพิ่มข้อมูล
+            // เพิ่มคอลัมน์อื่นๆ ที่ต้องการลบข้อมูล ให้ใส่ค่า null ด้วย
+        );
+        $this->db->where('p_audit_id', $p_audit_id);
+        $this->db->update('tbl_p_audit', $data);
     }
+
+    public function p_audit_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_audit');
+        $this->db->where('tbl_p_audit.p_audit_id', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function p_audit_under_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_audit');
+        $this->db->where('tbl_p_audit.p_audit_id !=', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 
     public function p_audit_frontend_one()
     {

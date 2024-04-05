@@ -219,8 +219,37 @@ class P_learder_model extends CI_Model
             unlink($old_file_path);
         }
 
-        $this->db->delete('tbl_p_learder', array('p_learder_id' => $p_learder_id));
+        // อัพเดทข้อมูลในฐานข้อมูลให้ค่าว่างหรือ null
+        $data = array(
+            'p_learder_name' => null,
+            'p_learder_rank' => null,
+            'p_learder_phone' => null,
+            'p_learder_img' => null,
+            'p_learder_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่เพิ่มข้อมูล
+            // เพิ่มคอลัมน์อื่นๆ ที่ต้องการลบข้อมูล ให้ใส่ค่า null ด้วย
+        );
+        $this->db->where('p_learder_id', $p_learder_id);
+        $this->db->update('tbl_p_learder', $data);
     }
+
+    public function p_learder_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_learder');
+        $this->db->where('tbl_p_learder.p_learder_id', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function p_learder_under_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_learder');
+        $this->db->where('tbl_p_learder.p_learder_id !=', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 
     public function p_learder_frontend_one()
     {
