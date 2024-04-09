@@ -226,8 +226,37 @@ class P_council_model extends CI_Model
             unlink($old_file_path);
         }
 
-        $this->db->delete('tbl_p_council', array('p_council_id' => $p_council_id));
+        // อัพเดทข้อมูลในฐานข้อมูลให้ค่าว่างหรือ null
+        $data = array(
+            'p_council_name' => null,
+            'p_council_rank' => null,
+            'p_council_phone' => null,
+            'p_council_img' => null,
+            'p_council_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่เพิ่มข้อมูล
+            // เพิ่มคอลัมน์อื่นๆ ที่ต้องการลบข้อมูล ให้ใส่ค่า null ด้วย
+        );
+        $this->db->where('p_council_id', $p_council_id);
+        $this->db->update('tbl_p_council', $data);
     }
+
+    public function p_council_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_council');
+        $this->db->where('tbl_p_council.p_council_id', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function p_council_under_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_council');
+        $this->db->where('tbl_p_council.p_council_id !=', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 
     public function p_council_frontend_one()
     {

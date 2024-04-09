@@ -204,8 +204,37 @@ class P_deputy_model extends CI_Model
             unlink($old_file_path);
         }
 
-        $this->db->delete('tbl_p_deputy', array('p_deputy_id' => $p_deputy_id));
+        // อัพเดทข้อมูลในฐานข้อมูลให้ค่าว่างหรือ null
+        $data = array(
+            'p_deputy_name' => null,
+            'p_deputy_rank' => null,
+            'p_deputy_phone' => null,
+            'p_deputy_img' => null,
+            'p_deputy_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่เพิ่มข้อมูล
+            // เพิ่มคอลัมน์อื่นๆ ที่ต้องการลบข้อมูล ให้ใส่ค่า null ด้วย
+        );
+        $this->db->where('p_deputy_id', $p_deputy_id);
+        $this->db->update('tbl_p_deputy', $data);
     }
+
+    public function p_deputy_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_deputy');
+        $this->db->where('tbl_p_deputy.p_deputy_id', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function p_deputy_under_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_deputy');
+        $this->db->where('tbl_p_deputy.p_deputy_id !=', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 
     public function p_deputy_frontend_one()
     {

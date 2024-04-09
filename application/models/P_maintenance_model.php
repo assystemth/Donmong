@@ -203,8 +203,37 @@ class P_maintenance_model extends CI_Model
             unlink($old_file_path);
         }
 
-        $this->db->delete('tbl_p_maintenance', array('p_maintenance_id' => $p_maintenance_id));
+        // อัพเดทข้อมูลในฐานข้อมูลให้ค่าว่างหรือ null
+        $data = array(
+            'p_maintenance_name' => null,
+            'p_maintenance_rank' => null,
+            'p_maintenance_phone' => null,
+            'p_maintenance_img' => null,
+            'p_maintenance_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่เพิ่มข้อมูล
+            // เพิ่มคอลัมน์อื่นๆ ที่ต้องการลบข้อมูล ให้ใส่ค่า null ด้วย
+        );
+        $this->db->where('p_maintenance_id', $p_maintenance_id);
+        $this->db->update('tbl_p_maintenance', $data);
     }
+
+    public function p_maintenance_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_maintenance');
+        $this->db->where('tbl_p_maintenance.p_maintenance_id', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function p_maintenance_under_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_maintenance');
+        $this->db->where('tbl_p_maintenance.p_maintenance_id !=', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 
     public function p_maintenance_frontend_one()
     {

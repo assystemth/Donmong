@@ -228,6 +228,45 @@
     }
   }
 
+  @media (min-width: 1141px) and (max-width: 1170px) {
+    main {
+      transform: scale(0.86);
+      transform-origin: top left;
+      height: 2000px;
+    }
+  }
+
+  @media (min-width: 1171px) and (max-width: 1199px) {
+    main {
+      transform: scale(0.88);
+      transform-origin: top left;
+      height: 2000px;
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1220px) {
+    main {
+      transform: scale(0.9);
+      transform-origin: top left;
+      height: 2000px;
+    }
+  }
+
+  @media (min-width: 1221px) and (max-width: 1250px) {
+    main {
+      transform: scale(0.92);
+      transform-origin: top left;
+      height: 2000px;
+    }
+  }
+
+  @media (min-width: 1250px) and (max-width: 1289px) {
+    main {
+      transform: scale(0.95);
+      transform-origin: top left;
+      height: 2000px;
+    }
+  }
 
   /* color-all color สีทั้งหมด ****************************************************** */
   .white {

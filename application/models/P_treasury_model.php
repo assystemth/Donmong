@@ -204,8 +204,37 @@ class P_treasury_model extends CI_Model
             unlink($old_file_path);
         }
 
-        $this->db->delete('tbl_p_treasury', array('p_treasury_id' => $p_treasury_id));
+        // อัพเดทข้อมูลในฐานข้อมูลให้ค่าว่างหรือ null
+        $data = array(
+            'p_treasury_name' => null,
+            'p_treasury_rank' => null,
+            'p_treasury_phone' => null,
+            'p_treasury_img' => null,
+            'p_treasury_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่เพิ่มข้อมูล
+            // เพิ่มคอลัมน์อื่นๆ ที่ต้องการลบข้อมูล ให้ใส่ค่า null ด้วย
+        );
+        $this->db->where('p_treasury_id', $p_treasury_id);
+        $this->db->update('tbl_p_treasury', $data);
     }
+
+    public function p_treasury_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_treasury');
+        $this->db->where('tbl_p_treasury.p_treasury_id', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function p_treasury_under_one()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_p_treasury');
+        $this->db->where('tbl_p_treasury.p_treasury_id !=', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 
     public function p_treasury_frontend_one()
     {
