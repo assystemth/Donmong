@@ -19,8 +19,11 @@
                     <?php if (!empty($rs->p_unit_leaders_rank)) : ?>
                         <div class="bg-personnel-s">
                             <div class="rounded-image-s">
-                                <img src="<?= base_url('docs/img/' . $rs->p_unit_leaders_img); ?>" width="100%" height="100%">
-                            </div>
+                            <?php if (!empty($rs->p_unit_leaders_img)) : ?>
+                                        <img src="<?php echo base_url('docs/img/' . $rs->p_unit_leaders_img); ?>" width="100%" height="100%">
+                                    <?php else : ?>
+                                        <img src="<?php echo base_url('docs/ex_personnel.png'); ?>" width="100%" height="100%">
+                                    <?php endif; ?>                            </div>
                         </div>
                         <div class="mt-3 center-center">
                             <span class="font-p-name">
@@ -38,11 +41,13 @@
                 <?php foreach ($query_under_one as $rs) : ?>
                     <div class="col-4 col-md-4 mb-3 center-center">
                         <?php if (!empty($rs->p_unit_leaders_rank)) : ?>
-
                             <div class="bg-personnel-s">
                                 <div class="rounded-image-s">
-                                    <img src="<?= base_url('docs/img/' . $rs->p_unit_leaders_img); ?>" width="100%" height="100%">
-                                </div>
+                                <?php if (!empty($rs->p_unit_leaders_img)) : ?>
+                                        <img src="<?php echo base_url('docs/img/' . $rs->p_unit_leaders_img); ?>" width="100%" height="100%">
+                                    <?php else : ?>
+                                        <img src="<?php echo base_url('docs/ex_personnel.png'); ?>" width="100%" height="100%">
+                                    <?php endif; ?>                                </div>
                             </div>
                             <span class="font-p-name">
                                 <?php echo !empty($rs->p_unit_leaders_name) ? $rs->p_unit_leaders_name : 'ว่าง'; ?>

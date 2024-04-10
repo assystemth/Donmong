@@ -19,8 +19,11 @@
                     <?php if (!empty($rs->p_deputy_rank)) : ?>
                         <div class="bg-personnel-s">
                             <div class="rounded-image-s">
-                                <img src="<?= base_url('docs/img/' . $rs->p_deputy_img); ?>" width="100%" height="100%">
-                            </div>
+                            <?php if (!empty($rs->p_deputy_img)) : ?>
+                                        <img src="<?php echo base_url('docs/img/' . $rs->p_deputy_img); ?>" width="100%" height="100%">
+                                    <?php else : ?>
+                                        <img src="<?php echo base_url('docs/ex_personnel.png'); ?>" width="100%" height="100%">
+                                    <?php endif; ?>                            </div>
                         </div>
                         <div class="mt-3 center-center">
                             <span class="font-p-name"><?= $rs->p_deputy_name; ?></span>
@@ -38,8 +41,11 @@
                         <?php if (!empty($rs->p_deputy_rank)) : ?>
                             <div class="bg-personnel-s">
                                 <div class="rounded-image-s">
-                                    <img src="<?= base_url('docs/img/' . $rs->p_deputy_img); ?>" width="100%" height="100%">
-                                </div>
+                                <?php if (!empty($rs->p_deputy_img)) : ?>
+                                        <img src="<?php echo base_url('docs/img/' . $rs->p_deputy_img); ?>" width="100%" height="100%">
+                                    <?php else : ?>
+                                        <img src="<?php echo base_url('docs/ex_personnel.png'); ?>" width="100%" height="100%">
+                                    <?php endif; ?>                                </div>
                             </div>
                             <span class="font-p-name">
                                 <?php echo !empty($rs->p_deputy_name) ? $rs->p_deputy_name : 'ว่าง'; ?>
