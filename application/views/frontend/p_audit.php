@@ -17,31 +17,36 @@
             <div class="scrollable-container">
                 <div class="page-center">
                     <?php foreach ($query_one as $rs) { ?>
-                        <div class="bg-personnel-s">
-                            <div class="rounded-image-s">
-                                <img src="<?= base_url('docs/img/' . $rs->p_audit_img); ?>" width="100%" height="100%">
+                        <?php if (!empty($rs->p_audit_rank)) : ?>
+                            <div class="bg-personnel-s">
+                                <div class="rounded-image-s">
+                                    <img src="<?= base_url('docs/img/' . $rs->p_audit_img); ?>" width="100%" height="100%">
+                                </div>
                             </div>
-                        </div>
-                        <div class="mt-3 center-center">
-                            <span class="font-p-name"><?= $rs->p_audit_name; ?></span>
-                            <span class="font-p-detail "><?= $rs->p_audit_rank; ?></span>
-                            <?php if (!empty($rs->p_audit_phone)) : ?>
-                                <span class="font-p-detail">เบอร์ <?= $rs->p_audit_phone; ?></span>
-                            <?php endif; ?>
-                        </div>
+                            <div class="mt-3 center-center">
+                                <span class="font-p-name">
+                                    <?php echo !empty($rs->p_audit_name) ? $rs->p_audit_name : 'ว่าง'; ?>
+                                </span>
+                                <span class="font-p-detail "><?= $rs->p_audit_rank; ?></span>
+                                <?php if (!empty($rs->p_audit_phone)) : ?>
+                                    <span class="font-p-detail">เบอร์ <?= $rs->p_audit_phone; ?></span>
+                                <?php endif; ?>
+                            </div>
+                        <?php endif; ?>
                     <?php } ?>
                 </div>
                 <div class="row " style="margin-top: 25px;">
                     <?php foreach ($query_under_one as $rs) : ?>
                         <div class="col-4 col-md-4 mb-3 center-center">
-                            <?php if (!empty($rs->p_audit_name)) : ?>
-
+                            <?php if (!empty($rs->p_audit_rank)) : ?>
                                 <div class="bg-personnel-s">
                                     <div class="rounded-image-s">
                                         <img src="<?= base_url('docs/img/' . $rs->p_audit_img); ?>" width="100%" height="100%">
                                     </div>
                                 </div>
-                                <span class="font-p-name"><?= $rs->p_audit_name; ?></span>
+                                <span class="font-p-name">
+                                    <?php echo !empty($rs->p_audit_name) ? $rs->p_audit_name : 'ว่าง'; ?>
+                                </span>
                                 <span class="font-p-detail "><?= $rs->p_audit_rank; ?></span>
                                 <?php if (!empty($rs->p_audit_phone)) : ?>
                                     <span class="font-p-detail">เบอร์ <?= $rs->p_audit_phone; ?></span>
