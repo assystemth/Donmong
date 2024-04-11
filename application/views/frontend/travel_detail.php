@@ -62,15 +62,17 @@
                 <span class="font-page-detail-content-img">โทรศัพท์</span> : <span class="font-page-detail-content-img"><?= $rsTravel->travel_phone; ?></span>
                 <br>
                 <span class="font-page-detail-content-img">แหล่งที่มา</span> : <span class="font-page-detail-content-img"><a href="<?= $rsTravel->travel_refer; ?>" target="_blank"><?= $rsTravel->travel_refer; ?></a></span>
-                <div class="popup">
-                    <div class="row mt-5">
-                        <?php foreach ($rsImg as $img) { ?>
-                            <div class="col-3 mb-3">
+                <!-- <div class="popup"> -->
+                <div class="row mt-5">
+                    <?php foreach ($rsImg as $img) { ?>
+                        <div class="col-3 mb-3">
+                            <a href="<?php echo base_url('docs/img/' . $img->travel_img_img); ?>" data-lightbox="image-1" data-title="My caption">
                                 <img class="rounded-all" src="<?php echo base_url('docs/img/' . $img->travel_img_img); ?>" width="209px" height="202px">
-                            </div>
-                        <?php } ?>
-                    </div>
+                            </a>
+                        </div>
+                    <?php } ?>
                 </div>
+                <!-- </div> -->
             </div>
         </div>
         <div class="row">
