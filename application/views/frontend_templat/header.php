@@ -38,7 +38,6 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   
   <!-- รูปภาพ preview -->
-  <link href="path/to/lightbox.css" rel="stylesheet" />
   <link href="<?= base_url('asset/'); ?>lightbox2/src/css/lightbox.css" rel="stylesheet">
   <!-- facebook -->
   <div id="fb-root"></div>
