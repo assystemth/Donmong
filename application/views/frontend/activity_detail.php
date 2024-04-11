@@ -52,7 +52,7 @@
                 <div class="row mt-5">
                     <?php foreach ($rsImg as $img) { ?>
                         <div class="col-3 mb-3">
-                            <a href="<?php echo base_url('docs/img/' . $img->activity_img_img); ?>" data-lightbox="image-1" data-title="My caption">
+                            <a href="<?php echo base_url('docs/img/' . $img->activity_img_img); ?>" data-lightbox="image-1">
                                 <img class="rounded-all" src="<?php echo base_url('docs/img/' . $img->activity_img_img); ?>" width="209px" height="202px">
                             </a>
                         </div>
