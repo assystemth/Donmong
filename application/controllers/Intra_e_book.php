@@ -28,7 +28,7 @@ class Intra_e_book extends CI_Controller
     {
         $data['query'] = $this->Intra_e_book_model->list_all();
 
-        $this->load->view('intranet_templat/header_e_book');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/e_book', $data);
@@ -48,7 +48,7 @@ class Intra_e_book extends CI_Controller
             $data['query'] = $this->Intra_e_book_model->list_all();
         }
 
-        $this->load->view('intranet_templat/header_e_book');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/e_book', $data);
@@ -80,7 +80,7 @@ class Intra_e_book extends CI_Controller
     {
         $data['rsedit'] = $this->Intra_e_book_model->read($intra_e_book_id);
 
-        $this->load->view('intranet_templat/header_e_book');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/e_book_detail', $data);

@@ -71,7 +71,9 @@
                 <div class="col-sm-4" style="height: 31vh;">
                     <?php if (isset($currentItem->intra_gallery_img_id)) : ?>
                         <!-- Display image -->
+                        <a href="<?= base_url('docs/intranet/img/' . $currentItem->intra_gallery_img_img); ?>" data-lightbox="image-1" data-title="My caption">
                         <img src="<?= base_url('docs/intranet/img/' . $currentItem->intra_gallery_img_img); ?>" width="90%" height="80%">
+                        </a>
                         <br>
                         <div class="row mt-3">
                             <div class="col-6">

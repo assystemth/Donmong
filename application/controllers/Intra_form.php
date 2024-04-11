@@ -28,7 +28,7 @@ class Intra_form extends CI_Controller
     {
         $data['query'] = $this->Intra_form_model->list_all();
 
-        $this->load->view('intranet_templat/header_form');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/form', $data);
@@ -68,7 +68,7 @@ class Intra_form extends CI_Controller
             $data['query'] = $this->Intra_form_model->list_all();
         }
 
-        $this->load->view('intranet_templat/header_form');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/form', $data);
@@ -80,7 +80,7 @@ class Intra_form extends CI_Controller
     {
         $data['rsedit'] = $this->Intra_form_model->read($intra_form_id);
 
-        $this->load->view('intranet_templat/header_form');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/form_detail', $data);

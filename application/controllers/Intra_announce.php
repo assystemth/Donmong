@@ -28,7 +28,7 @@ class Intra_announce extends CI_Controller
     {
         $data['query'] = $this->Intra_announce_model->list_all();
 
-        $this->load->view('intranet_templat/header_announce');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/announce', $data);
@@ -68,7 +68,7 @@ class Intra_announce extends CI_Controller
             $data['query'] = $this->Intra_announce_model->list_all();
         }
 
-        $this->load->view('intranet_templat/header_announce');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/announce', $data);
@@ -80,7 +80,7 @@ class Intra_announce extends CI_Controller
     {
         $data['rsedit'] = $this->Intra_announce_model->read($intra_announce_id);
 
-        $this->load->view('intranet_templat/header_announce');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/announce_detail', $data);

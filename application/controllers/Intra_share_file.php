@@ -29,7 +29,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['storage'] = $this->space_model->list_all();
 
-        $this->load->view('intranet_templat/header_share_file');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/share_file', $data);
@@ -42,7 +42,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['query'] = $this->Intra_share_file_model->list_sf_all();
 
-        $this->load->view('intranet_templat/header_sf_all');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_all', $data);
@@ -62,7 +62,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_all();
         }
 
-        $this->load->view('intranet_templat/header_sf_all');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_all', $data);
@@ -98,7 +98,7 @@ class Intra_share_file extends CI_Controller
         $data['query'] = $this->Intra_share_file_model->list_sf_executive();
 
 
-        $this->load->view('intranet_templat/header_sf_executive');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_executive', $data);
@@ -118,7 +118,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_executive();
         }
 
-        $this->load->view('intranet_templat/header_sf_executive');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_executive', $data);
@@ -151,7 +151,7 @@ class Intra_share_file extends CI_Controller
         $data['query'] = $this->Intra_share_file_model->list_sf_palace();
 
 
-        $this->load->view('intranet_templat/header_sf_palace');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_palace', $data);
@@ -171,7 +171,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_palace();
         }
 
-        $this->load->view('intranet_templat/header_sf_palace');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_palace', $data);
@@ -205,7 +205,7 @@ class Intra_share_file extends CI_Controller
         $data['query'] = $this->Intra_share_file_model->list_sf_employee();
 
 
-        $this->load->view('intranet_templat/header_sf_employee');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_employee', $data);
@@ -225,7 +225,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_employee();
         }
 
-        $this->load->view('intranet_templat/header_sf_employee');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_employee', $data);
@@ -259,7 +259,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['query'] = $this->Intra_share_file_model->list_sf_audit();
 
-        $this->load->view('intranet_templat/header_sf_audit');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_audit', $data);
@@ -279,7 +279,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_audit();
         }
 
-        $this->load->view('intranet_templat/header_sf_audit');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_audit', $data);
@@ -312,7 +312,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['query'] = $this->Intra_share_file_model->list_sf_learder();
 
-        $this->load->view('intranet_templat/header_sf_learder');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_learder', $data);
@@ -332,7 +332,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_learder();
         }
 
-        $this->load->view('intranet_templat/header_sf_learder');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_learder', $data);
@@ -365,7 +365,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['query'] = $this->Intra_share_file_model->list_sf_dsab();
 
-        $this->load->view('intranet_templat/header_sf_dsab');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_dsab', $data);
@@ -385,7 +385,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_dsab();
         }
 
-        $this->load->view('intranet_templat/header_sf_dsab');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_dsab', $data);
@@ -419,7 +419,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['query'] = $this->Intra_share_file_model->list_sf_treasury();
 
-        $this->load->view('intranet_templat/header_sf_treasury');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_treasury', $data);
@@ -439,7 +439,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_treasury();
         }
 
-        $this->load->view('intranet_templat/header_sf_treasury');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_treasury', $data);
@@ -473,7 +473,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['query'] = $this->Intra_share_file_model->list_sf_maintenance();
 
-        $this->load->view('intranet_templat/header_sf_maintenance');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_maintenance', $data);
@@ -493,7 +493,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_maintenance();
         }
 
-        $this->load->view('intranet_templat/header_sf_maintenance');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_maintenance', $data);
@@ -527,7 +527,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['query'] = $this->Intra_share_file_model->list_sf_deputy();
 
-        $this->load->view('intranet_templat/header_sf_deputy');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_deputy', $data);
@@ -547,7 +547,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_deputy();
         }
 
-        $this->load->view('intranet_templat/header_sf_deputy');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_deputy', $data);
@@ -581,7 +581,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['query'] = $this->Intra_share_file_model->list_sf_council();
 
-        $this->load->view('intranet_templat/header_sf_council');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_council', $data);
@@ -601,7 +601,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_council();
         }
 
-        $this->load->view('intranet_templat/header_sf_council');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_council', $data);
@@ -635,7 +635,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['query'] = $this->Intra_share_file_model->list_sf_unit_leaders();
 
-        $this->load->view('intranet_templat/header_sf_unit_leaders');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_unit_leaders', $data);
@@ -655,7 +655,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_unit_leaders();
         }
 
-        $this->load->view('intranet_templat/header_sf_unit_leaders');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_unit_leaders', $data);
@@ -689,7 +689,7 @@ class Intra_share_file extends CI_Controller
     {
         $data['query'] = $this->Intra_share_file_model->list_sf_education();
 
-        $this->load->view('intranet_templat/header_sf_education');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_education', $data);
@@ -709,7 +709,7 @@ class Intra_share_file extends CI_Controller
             $data['query'] = $this->Intra_share_file_model->list_sf_education();
         }
 
-        $this->load->view('intranet_templat/header_sf_education');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/sf_education', $data);

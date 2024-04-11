@@ -28,7 +28,7 @@ class Intra_discipline extends CI_Controller
     {
         $data['query'] = $this->Intra_discipline_model->list_all();
 
-        $this->load->view('intranet_templat/header_discipline');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/discipline', $data);
@@ -68,7 +68,7 @@ class Intra_discipline extends CI_Controller
             $data['query'] = $this->Intra_discipline_model->list_all();
         }
 
-        $this->load->view('intranet_templat/header_discipline');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/discipline', $data);
@@ -80,7 +80,7 @@ class Intra_discipline extends CI_Controller
     {
         $data['rsedit'] = $this->Intra_discipline_model->read($intra_discipline_id);
 
-        $this->load->view('intranet_templat/header_discipline');
+        $this->load->view('intranet_templat/header');
         $this->load->view('internet_asste/css');
         $this->load->view('intranet_templat/navbar');
         $this->load->view('intranet/discipline_detail', $data);
