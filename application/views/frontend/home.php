@@ -917,22 +917,27 @@
                                 <?= htmlspecialchars($data['project_name']) ?>
                             </a></span>
                     </div>
+                    <div class="d-flex justify-content-center" style="margin-top: -28px;">
+                        <a href="<?php echo site_url('Pages/e_gp'); ?>">
+                            <img src="docs/k.btn-all.png">
+                        </a>
+                    </div>
                     <?php
                 endforeach;
-            else:
-                ?>
-                <span class="text-center align-center"
-                    style="font-size: 36px;">ไม่สามารถดึงข้อมูลจากระบบจัดซือจัดจ้างภาครัฐได้
-                    กรุณาโหลดหน้าเว็บใหม่อีกครั้ง</span>
-                <?php
-            endif;
-            ?>
+            else: ?>
+                <div class="text-center">
+                    <span style="font-size: 23px;">เนื่องจากระบบส่วนกลางมีปัญหา เว็บไซต์ไม่สามารถดึงข้อมูลจากระบบการจัดซื้อจัดจ้างภาครัฐได้<br>
+                        แก้ไขเบื้องต้นโดยการ Refresh หน้าเว็บอีกครั้ง หรือรอการแก้ไขจากผู้ดูแลระบบเว็บฯ ส่วนกลาง<br>
+                        ต้องขออภัยเป็นอย่างสูงในความไม่สะดวก
+                    </span>
+                </div>
+            <?php endif; ?>
 
-            <div class="d-flex justify-content-center" style="margin-top: -28px;">
+            <!-- <div class="d-flex justify-content-center" style="margin-top: -28px;">
                 <a href="<?php echo site_url('Pages/e_gp'); ?>">
                     <img src="docs/k.btn-all.png">
                 </a>
-            </div>
+            </div> -->
         </div>
         <div id="tab3" class="tab-content">
             <?php foreach ($qP_reb as $anou) { ?>
