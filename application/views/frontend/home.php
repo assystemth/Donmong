@@ -917,11 +917,11 @@
                                 <?= htmlspecialchars($data['project_name']) ?>
                             </a></span>
                     </div>
-                    <div class="d-flex justify-content-center" style="margin-top: -28px;">
+                    <!-- <div class="d-flex justify-content-center" style="margin-top: -28px;">
                         <a href="<?php echo site_url('Pages/e_gp'); ?>">
                             <img src="docs/k.btn-all.png">
                         </a>
-                    </div>
+                    </div> -->
                     <?php
                 endforeach;
             else: ?>
@@ -933,11 +933,11 @@
                 </div>
             <?php endif; ?>
 
-            <!-- <div class="d-flex justify-content-center" style="margin-top: -28px;">
+            <div class="d-flex justify-content-center" style="margin-top: -28px;">
                 <a href="<?php echo site_url('Pages/e_gp'); ?>">
                     <img src="docs/k.btn-all.png">
                 </a>
-            </div> -->
+            </div>
         </div>
         <div id="tab3" class="tab-content">
             <?php foreach ($qP_reb as $anou) { ?>
