@@ -2741,7 +2741,7 @@
   }
 
   .font-gi-head {
-    color: #FFD203;
+    color: #000;
     font-family: Kanit;
     font-size: 24px;
     font-style: normal;

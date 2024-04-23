@@ -5,7 +5,7 @@
             <h4>แก้ไขข้อมูลอำนาจหน้าที่</h4>
             <form action=" <?php echo site_url('authority_backend/edit/' . $rsedit->authority_id); ?> " method="post" class="form-horizontal" enctype="multipart/form-data">
                 <br>
-                <div class="form-group row">
+                <!-- <div class="form-group row">
                     <div class="col-sm-2 control-label">รายละเอียด</div>
                     <div class="col-sm-10">
                         <textarea name="authority_detail" id="authority_detail"><?= $rsedit->authority_detail; ?></textarea>
@@ -47,6 +47,24 @@
                         เลือกใหม่
                         <br>
                         <input type="file" name="authority_img" class="form-control" accept="image/*">
+                    </div>
+                </div> -->
+                <div class="form-group row">
+                    <div class="col-sm-3 control-label">เรื่อง</div>
+                    <div class="col-sm-9">
+                        <input type="text" name="authority_name" id="authority_name" class="form-control" value="<?= $rsedit->authority_name; ?>">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <div class="col-sm-3 control-label">ไฟล์เอกสารเพิ่มเติม</div>
+                    <div class="col-sm-6">
+                        <a class="btn btn-info btn-sm mb-2" href="<?= base_url('docs/file/' . $rsedit->authority_pdf); ?>" target="_blank">ดูไฟล์ <?= $rsedit->authority_pdf; ?></a>
+                        <br>
+                        <input type="file" name="authority_pdf" class="form-control mt-1" accept="application/pdf" multiple>
+                        <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
+                        <br>
+                        <span class="red-add">(เฉพาะไฟล์ PDF)</span>
                     </div>
                 </div>
                 <br>
