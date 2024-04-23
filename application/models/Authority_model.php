@@ -25,16 +25,15 @@ class Authority_model extends CI_Model
         }
         return FALSE;
     }
-
     public function edit($authority_id)
     {
         $old_document = $this->db->get_where('tbl_authority', array('authority_id' => $authority_id))->row();
 
-        $update_doc_file = !empty($_FILES['authority_img']['name']) && $old_document->authority_img != $_FILES['authority_img']['name'];
+        $update_doc_file = !empty($_FILES['authority_pdf']['name']) && $old_document->authority_pdf != $_FILES['authority_pdf']['name'];
 
         // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
-            $old_file_path = './docs/img/' . $old_document->authority_img;
+            $old_file_path = './docs/file/' . $old_document->authority_pdf;
             if (file_exists($old_file_path)) {
                 unlink($old_file_path);
             }
@@ -44,8 +43,8 @@ class Authority_model extends CI_Model
             $upload_limit_mb = $this->space_model->get_limit_storage();
 
             $total_space_required = 0;
-            if (!empty($_FILES['authority_img']['name'])) {
-                $total_space_required += $_FILES['authority_img']['size'];
+            if (!empty($_FILES['authority_pdf']['name'])) {
+                $total_space_required += $_FILES['authority_pdf']['size'];
             }
 
             if ($used_space_mb + ($total_space_required / (1024 * 1024 * 1024)) >= $upload_limit_mb) {
@@ -54,11 +53,11 @@ class Authority_model extends CI_Model
                 return;
             }
 
-            $config['upload_path'] = './docs/img';
-            $config['allowed_types'] = 'gif|jpg|png|jpeg';
+            $config['upload_path'] = './docs/file';
+            $config['allowed_types'] = 'pdf';
             $this->load->library('upload', $config);
 
-            if (!$this->upload->do_upload('authority_img')) {
+            if (!$this->upload->do_upload('authority_pdf')) {
                 echo $this->upload->display_errors();
                 return;
             }
@@ -67,13 +66,13 @@ class Authority_model extends CI_Model
             $filename = $data['file_name'];
         } else {
             // ใช้รูปภาพเดิม
-            $filename = $old_document->authority_img;
+            $filename = $old_document->authority_pdf;
         }
 
         $data = array(
-            'authority_detail' => $this->input->post('authority_detail'),
+            'authority_name' => $this->input->post('authority_name'),
             'authority_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่เพิ่มข้อมูล
-            'authority_img' => $filename
+            'authority_pdf' => $filename
         );
 
         $this->db->where('authority_id', $authority_id);
@@ -90,6 +89,71 @@ class Authority_model extends CI_Model
             echo "</script>";
         }
     }
+
+    // public function edit($authority_id)
+    // {
+    //     $old_document = $this->db->get_where('tbl_authority', array('authority_id' => $authority_id))->row();
+
+    //     $update_doc_file = !empty($_FILES['authority_img']['name']) && $old_document->authority_img != $_FILES['authority_img']['name'];
+
+    //     // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+    //     if ($update_doc_file) {
+    //         $old_file_path = './docs/img/' . $old_document->authority_img;
+    //         if (file_exists($old_file_path)) {
+    //             unlink($old_file_path);
+    //         }
+
+    //         // Check used space
+    //         $used_space_mb = $this->space_model->get_used_space();
+    //         $upload_limit_mb = $this->space_model->get_limit_storage();
+
+    //         $total_space_required = 0;
+    //         if (!empty($_FILES['authority_img']['name'])) {
+    //             $total_space_required += $_FILES['authority_img']['size'];
+    //         }
+
+    //         if ($used_space_mb + ($total_space_required / (1024 * 1024 * 1024)) >= $upload_limit_mb) {
+    //             $this->session->set_flashdata('save_error', TRUE);
+    //             redirect('authority/editing');
+    //             return;
+    //         }
+
+    //         $config['upload_path'] = './docs/img';
+    //         $config['allowed_types'] = 'gif|jpg|png|jpeg';
+    //         $this->load->library('upload', $config);
+
+    //         if (!$this->upload->do_upload('authority_img')) {
+    //             echo $this->upload->display_errors();
+    //             return;
+    //         }
+
+    //         $data = $this->upload->data();
+    //         $filename = $data['file_name'];
+    //     } else {
+    //         // ใช้รูปภาพเดิม
+    //         $filename = $old_document->authority_img;
+    //     }
+
+    //     $data = array(
+    //         'authority_detail' => $this->input->post('authority_detail'),
+    //         'authority_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่เพิ่มข้อมูล
+    //         'authority_img' => $filename
+    //     );
+
+    //     $this->db->where('authority_id', $authority_id);
+    //     $query = $this->db->update('tbl_authority', $data);
+
+    //     $this->space_model->update_server_current();
+
+
+    //     if ($query) {
+    //         $this->session->set_flashdata('save_success', TRUE);
+    //     } else {
+    //         echo "<script>";
+    //         echo "alert('เกิดข้อผิดพลาดในการอัปเดตข้อมูล !');";
+    //         echo "</script>";
+    //     }
+    // }
 
     public function authority_frontend()
     {
