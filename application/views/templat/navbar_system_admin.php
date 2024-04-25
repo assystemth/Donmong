@@ -171,6 +171,7 @@
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_cosr_backend'); ?>">ศูนย์ปฏิบัติการความปลอด<br>ภัยทางถนน</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_hkl_backend'); ?>">คลังความรู้ / แผ่นพับประชา<br>สัมพันธ์</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_gbo_backend'); ?>"> คู่มือผลประโยชน์ทับซ้อน</a>
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_dss_backend'); ?>">ข้อมูลเชิงสถิติการให้บริการ</a>
                     </div>
                 </div>
             </li>
@@ -1042,7 +1043,11 @@
                         <span>คู่มือผลประโยชน์ทับซ้อน</span>
                     </a>
                 </li>
-
+                <li class="hide">
+                    <a href="<?php echo site_url('Pbsv_dss_backend'); ?>" class="link">
+                        <span>ข้อมูลเชิงสถิติการให้บริการ</span>
+                    </a>
+                </li>
                 <!-- การดำเนินงาน -->
                 <a href="<?php echo site_url('Operation_reauf_backend'); ?>" class="link">
 

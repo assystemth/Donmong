@@ -398,6 +398,7 @@
                             href="https://csgcheck.dcy.go.th/public/eq/popSubsidy.do?ms=158953" target="_blank"><img
                                 src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ระบบตรวจสอบสิทธิผู้มีสิทธิรับเงิน<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อุดหนุนเพื่อการเลี้ยงดูเด็กแรกเกิด</a>
                     </li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/pbsv_dss'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ข้อมูลเชิงสถิติการให้บริการ </a></li>
                 </div>
             </ul>
         </div>
