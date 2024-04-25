@@ -299,68 +299,42 @@
             style="border: none; background: none; padding: 0; margin: 0; padding-left: 70px; padding-top: 5px;">
             การดำเนินงาน
         </button>
-        <div class="dropdown-content">
+        <div class="dropdown-content1">
             <ul class="no-bullets mt-4">
                 <div class="dropdown-left">
-                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_reauf'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานติดตามและประเมินผลแผนฯ</a></li>
                     <!-- <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/#'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานผลการดำเนินงานจัดซื้อจัดจ้าง</a></li> -->
-                    <li><a class="mar-left-9 dropdown-item"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การบริหารและพัฒนาทรัพยากรบุคคล</a></li>
-                    <li><a class="mar-left-12 dropdown-item"
-                            href="<?php echo site_url('Pages/operation_policy_hr'); ?>"><img
-                                src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;นโยบายบริหารทรัพยากรบุคคล</a></li>
-                    <li><a class="mar-left-12 dropdown-item"
-                            href="<?php echo site_url('Pages/operation_am_hr'); ?>"><img
-                                src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;การดำเนินงานตามนโยบายการบริหาร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทรัพยากรบุคคล</a>
-                    </li>
-                    <li><a class="mar-left-12 dropdown-item"
-                            href="<?php echo site_url('Pages/operation_rdam_hr'); ?>"><img
-                                src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;รายงานผลการบริหารและพัฒนาทรัพยากร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;บุคคลประจำปี</a>
-                    </li>
-                    <li><a class="mar-left-12 dropdown-item"
-                            href="<?php echo site_url('Pages/operation_cdm_topic'); ?>"><img
-                                src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;หลักเกณฑ์การบริหารและพัฒนาทรัพยากร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;บุคคล</a>
-                    </li>
-                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_po'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การเปิดโอกาสให้มีส่วนร่วม</a></li>
+                    <li><a class="mar-left-9 dropdown-item"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การบริหารและพัฒนาทรัพยากรบุคคล</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_policy_hr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;นโยบายบริหารทรัพยากรบุคคล</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_am_hr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;การดำเนินงานตามนโยบายการบริหาร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทรัพยากรบุคคล</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_rdam_hr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;รายงานผลการบริหารและพัฒนาทรัพยากร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;บุคคลประจำปี</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_cdm_topic'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;หลักเกณฑ์การบริหารและพัฒนาทรัพยากร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;บุคคล</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_pgn'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;นโยบายไม่รับของขวัญ no gift policy</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_po'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การเปิดโอกาสให้มีส่วนร่วม</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_pm'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การมีส่วนร่วมของผู้บริหาร</a></li>
                 </div>
                 <div class="dropdown-center">
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_pgn'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;นโยบายไม่รับของขวัญ no gift policy</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_pm'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การมีส่วนร่วมของผู้บริหาร</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_eco'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การเสริมสร้างวัฒนธรรมองค์กร</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_aca'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การปฏิบัติการป้องกันการทุจริต</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/lpa'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;LPA
-                            หรือการประเมิณประสิทธิภาพขององค์กร<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปกครองส่วนท้องถิ่น</a>
-                    </li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/ita_all'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ITA การประเมิณคุณธรรมของหน่วยงานภาครัฐ</a>
-                    </li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_we'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;งานจริยธรรม</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_mcc'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การจัดการเรื่องร้องเรียนการทุจริต</a></li>
+                   
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_eco'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การเสริมสร้างวัฒนธรรมองค์กร</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_aca'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การปฏิบัติการป้องกันการทุจริต</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/lpa'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;LPA การประเมิณประสิทธิภาพขององค์กร</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/ita_all'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ITA การประเมิณคุณธรรมของหน่วยงานภาครัฐ</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_we'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;งานจริยธรรม</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_mcc'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การจัดการเรื่องร้องเรียนการทุจริต</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_sap'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การปฏิบัติงานและการให้บริการ</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_spfct'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การลดขั้นตอนการปฏิบัติงาน</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_aa'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;กิจการสภา</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_aditn'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ตรวจสอบภายใน</a></li>
+                
                 </div>
                 <div class="dropdown-right">
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_sap'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การปฏิบัติงานและการให้บริการ</a></li>
-                    <li><a class="mar-left-12 dropdown-item"
-                            href="<?php echo site_url('Pages/operation_aditn'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;ตรวจสอบภายใน</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_aa'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;กิจการสภา</a></li>
-                    <li><a class="mar-left-12 dropdown-item"
-                            href="<?php echo site_url('Pages/operation_spfct'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การลดขั้นตอนการปฏิบัติงาน</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_rpf'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานข้อมูลทางการเงิน</a></li>
-                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/operation_rprm'); ?>"><img
-                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานผลการประชุม</a></li>
+                    <li><a class="mar-left-9 dropdown-item"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;การจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a></li>
+					<li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/p_rpobuy'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;รายการจัดซื้อจัดจ้าง หรือการจัดหาพัสดุ</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/p_sopopip'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;รายงานความก้าวหน้าการจัดซื้อจัดจ้าง<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หรือการจัดหาพัสดุ</a></li>
+                    <li><a class="mar-left-12 dropdown-item" href="<?php echo site_url('Pages/p_sopopaortsr'); ?>"><img src="docs/k.item-img-navmid2.png">&nbsp;&nbsp;รายงานสรุปผลการจัดซื้อจัดจ้าง<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หรือการจัดหาพัสดุประจำปี</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_rpf'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานข้อมูลทางการเงิน</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_rprm'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานผลการประชุม</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_reauf'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานติดตามและประเมินผลแผนฯ</a></li>
+                    
                 </div>
             </ul>
         </div>

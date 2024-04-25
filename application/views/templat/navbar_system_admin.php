@@ -206,6 +206,9 @@
                         <a class="collapse-item" href="<?php echo site_url('P_rpo_backend'); ?>">รายงานผลการดำเนินงาน</a>
                         <a class="collapse-item" href="<?php echo site_url('P_reb_backend'); ?>">รายงานใช้จ่ายงบประมาณ</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_mcc_backend'); ?>">การจัดการเรื่องร้องเรียน<br>การทุจริต</a>
+                        <a class="collapse-item" href="<?php echo site_url('p_rpobuy_backend'); ?>">รายการจัดซื้อจัดจ้างหรือ<br>การจัดหาพัสดุ</a>
+                        <a class="collapse-item" href="<?php echo site_url('p_sopopip_backend'); ?>">รายงานความก้าวหน้าการจัด<br>ซื้อจัดจ้างหรือการจัดหาพัสดุ</a>
+                        <a class="collapse-item" href="<?php echo site_url('P_sopopaortsr_backend'); ?>">รายงานสรุปผลการจัดซื้อจัด<br>จ้างหรือการจัดหาพัสดุประจำปี</a>
                         <!-- <a class="collapse-item" href="<?php echo site_url('Operation_eg_backend'); ?>">ประมวลจริยธรรมสำหรับ<br>เจ้าหน้าที่ของรัฐ</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_ameg_backend'); ?>">การประเมินจริยธรรม<br>เจ้าหน้าที่ของรัฐ</a> -->
                     </div>
@@ -1082,6 +1085,24 @@
 
                     <li class="hide">
                         <span>นโยบายไม่รับของขวัญ no gift policy</span>
+                    </li>
+                </a>
+                <a href="<?php echo site_url('P_rpobuy_backend'); ?>" class="link">
+
+                    <li class="hide">
+                        <span>รายการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</span>
+                    </li>
+                </a>
+                <a href="<?php echo site_url('P_sopopip_backend'); ?>" class="link">
+
+                    <li class="hide">
+                        <span>รายงานความก้าวหน้าการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</span>
+                    </li>
+                </a>
+                <a href="<?php echo site_url('P_sopopaortsr_backend'); ?>" class="link">
+
+                    <li class="hide">
+                        <span>รายงานสรุปผลการจัดซื้อจัดจ้างหรือการจัดหาพัสดุประจำปี</span>
                     </li>
                 </a>
                 <a href="<?php echo site_url('Operation_pm_backend'); ?>" class="link">

@@ -527,6 +527,34 @@
     line-height: normal;
   }
 
+  .dropdown-content1 {
+    background-image: url('<?php echo base_url("docs/d.bg-nav-content1v2.png"); ?>');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: none;
+    position: absolute;
+    width: 1280px;
+    height: 586px;
+    z-index: 2;
+    margin-left: 3px;
+  }
+
+  .dropdown-content1 ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* แบ่งออกเป็น 3 columns ที่มีขนาดเท่ากัน */
+
+  }
+
+  .dropdown-content1 a {
+    color: #000;
+    font-family: Kanit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
   .dropdown-item:hover {
     color: #E1B81A;
     font-family: Kanit;
@@ -3051,5 +3079,10 @@
     font-size: 20px;
     font-style: normal;
     padding-left: 150px;
+  }
+
+  .font-doc {
+    font-size: 20px;
+    text-shadow: 1px 1px #ccc;
   }
 </style>
