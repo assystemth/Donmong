@@ -411,7 +411,7 @@ class Award_model extends CI_Model
         $this->db->select('*');
         $this->db->from('tbl_award');
         $this->db->where('tbl_award.award_status', 'show');
-        $this->db->limit(8);
+        
         $this->db->order_by('tbl_award.award_date', 'DESC');
         $query = $this->db->get();
         return $query->result();
