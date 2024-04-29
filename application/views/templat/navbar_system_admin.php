@@ -246,6 +246,7 @@
                         <a class="collapse-item" href="<?php echo site_url('Q_a_backend'); ?>">กระทู้ถาม-ตอบ</a>
                         <a class="collapse-item" href="<?php echo site_url('Questions_backend'); ?>">คำถามที่พบบ่อย</a>
                         <a class="collapse-item" href="<?php echo site_url('Emailto_backend'); ?>">E-mail ถึงเทศบาล</a>
+                        <a class="collapse-item" href="<?php echo site_url('Eservice_backend'); ?>">บริการ E-service</a>
                     </div>
                 </div>
             </li>
@@ -1252,51 +1253,43 @@
 
                 <!-- E-service -->
                 <a href="<?php echo site_url('Complain_backend'); ?>" class="link">
-
                     <li class="hide">
                         <span>เรื่องร้องเรียน</span>
                     </li>
                 </a>
-
                 <a href="<?php echo site_url('Corruption_backend'); ?>" class="link">
-
                     <li class="hide">
                         <span>แจ้งเรื่องทุจริตหน่วยงานภาครัฐ</span>
                     </li>
                 </a>
-
                 <a href="<?php echo site_url('Suggestions_backend'); ?>" class="link">
-
                     <li class="hide">
                         <span>รับฟังความคิดเห็นและข้อเสนอแนะ</span>
                     </li>
                 </a>
-
                 <a href="<?php echo site_url('Esv_ods_backend'); ?>" class="link">
-
                     <li class="hide">
                         <span>ยื่นคำร้องออนไลน์</span>
                     </li>
                 </a>
-
                 <a href="<?php echo site_url('Q_a_backend'); ?>" class="link">
-
                     <li class="hide">
                         <span>กระทู้ถาม-ตอบ</span>
                     </li>
                 </a>
-
                 <a href="<?php echo site_url('Questions_backend'); ?>" class="link">
-
                     <li class="hide">
                         <span>คำถามที่พบบ่อย</span>
                     </li>
                 </a>
-
                 <a href="<?php echo site_url('Emailto_backend'); ?>" class="link">
-
                     <li class="hide">
                         <span>E-mail ถึงเทศบาล</span>
+                    </li>
+                </a>
+                <a href="<?php echo site_url('Eservice_backend'); ?>" class="link">
+                    <li class="hide">
+                        <span>บริการ E-service</span>
                     </li>
                 </a>
 

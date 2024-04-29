@@ -1129,14 +1129,14 @@
             <a href="<?php echo site_url('Pages/adding_suggestions'); ?>" class="zoom-otop">
                 <img src="docs/d.menu-e-service3v3.png">
                 <br>
-                <span class="font-e-service-25">รับฟังความคิดเห็น</span>
+                <span class="font-e-service-25">รับฟัง<br>ความคิดเห็น</span>
             </a>
         </div>
         <div class="col text-center mx-4">
             <a href="<?php echo site_url('Pages/q_a'); ?>" class="zoom-otop">
                 <img src="docs/d.menu-e-service4v3.png">
                 <br>
-                <span class="font-e-service-25">กระทู้ ถาม-ตอบ</span>
+                <span class="font-e-service-25">กระทู้<br>ถาม-ตอบ</span>
             </a>
         </div>
         <div class="col text-center mx-4">
@@ -1157,7 +1157,14 @@
             <a href="<?php echo site_url('Pages/emailto'); ?>" class="zoom-otop">
                 <img src="docs/d.menu-e-service7v2.png">
                 <br>
-                <span class="font-e-service-25">E-mail ถึงเทศบาล</span>
+                <span class="font-e-service-25">E-mail<br>ถึงเทศบาล</span>
+            </a>
+        </div>
+        <div class="col text-center d-flex  mx-4">
+            <a href="<?php echo site_url('Pages/adding_eservice'); ?>" class="zoom-otop">
+                <img src="docs/d.menu-e-service8.png">
+                <br>
+                <span class="font-e-service-25">บริการ<br>E-Service</span>
             </a>
         </div>
     </div>

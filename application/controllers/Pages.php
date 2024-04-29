@@ -124,6 +124,7 @@ class Pages extends CI_Controller
 		$this->load->model('q_a_model');
 		$this->load->model('complain_model');
 		$this->load->model('corruption_model');
+		$this->load->model('eservice_model');
 		$this->load->model('suggestions_model');
 		$this->load->model('questions_model');
 		$this->load->model('site_map_model');
@@ -3791,6 +3792,24 @@ class Pages extends CI_Controller
 		// exit;
 		$this->corruption_model->add_corruption();
 		redirect('Pages/adding_corruption', 'refresh');
+	}
+	public function adding_eservice()
+	{
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/eservice');
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+	public function add_eservice()
+	{
+		// echo '<pre>';
+		// print_r($_POST);
+		// echo '</pre>';
+		// exit;
+		$this->eservice_model->add_eservice();
+		redirect('Pages/adding_eservice', 'refresh');
 	}
 	public function adding_suggestions()
 	{

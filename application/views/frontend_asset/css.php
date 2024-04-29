@@ -901,7 +901,7 @@
     -webkit-text-stroke-width: 0.30000001192092896;
     -webkit-text-stroke-color: #000;
     font-family: Kanit;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -2426,7 +2426,7 @@
     border-radius: 17.085px;
     background: #FFF5C9;
     box-shadow: 0px 0px 6.701px 0px rgba(0, 0, 0, 0.25);
-    height: 600px;
+    height: 620px;
     width: 914px;
   }
 
@@ -2485,17 +2485,6 @@
     margin-bottom: 30px;
   }
 
-  .pages-form-es-complain {
-    margin-top: 40px;
-    margin-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 17.085px;
-    background: #FFF5C9;
-    box-shadow: 0px 0px 6.701px 0px rgba(0, 0, 0, 0.25);
-    height: 600px;
-    width: 914px;
-  }
 
   .detail-q-a {
     width: 914px;
