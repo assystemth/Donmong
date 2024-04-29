@@ -37,12 +37,15 @@
                         <!-- <div class="col-sm-5 control-label  font-e-service-complain">ประเภทเรื่องที่ต้องการร้องเรียน</div> -->
                         <div class="col-sm-5">
                             <select class="form-select custom-select" name="eservice_type" required>
-                                <option value="" disabled selected>เลือกหมวดหมู่บริการ E-service</option>
+                                <option value="" disabled selected>เลือกหมวดหมู่ขอรับบริการ E-service</option>
                                 <option value="ขอซ่อม/ไฟสาธารณะ">ขอซ่อม/ไฟสาธารณะ</option>
                                 <option value="งานถนน">งานถนน</option>
                                 <option value="ขอความอนุเคราะห์น้ำเพื่ออุปโภคบริโภค">ขอความอนุเคราะห์น้ำเพื่ออุปโภคบริโภค</option>
                                 <option value="ขอถังขยะ">ขอถังขยะ</option>
                                 <option value="ขอตัดต้นไม้และจัดเก็บกิ่งไม้">ขอตัดต้นไม้และจัดเก็บกิ่งไม้</option>
+                                <option value="รับชำระภาษี">รับชำระภาษี</option>
+                                <option value="จดทะเบียนพาณิชย์">จดทะเบียนพาณิชย์</option>
+                                <option value="ลงทะเบียนยืนยันสิทธิรับเบี้ยยงชีพผู้สูงอายุ">ลงทะเบียนยืนยันสิทธิรับเบี้ยยงชีพผู้สูงอายุ</option>
                             </select>
                         </div>
                     </div>
@@ -50,7 +53,7 @@
                     <div class="form-group">
                         <div class="col-sm-3 control-label font-e-service-complain">เรื่อง <span class="red-font">*</span></div>
                         <div class="col-sm-12 mt-2">
-                            <input type="text" name="eservice_topic" class="form-control font-label-e-service-complain" required placeholder="กรอกเรื่องร้องเรียน...">
+                            <input type="text" name="eservice_topic" class="form-control font-label-e-service-complain" required placeholder="กรอกเรื่องขอรับบริการ...">
                         </div>
                     </div>
                     <br>

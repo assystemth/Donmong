@@ -119,6 +119,7 @@ class Pages extends CI_Controller
 		$this->load->model('operation_aditn_model');
 		$this->load->model('operation_eg_model');
 		$this->load->model('operation_ameg_model');
+		$this->load->model('operation_mptae_model');
 
 		$this->load->model('newsletter_model');
 		$this->load->model('q_a_model');
@@ -3637,6 +3638,49 @@ class Pages extends CI_Controller
 	public function increment_download_operation_aa($operation_aa_file_id)
 	{
 		$this->operation_aa_model->increment_download_operation_aa($operation_aa_file_id);
+	}
+	public function operation_mptae()
+	{
+		$data['query'] = $this->operation_mptae_model->operation_mptae_frontend_list();
+
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/operation_mptae', $data);
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+	public function operation_mptae_detail($operation_mptae_id)
+	{
+		$this->operation_mptae_model->increment_view($operation_mptae_id);
+
+		$data['rsData'] = $this->operation_mptae_model->read($operation_mptae_id);
+
+		// เพิ่มเงื่อนไขเพื่อตรวจสอบว่ามีข้อมูลหรือไม่
+		if (!$data['rsData']) {
+			$this->load->view('frontend_templat/header');
+			$this->load->view('frontend_asset/css');
+			$this->load->view('frontend_templat/navbar');
+			$this->load->view('frontend/empty_detail_pages');
+			$this->load->view('frontend_asset/js');
+			$this->load->view('frontend_templat/footer');
+			return; // ให้จบการทำงานที่นี่
+		}
+
+		$data['rsPdf'] = $this->operation_mptae_model->read_pdf($operation_mptae_id);
+		$data['rsDoc'] = $this->operation_mptae_model->read_doc($operation_mptae_id);
+		$data['rsImg'] = $this->operation_mptae_model->read_img($operation_mptae_id);
+
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/operation_mptae_detail', $data);
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+	public function increment_download_operation_mptae($operation_mptae_file_id)
+	{
+		$this->operation_mptae_model->increment_download_operation_mptae($operation_mptae_file_id);
 	}
 	public function newsletter()
 	{

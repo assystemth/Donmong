@@ -334,6 +334,7 @@
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_rpf'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานข้อมูลทางการเงิน</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_rprm'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานผลการประชุม</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_reauf'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;รายงานติดตามและประเมินผลแผนฯ</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/operation_mptae'); ?>"><img src="docs/k.item-img-navmid.png">&nbsp;&nbsp;มาตรการส่งเสริมคุณธรรม<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;และความโปร่งใสภายใน</a></li>
                     
                 </div>
             </ul>

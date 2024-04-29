@@ -210,6 +210,7 @@
                         <a class="collapse-item" href="<?php echo site_url('p_rpobuy_backend'); ?>">รายการจัดซื้อจัดจ้างหรือ<br>การจัดหาพัสดุ</a>
                         <a class="collapse-item" href="<?php echo site_url('p_sopopip_backend'); ?>">รายงานความก้าวหน้าการจัด<br>ซื้อจัดจ้างหรือการจัดหาพัสดุ</a>
                         <a class="collapse-item" href="<?php echo site_url('P_sopopaortsr_backend'); ?>">รายงานสรุปผลการจัดซื้อจัด<br>จ้างหรือการจัดหาพัสดุประจำปี</a>
+                        <a class="collapse-item" href="<?php echo site_url('Operation_mptae_backend'); ?>">มาตรการส่งเสริมคุณธรรม<br>และความโปร่งใสภายใน</a>
                         <!-- <a class="collapse-item" href="<?php echo site_url('Operation_eg_backend'); ?>">ประมวลจริยธรรมสำหรับ<br>เจ้าหน้าที่ของรัฐ</a>
                         <a class="collapse-item" href="<?php echo site_url('Operation_ameg_backend'); ?>">การประเมินจริยธรรม<br>เจ้าหน้าที่ของรัฐ</a> -->
                     </div>
@@ -1207,7 +1208,11 @@
                         <span>การจัดการเรื่องร้องเรียนการทุจริต</span>
                     </li>
                 </a>
-
+                <a href="<?php echo site_url('Operation_mptae_backend'); ?>" class="link">
+                    <li class="hide">
+                        <span>มาตรการส่งเสริมคุณธรรมและความโปร่งใสภายใน</span>
+                    </li>
+                </a>
                 <!-- มาตราการภายใน -->
                 <a href="<?php echo site_url('Order_backend'); ?>" class="link">
 
