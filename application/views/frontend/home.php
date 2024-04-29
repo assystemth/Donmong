@@ -15,7 +15,7 @@
     <div class="row">
         <div class="col-4">
             <div class="d-flex justify-content-center">
-                <img class="mark-logo" src="docs/d.item-vision-left1.png">
+                <img class="mark-logo" src="docs/d.item-vision-left1v3.png">
             </div>
             <div class="d-flex justify-content-center">
                 <img class="mark-logo" src="docs/d.item-vision-left2.png">
