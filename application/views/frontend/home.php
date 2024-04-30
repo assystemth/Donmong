@@ -15,7 +15,7 @@
     <div class="row">
         <div class="col-4">
             <div class="d-flex justify-content-center">
-                <img class="mark-logo" src="docs/d.item-vision-left1v3.png">
+                <img class="mark-logo" src="docs/d.item-vision-left1v4.png">
             </div>
             <div class="d-flex justify-content-center">
                 <img class="mark-logo" src="docs/d.item-vision-left2.png">
@@ -364,6 +364,8 @@
                                 src="docs/k.item-img-navmid.png">&nbsp;&nbsp;หลักประกันสุขภาพเทศบาล</a></li>
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/pbsv_sags'); ?>"><img
                                 src="docs/k.item-img-navmid.png">&nbsp;&nbsp;คู่มือหรือมาตรฐานการให้บริการ</a></li>
+                    <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/pbsv_e_service'); ?>"><img
+                                src="docs/k.item-img-navmid.png">&nbsp;&nbsp;คู่มือการใช้งานบริการ E-Service</a></li>
                 </div>
                 <div class="dropdown-center">
                     <li><a class="mar-left-9 dropdown-item" href="<?php echo site_url('Pages/pbsv_gup'); ?>"><img

@@ -76,6 +76,7 @@ class Pages extends CI_Controller
 		$this->load->model('pbsv_cig_model');
 		$this->load->model('pbsv_cjc_model');
 		$this->load->model('pbsv_sags_model');
+		$this->load->model('pbsv_e_service_model');
 		$this->load->model('pbsv_ahs_model');
 		$this->load->model('pbsv_oppr_model');
 		$this->load->model('pbsv_ems_model');
@@ -1867,6 +1868,48 @@ class Pages extends CI_Controller
 	public function increment_download_pbsv_sags($pbsv_sags_file_id)
 	{
 		$this->pbsv_sags_model->increment_download_pbsv_sags($pbsv_sags_file_id);
+	}
+	public function pbsv_e_service()
+	{
+		$data['query'] = $this->pbsv_e_service_model->pbsv_e_service_frontend();
+
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/pbsv_e_service', $data);
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+	public function pbsv_e_service_detail($pbsv_e_service_id)
+	{
+		$this->pbsv_e_service_model->increment_view($pbsv_e_service_id);
+
+		$data['rsData'] = $this->pbsv_e_service_model->read($pbsv_e_service_id);
+
+		// เพิ่มเงื่อนไขเพื่อตรวจสอบว่ามีข้อมูลหรือไม่
+		if (!$data['rsData']) {
+			$this->load->view('frontend_templat/header');
+			$this->load->view('frontend_asset/css');
+			$this->load->view('frontend_templat/navbar');
+			$this->load->view('frontend/empty_detail_pages');
+			$this->load->view('frontend_asset/js');
+			$this->load->view('frontend_templat/footer');
+			return; // ให้จบการทำงานที่นี่
+		}
+
+		$data['rsFile'] = $this->pbsv_e_service_model->read_file($pbsv_e_service_id);
+		$data['rsImg'] = $this->pbsv_e_service_model->read_img($pbsv_e_service_id);
+
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar');
+		$this->load->view('frontend/pbsv_e_service_detail', $data);
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer');
+	}
+	public function increment_download_pbsv_e_service($pbsv_e_service_file_id)
+	{
+		$this->pbsv_e_service_model->increment_download_pbsv_e_service($pbsv_e_service_file_id);
 	}
 	public function pbsv_ahs()
 	{

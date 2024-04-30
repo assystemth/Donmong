@@ -165,6 +165,7 @@
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_ems_backend'); ?>">งานกู้ชีพ/บริการ<br>การแพทย์ฉุกเฉิน(EMS)</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_ahs_backend'); ?>">หลักประกันสุขภาพเทศบาล</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_sags_backend'); ?>">คู่มือและ<br>มาตราฐานการให้บริการ</a>
+                        <a class="collapse-item" href="<?php echo site_url('Pbsv_e_service_backend'); ?>">คู่มือการใช้งานบริการ<br> E-Service</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_gup_backend'); ?>">คู่มือสำหรับประชาชน</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_e_book_backend'); ?>">ดาวโหลดแบบฟอร์ม E-book</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_ckl_backend'); ?>">ศูนย์การจัดการความรู้</a>
@@ -1010,6 +1011,13 @@
 
                     <li class="hide">
                         <span>คู่มือและมาตราฐานการให้บริการ</span>
+                    </li>
+                </a>
+
+                <a href="<?php echo site_url('Pbsv_e_service_backend'); ?>" class="link">
+
+                    <li class="hide">
+                        <span>คู่มือการใช้งานบริการ E-Service</span>
                     </li>
                 </a>
 
