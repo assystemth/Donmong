@@ -15,6 +15,9 @@
 
 <!-- chart พาย  -->
 <script src="<?= base_url('asset/'); ?>rpie.js"></script>
+<script src="<?= base_url('asset/'); ?>swiper/swiper/swiper-bundle.min.js"></script>
+<script src="<?= base_url('asset/'); ?>slick/slick-carousel/slick/slick.min.js"></script>
+<script src="<?= base_url('asset/'); ?>boostrap/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- ใช้ JavaScript ของ Swiper -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
