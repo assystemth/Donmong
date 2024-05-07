@@ -98,7 +98,7 @@
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1" class="form-label  font-e-service-complain">รายละเอียด <span class="red-font">*</span></label>
                         <div class="col-sm-12">
-                            <textarea name="complain_detail" class="form-control font-label-e-service-complain" id="exampleFormControlTextarea1" rows="6" placeholder="กรอกรายละเอียดเพิ่มเติม..."></textarea>
+                            <textarea name="complain_detail" class="form-control font-label-e-service-complain" id="exampleFormControlTextarea1" rows="6" required placeholder="กรอกรายละเอียดเพิ่มเติม..."></textarea>
                         </div>
                     </div>
                     <br>
