@@ -36,12 +36,12 @@
                     <img src="<?php echo base_url("docs/intranet/nav-intranet-btn7.png"); ?>" width="100%" height="100%" style="padding-top: 5%;">
                 </a>
                 <br>
-                <a class="navbar-link" data-image-src="<?php echo base_url("docs/intranet/nav-intranet-btn-hover8.1.png"); ?>" href="<?php echo site_url('Intra_report'); ?>">
-                    <img src="<?php echo base_url("docs/intranet/nav-intranet-btn8.1.png"); ?>" width="100%" height="100%" style="padding-top: 5%;">
-                </a>
-                <br>
                 <a class="navbar-link" data-image-src="<?php echo base_url("docs/intranet/nav-intranet-btn-hover8.2.png"); ?>" href="<?php echo site_url('Intra_egp'); ?>">
                     <img src="<?php echo base_url("docs/intranet/nav-intranet-btn8.2.png"); ?>" width="100%" height="100%" style="padding-top: 5%;">
+                </a>
+                <br>
+                <a class="navbar-link" data-image-src="<?php echo base_url("docs/intranet/nav-intranet-btn-hover8.1.png"); ?>" href="<?php echo site_url('Intra_report'); ?>">
+                    <img src="<?php echo base_url("docs/intranet/nav-intranet-btn8.1.png"); ?>" width="100%" height="100%" style="padding-top: 5%;">
                 </a>
                 <br>
                 <a class="navbar-link" data-image-src="<?php echo base_url("docs/intranet/nav-intranet-btn-hover9.png"); ?>" href="<?php echo site_url('Intra_it'); ?>">
