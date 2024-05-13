@@ -40,6 +40,11 @@
 <!-- รูปภาพ preview -->
 <script src="<?= base_url('asset/'); ?>lightbox2/src/js/lightbox.js"></script>
 
+<!-- chart w3school -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<!-- chart google -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
 <script>
   // รูปภาพ preview *********************************************************************
   $(document).ready(function() {
