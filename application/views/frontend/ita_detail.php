@@ -4,7 +4,7 @@
                 <span class="font-path-1 underline"><a href="<?php echo site_url('Home'); ?>">หน้าแรก</a></span>
             </div>
             <div class="path2-3">
-                <span class="font-path-2 underline"><a href="#">ITA เทศบาลกาบเชิง</a></span>
+                <span class="font-path-2 underline"><a href="#">ITA เทศบาลดอนโมง</a></span>
             </div>
         </div>
         <div class="page-center">
