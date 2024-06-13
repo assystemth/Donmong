@@ -53,7 +53,7 @@
                 </a>
             </div>
             <div class="d-flex justify-content-center mt-4">
-                <a href="https://www.oic.go.th/INFOCENTER25/2518/" class="zoom-otop" target="_blank">
+                <a href="https://www.oic.go.th/INFOCENTER30/3056/" class="zoom-otop" target="_blank">
                     <img class="mark-logo" src="docs/k.menu-eservice-top2v2.png">
                 </a>
             </div>
