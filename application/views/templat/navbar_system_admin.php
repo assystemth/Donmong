@@ -173,6 +173,7 @@
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_hkl_backend'); ?>">คลังความรู้ / แผ่นพับประชา<br>สัมพันธ์</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_gbo_backend'); ?>"> คู่มือผลประโยชน์ทับซ้อน</a>
                         <a class="collapse-item" href="<?php echo site_url('Pbsv_dss_backend'); ?>">ข้อมูลเชิงสถิติการให้บริการ</a>
+                        <a class="collapse-item" href="<?php echo site_url('Odata_backend'); ?>">ฐานข้อมูลเปิดภาครัฐ<br>(Open Data)</a>
                     </div>
                 </div>
             </li>
@@ -1056,6 +1057,11 @@
                 <li class="hide">
                     <a href="<?php echo site_url('Pbsv_dss_backend'); ?>" class="link">
                         <span>ข้อมูลเชิงสถิติการให้บริการ</span>
+                    </a>
+                </li>
+                <li class="hide">
+                    <a href="<?php echo site_url('Odata_backend'); ?>" class="link">
+                    <span>ฐานข้อมูลเปิดภาครัฐ (Open Data)</span>
                     </a>
                 </li>
                 <!-- การดำเนินงาน -->
