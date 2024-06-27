@@ -29,6 +29,8 @@ class Home extends CI_Controller
 		$this->load->model('q_a_model');
 
 		$this->load->model('publicize_ita_model');
+
+		$this->load->model('intra_egp_model');
 	}
 
 	public function main()
@@ -97,6 +99,8 @@ class Home extends CI_Controller
 		$data['qMui'] = $this->mui_model->mui_frontend();
 		$data['qGuide_work'] = $this->guide_work_model->guide_work_frontend();
 		$data['qLoadform'] = $this->loadform_model->loadform_frontend();
+
+		$data['qEgp'] = $this->intra_egp_model->egp_frontend();
 
 		$data['qTravel'] = $this->travel_model->travel_frontend();
 		$data['qOtop'] = $this->otop_model->otop_frontend();
